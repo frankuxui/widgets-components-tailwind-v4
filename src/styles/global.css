@@ -7,20 +7,16 @@
   --color-border: var(--color-gray-200);
   
   --color-primary: oklch(0.51 0.23 276.97);
-  --color-btn-primary: oklch(0.51 0.23 276.97);
   --color-secondary: var(--color-gray-200);
   --color-danger:  oklch(0.65 0.22 16.44);
   --color-success: var(--color-emerald-500);
+  --color-warning: var(--color-amber-500);
 }
 
 .dark {
   --color-background: var(--color-gray-950);
   --color-foreground: var(--color-white);
   --color-border: var(--color-gray-800);
-  --color-primary: oklch(0.51 0.23 276.97);
-  --color-secondary: var(--color-gray-700);
-  --color-danger:  oklch(0.65 0.22 16.44);
-  --color-success: var(--color-emerald-500)
 }
 
 @font-face {

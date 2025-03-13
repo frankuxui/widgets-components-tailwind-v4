@@ -1,0 +1,463 @@
+---
+import "../styles/global.css";
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+
+let pages = []
+pages = await Astro.glob('../pages/categories/*.md')
+
+const data = pages.map((item) => {
+	const { category, title, slug, tags, visible } = item.frontmatter
+
+	return {
+		category,
+		title,
+		slug,
+		tags,
+		visible
+	}
+})
+
+const pageSlug = Astro.url.pathname.split('/')[2]
+
+const permalink = Astro.url.href ?? 'https://widgets-components-v2-1.vercel.app/';
+const ogImage = "https://widgets-components-v2-1.vercel.app/og-image.jpg"
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+
+		<!-- Open Graph -->
+		<meta name="title" content={title} />
+		<meta name="description" content={description} />
+
+		<!-- The rest of your head content -->
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={permalink} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={ogImage} />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={permalink} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content={ogImage} />
+
+		
+	</head>
+
+
+	<script>
+		const themeToggle = document.querySelectorAll('[data-toggle="theme"]');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+		const prefersLight = window.matchMedia('(prefers-color-scheme: light)');
+		const prefersNone = window.matchMedia('(prefers-color-scheme: no-preference)');
+
+		const setTheme = (theme: string) => {
+			if (theme === 'dark') {
+				document.documentElement.classList.add('dark');
+				document.documentElement.classList.remove('light');
+				themeToggle.forEach((toggle) => {
+					(toggle as HTMLInputElement).checked = true;
+				});
+			} else {
+				document.documentElement.classList.add('light');
+				document.documentElement.classList.remove('dark');
+				themeToggle.forEach((toggle) => {
+					(toggle as HTMLInputElement).checked = false;
+				});	
+			}
+		};
+
+		if (prefersDark.matches) {
+			setTheme('dark');
+		}
+		if (prefersLight.matches) {
+			setTheme('light');
+		}
+		if (prefersNone.matches) {
+			setTheme('light');
+		}
+
+		// Save the user's theme preference to localStorage
+
+		const savedTheme = localStorage.getItem('theme');
+
+		if (savedTheme) {
+			setTheme(savedTheme);
+		}
+
+		themeToggle.forEach((toggle) => {
+			toggle.addEventListener('change', (e: Event) => {
+				const isChecked = (e.target as HTMLInputElement).checked;
+				const theme = localStorage.getItem('theme');
+
+				if (theme === 'dark') {
+					localStorage.setItem('theme', 'light');
+					setTheme('light');
+				} else {
+					localStorage.setItem('theme', 'dark');
+					setTheme('dark');
+				}
+			});
+		});
+
+		prefersDark.addEventListener('change', (e) => {
+			if (e.matches) {
+				setTheme('dark');
+			}
+		});
+
+		prefersLight.addEventListener('change', (e) => {
+			if (e.matches) {
+				setTheme('light');
+			}
+		});
+
+		prefersNone.addEventListener('change', (e) => {
+			if (e.matches) {
+				setTheme('light');
+			}
+		});
+
+		// Aside toggle
+
+		const asideToggle = document.querySelectorAll('[data-toggle="aside"]');
+		const asideContent = document.querySelector('.aside-content') as HTMLElement;
+		const aside = document.querySelector('aside') as HTMLElement;
+
+		asideToggle.forEach((toggle) => {
+			toggle.addEventListener('click', () => {
+				if (aside.style.display === 'none') {
+					aside.style.display = 'block';
+					document.body.style.overflow = 'hidden';
+					setTimeout(() => {
+						asideContent.style.transform = 'translateX(0)';
+					}, 100);
+				} else {
+					asideContent.style.transform = 'translateX(-100%)';
+					document.body.style.overflow = 'auto';
+					setTimeout(() => {
+						aside.style.display = 'none';
+					}, 300);
+				}
+			});
+		});
+		
+
+		// Menu more toggle
+
+		const menuMoreToggle = document.querySelectorAll('[data-toggle="menu-more"]');
+		const menuDropdown = document.querySelectorAll('.menu-dropdown');
+		
+		menuMoreToggle.forEach((toggle) => {
+			toggle.addEventListener('click', () => {
+				const dropdown = toggle.nextElementSibling as HTMLElement;
+
+				if (dropdown.style.display === 'none') {
+					dropdown.style.display = 'block';
+				} else {
+					dropdown.style.display = 'none';
+				}
+			});
+		});
+
+		// Close menu more dropdown when clicking outside of it
+
+		document.addEventListener('click', (e) => {
+			menuMoreToggle.forEach((item) => {
+				if (!item.contains(e.target as Node)) {
+					menuDropdown.forEach((dropdown) => {
+						(dropdown as HTMLElement).style.display = 'none';
+					});
+				}
+			});
+		});
+
+		// Close menu more dropdown when clicking the escape key
+
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape') {
+				menuDropdown.forEach((dropdown) => {
+					(dropdown as HTMLElement).style.display = 'none';
+				});
+			}
+		});
+	</script>
+
+	<body>
+
+		<header class="z-30 fixed left-0 w-full top-0 py-4 bg-white/80 dark:bg-gray-950/80 backdrop-blur-lg">
+			<div class="flex items-center justify-between px-4">
+				<a href="/" class="relative overflow-hidden flex group items-center gap-2 border px-4 py-2 rounded-md shadow bg-white/60 dark:border-gray-900 dark:bg-gray-950/60">
+					<div class="absolute z-0 -bottom-12 transition-all duration-300 opacity-60 left-0 w-14 h-10 blur-lg bg-indigo-600 group-hover:blur-2xl group-hover:opacity-80"></div>
+					<h1 class="relative flex-none text-lg md:text-xl font-bold dark:text-white">Widgets</h1>
+				</a>
+				<ul class="hidden lg:flex items-center justify-center w-full">
+					{
+						data.filter((item) => item.visible).map((item) => {
+							return (
+								<li>
+									<a 
+										href={`/categories/${item.slug}`}
+										class="flex items-center justify-center uppercase text-sm py-2 px-4 rounded-full tracking-wider transition-colors duration-200"
+										class:list={{
+											'font-medium hover:text-black text-gray-600 dark:text-gray-500 dark:hover:text-gray-400': pageSlug !== item.slug,
+											'font-extrabold text-black dark:text-white bg-black/10 backdrop-blur-sm dark:bg-white/5': pageSlug === item.slug
+										}}
+										>
+										{item.category}
+									</a>
+								</li>
+							)
+						})
+
+					}
+					<li class="relative">
+						<button data-toggle="menu-more" class="flex items-center justify-center w-10 h-10 flex-none transition-colors duration-300 rounded-full hover:bg-gray-200 dark:hover:bg-gray-900 dark:text-white focus:bg-gray-300 dark:focus:bg-gray-700" >
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+						</button>
+						<div 
+							class="menu-dropdown flex flex-col absolute mt-2 top-full left-1/2 -translate-x-1/2 w-full min-w-[15rem]"
+							style="display: none;"
+						>
+							<div class="border p-4 rounded-md shadow-xl bg-white dark:bg-gray-800 dark:border-gray-800">
+								{
+									data.filter((item) => item.visible === false).map((item) => {
+										return (
+											<a 
+												href={`/categories/${item.slug}`}
+												class="relative block py-2 px-4 w-full rounded transition-colors duration-200"
+												class:list={{
+													'text-gray-600 hover:text-black hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-white/5 dark:hover:text-white': pageSlug !== item.slug,
+													'text-black font-bold dark:text-white hover:bg-black/5 dark:hover:bg-white/5': pageSlug === item.slug
+												}}
+												>
+												{item.category}
+											</a>
+										)
+									})
+								}
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="flex items-center flex-none gap-4">
+					<input type="checkbox" data-toggle="theme" class="h-[20px] px-[3px] w-[38px] relative flex-none cursor-pointer appearance-none rounded-full bg-gray-300 dark:bg-gray-700 before:transition-transform before:duration-200 before:pointer-events-none before:absolute before:top-1/2 before:-translate-y-1/2 before:h-4 before:w-4 before:rounded-full before:bg-transparent before:content-[''] before:transform before:translate-x-0 before:bg-white focus:bg-gray-400 dark:focus:bg-gray-600 focus:checked:bg-emerald-500 checked:bg-emerald-500 checked:before:translate-x-full checked:before:bg-white" />
+					
+					<!-- Menu button -->
+					<button data-toggle="aside" class="flex lg:hidden items-center justify-center w-10 h-10 flex-none transition-colors duration-300 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-white">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+					</button>
+					<!-- End menu button -->
+				</div>
+				
+
+			</div>
+		</header>
+
+    <slot />
+		
+
+		<aside
+			class="fixed top-0 left-0 h-full w-full z-50"
+			style="display: none;"
+		>
+			<div data-toggle="aside" class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 backdrop-blur"></div>
+
+			<div 
+				class="aside-content relative flex flex-col w-full h-full max-w-xs z-10 bg-white"
+				style="transition: transform 200ms ease-in-out; transform: translateX(-100%);"
+			>
+				<header class="w-full flex items-center justify-between px-6 p-4 border-b">
+					<h2 class="text-lg font-medium">Widgets</h2>
+
+					<!-- Close button -->
+					<button data-toggle="aside" class="flex lg:hidden items-center justify-center w-9 h-9 flex-none transition-colors duration-300 text-black rounded-full hover:bg-gray-200">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+					</button>
+					<!-- End close button -->
+
+				</header>
+				<section class="flex-1 py-8 px-6 overflow-y-auto">
+					<h2 class="text-lg font-medium">Categories</h2>
+					<ul class="flex flex-col w-full mt-4">
+						{
+							data.map((item) => {
+								return (
+									<li>
+										<a 
+											href={`/categories/${item.slug}`}
+											class="relative block py-2 w-full rounded transition-colors duration-200"
+											class:list={{
+												'text-gray-600 hover:text-black': pageSlug !== item.slug,
+												'text-black font-bold': pageSlug === item.slug
+											}}
+											>
+											{item.category}
+										</a>
+									</li>
+								)
+							})
+						}
+					</ul>
+				</section>
+
+				<footer class="flex items-center justify-between w-full bg-gray-50 py-8 px-6">
+					<h2 class="text-base font-medium">Settings</h2>
+					<!-- Theme toggle -->
+					<label class="relative inline-flex items-center cursor-pointer">
+						<input type="checkbox" value="" class="sr-only peer" data-toggle="theme">
+						<div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+					</label>
+					<!-- End theme toggle -->
+
+				</footer>
+			</div>
+		</aside>
+	</body>
+</html>
+
+<style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+	:root {
+		--dark-bg: var(--color-gray-950);
+		--light-bg: #ffffff;
+	}
+	body {
+		font-family: 'Roboto', sans-serif;
+		background: var(--light-bg);
+		overflow-x: hidden;
+	}
+	.dark body {
+		background: var(--dark-bg);
+	}
+	.break-inside {
+  	-moz-column-break-inside: avoid;
+  	break-inside: avoid;
+	}
+
+
+	.main-expo {
+		column-count: 1;
+		column-gap: 0.75rem;
+		padding: 0 1.5rem;
+		margin: 0 auto;
+		max-width: 100%;
+		padding-bottom: 2rem;
+	}
+	.container {
+		padding: 0 1.5rem;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 100%;
+	}
+
+
+	@media screen and (980px >= width > 640px) {
+		.main-expo {
+			column-count: 2;
+			max-width: 660px;
+		}
+		.container {
+			max-width: 660px;
+		}
+	}
+
+	@media screen and (1280px >= width > 980px) {
+		.main-expo {
+			column-count: 3;
+			max-width: 980px;
+		}
+		.container {
+			max-width: 980px;
+		}
+	}
+
+	@media screen and (1600px >= width > 1280px) {
+		.main-expo {
+			column-count: 4;
+			max-width: 1340px;
+		}
+		.container {
+			max-width: 1340px;
+		}
+	}
+
+	@media screen and (1920px >= width > 1600px) {
+		.main-expo {
+			column-count: 5;
+			max-width: 1600px;
+		}
+		.container {
+			max-width: 1600px;
+		}
+	}
+
+	@media screen and (1920px >= width > 1600px) {
+		.main-expo {
+			column-count: 5;
+			max-width: 1600px;
+		}
+	}
+	
+	@media screen and (2048px >= width > 1920px) {
+		.main-expo {
+			column-count: 6;
+			max-width: 1920px;
+		}
+		.container {
+			max-width: 1920px;
+		}
+	}
+
+	@media screen and (2460px >= width > 2048px) {
+		.main-expo {
+			column-count: 7;
+			max-width: 2048px;
+		}
+		.container {
+			max-width: 2048px;
+		}
+	}
+
+	@media screen and (2560px >= width > 2460px) {
+		.main-expo {
+			column-count: 8;
+			max-width: 2460px;
+		}
+		.container {
+			max-width: 2460px;
+		}
+	}
+
+	@keyframes shake {
+		0%{
+			transform: translate3d(-4px, 0, 0);	
+		},
+		100% {
+			transform: translate3d(4px, 0, 0);	
+		}
+	}
+
+</style>

@@ -68,6 +68,25 @@ visible: true
   </section>
 </article>
 
+<article
+  class="flex items-center justify-between gap-2 border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground"
+  data-filter="social">
+  <div class="flex items-center gap-4">
+    <div
+      class="flex-none w-12 h-12 rounded-xl flex items-center justify-center text-lg font-semibold bg-violet-100 text-violet-500 dark:bg-violet-600/50 dark:text-white">
+      <span class="material-symbols-rounded material-symbols-xl">palette</span>
+    </div>
+    <div class="flex-auto">
+      <h2 class="text-sm font-medium block">New widget</h2>
+      <p class="text-xs text-gray-600 dark:text-gray-400">Design a new logo for our website...</p>
+    </div>
+  </div>
+  <button
+    class="flex-none inline-flex items-center justify-center w-9 h-9 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+    <span class="material-symbols-rounded material-symbols-lg">forward</span>
+  </button>
+</article>
+
 <section class="break-inside grid grid-cols-2 mb-3 gap-3">
   <div class="flex flex-col gap-3">
     <article
@@ -109,7 +128,7 @@ visible: true
           <dd class="flex justify-start -space-x-0.5">
             <a href="#" class="inline-block">
               <img
-                class="w-6 h-6 rounded-full ring-2 ring-white dark:ring-gray-950"
+                class="w-7 h-7 rounded-full ring-2 ring-white dark:ring-gray-950"
                 src="https://randomuser.me/api/portraits/women/14.jpg"
                 alt="avatar"
                 loading="lazy"
@@ -117,7 +136,7 @@ visible: true
             </a>
             <a href="#" class="inline-block">
               <img
-                class="w-6 h-6 rounded-full ring-2 ring-white dark:ring-gray-950"
+                class="w-7 h-7 rounded-full ring-2 ring-white dark:ring-gray-950"
                 src="https://randomuser.me/api/portraits/men/19.jpg"
                 alt="avatar"
                 loading="lazy"
@@ -145,7 +164,7 @@ visible: true
       </div>
       <p class="text-foreground/80">We are a startup company.</p>
     </section>
-    <div class="grid p-4 gap-3">
+    <div class="grid p-4 gap-2">
       <div class="flex items-center justify-between">
         <label for="enabled" class="text-sm font-medium">Enabled</label>
         <input
@@ -173,7 +192,7 @@ visible: true
     </div>
   </header>
   <section class="mt-1">
-    <p class="text-foreground/70">Hi there! I'm a designer and developer from San Francisco and I'm looking...</p>
+    <p class="text-foreground/70">Hi there! I'm a designer 😊😊 and developer from San Francisco and I'm looking...</p>
   </section>
 </article>
 
@@ -252,6 +271,278 @@ visible: true
   <p class="mt-1 text-foreground/70">Design a new logo for our website, we are a startup company.</p>
 </article>
 
+<section class="break-inside mb-3 gap-3 columns-2 items-start">
+  <article
+    class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    <header class="flex items-center justify-between gap-3">
+      <img
+        class="flex-none w-9 h-9 rounded-full"
+        src="https://randomuser.me/api/portraits/men/85.jpg"
+        alt="avatar"
+        loading="lazy"
+      />
+      <button
+        class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+        <span class="material-icons">more_horiz</span>
+      </button>
+    </header>
+    <section class="mt-1.5 grid gap-1">
+      <h2 class="text-sm font-medium">Fabian Ruiz</h2>
+      <p>Dolor sit amet consec adipi sc...</p>
+    </section>
+    <section class="flex items-center justify-between gap-2 mt-3">
+      <div class="inline-flex items-center -space-x-1.5">
+        <span class="rounded-full border-2 border-background">
+          <img src="https://cdn.worldvectorlogo.com/logos/facebook-reaction-like.svg" alt="like" class="w-4 h-4" />
+        </span>
+        <span class="rounded-full border-2 border-background">
+          <img src="https://cdn.worldvectorlogo.com/logos/facebook-reaction-love.svg" alt="like" class="w-4 h-4" />
+        </span>
+        <span class="rounded-full border-2 border-background">
+          <img src="https://cdn.worldvectorlogo.com/logos/facebook-reaction-haha.svg" alt="like" class="w-4 h-4" />
+        </span>
+      </div>
+      <span class="text-foreground/70">2 min ago</span>
+    </section>
+  </article>
+  <article
+    class="border break-inside rounded-xl text-xs mb-3 border-border bg-background text-foreground"
+    data-filter="social">
+    <header class="flex items-start gap-2 p-3">
+      <img
+        src="https://frankuxui.com/images/frankuxui_frontend_developer_ux_ui_designer.png"
+        alt="Fotografía de frankuxui"
+        class="h-14 w-14 object-cover rounded-full"
+      />
+      <h2 class="text-sm font-medium mt-2">
+        Frank <br /> Esteban
+      </h2>
+    </header>
+    <section class="flex flex-col items-start gap-2 border-t p-3 border-border">
+      <p>Apacionado del frontend y el diseño de interfaces...</p>
+      <a
+        href="https://frankuxui.com/"
+        class="px-3 h-6 rounded font-medium inline-flex items-center justify-center transition-colors duration-300 bg-indigo-100 text-indigo-500 hover:bg-indigo-200 dark:bg-indigo-500/20 dark:text-indigo-400 dark:hover:bg-indigo-500/40">
+        Leer más
+      </a>
+    </section>
+  </article>
+  <article
+    class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    <span class="material-symbols-rounded material-symbols-fill material-symbols-md text-danger">favorite</span>
+    <section>
+      <h2>Events</h2>
+      <h3 class="text-base font-semibold text-rose-600">Favorites</h3>
+    </section>
+    <div class="flex items-center justify-between w-full mt-3">
+      <span
+        class="flex items-center justify-center h-5 px-1 gap-1 rounded text-sm bg-rose-100 text-rose-500 dark:bg-rose-500/20 dark:text-rose-400">
+        <span class="material-symbols-rounded material-symbols-sm material-symbols-weight-500">south_east</span>
+        <span class="text-xs mt-[1px] font-medium">15%</span>
+      </span>
+      <h5 class="font-semibold">23</h5>
+    </div>
+  </article>
+  <article
+    class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    <header class="flex items-center gap-2 justify-start">
+      <img
+        class="w-10 h-10 rounded-full"
+        src="https://randomuser.me/api/portraits/women/65.jpg"
+        alt="avatar"
+        loading="lazy"
+      />
+      <div class="flex flex-col">
+        <h2 class="text-sm font-medium leading-snug">
+          Alice
+          <br />
+          Anderson
+        </h2>
+      </div>
+    </header>
+    <p class="text-xs mt-2 text-gray-500 dark:text-gray-400">Personal assistant from company</p>
+    <button
+      class="mt-3 flex-none w-full px-3 border h-7 text-xs flex items-center justify-center rounded-full transition-colors duration-200 border-border hover:bg-foreground/5">
+      Connect
+    </button>
+  </article>
+  <article
+    class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    <header class="flex items-center gap-2 justify-start">
+      <img
+        class="w-10 h-10 rounded-full"
+        src="https://randomuser.me/api/portraits/men/66.jpg"
+        alt="avatar"
+        loading="lazy"
+      />
+      <div class="flex flex-col">
+        <h2 class="text-sm font-medium leading-snug">
+          Armando
+          <br />
+          Ortega
+        </h2>
+      </div>
+    </header>
+    <p class="text-xs mt-2 text-gray-500 dark:text-gray-400">Personal assistant from company</p>
+    <button
+      class="mt-3 flex-none w-full px-3 border h-7 text-xs flex items-center justify-center rounded-full transition-colors duration-200 border-border hover:bg-foreground/5">
+      Connect
+    </button>
+  </article>
+  <article
+    class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    <header class="flex items-start gap-2">
+      <img
+        class="w-10 h-10 rounded-full"
+        src="https://randomuser.me/api/portraits/men/41.jpg"
+        alt="avatar"
+        loading="lazy"
+      />
+      <h2 class="text-sm font-medium">
+        Jhonatan
+        <br />
+        Smith
+      </h2>
+    </header>
+    <div class="flex items-center justify-between w-full mt-3">
+      <span class="flex items-center justify-center px-2 h-5 text-[11px] rounded font-medium bg-amber-100 text-black">
+        Missing
+      </span>
+      <button
+        class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+        <span class="material-icons">more_horiz</span>
+      </button>
+    </div>
+  </article>
+  <article
+    class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    <header class="flex items-start gap-2">
+      <img
+        class="w-10 h-10 rounded-full"
+        src="https://randomuser.me/api/portraits/women/40.jpg"
+        alt="avatar"
+        loading="lazy"
+      />
+      <h2 class="text-sm font-medium">
+        Marianna
+        <br />
+        Green
+      </h2>
+    </header>
+    <div class="flex items-center justify-between w-full mt-3">
+      <span class="flex items-center justify-center px-2 h-5 text-[11px] rounded font-medium bg-green-100 text-black">
+        Online
+      </span>
+      <button
+        class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+        <span class="material-icons">more_horiz</span>
+      </button>
+    </div>
+  </article>
+  <article
+    class="overflow-hidden border break-inside rounded-xl mb-3 flex flex-col divide-y divide-border text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    <header class="flex items-start gap-2 p-4">
+      <img
+        class="w-10 h-10 rounded-full"
+        src="https://randomuser.me/api/portraits/men/42.jpg"
+        alt="avatar"
+        loading="lazy"
+      />
+      <h2 class="text-sm font-medium">
+        Angel
+        <br />
+        Llorente
+      </h2>
+    </header>
+    <div class="flex items-center justify-between w-full p-4 bg-foreground/5">
+      <span class="flex items-center justify-center px-2 h-5 text-[11px] rounded font-medium bg-background shadow-xs">
+        Inactive
+      </span>
+      <button
+        class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+        <span class="material-icons">more_horiz</span>
+      </button>
+    </div>
+  </article>
+  <article
+    class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    ...
+  </article>
+  <article
+    class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    ...
+  </article>
+  <article
+    class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    ...
+  </article>
+</section>
+
+<article
+  class="border break-inside rounded-xl mb-3 text-xs overflow-hidden border-border bg-background text-foreground"
+  data-filter="social">
+  <section class="flex items-center justify-between divide-x divide-border gap-2 w-full">
+    <div class="flex items-center justify-start gap-2 p-3">
+      <div class="w-full min-w-10 max-w-12 flex flex-col border border-border rounded overflow-hidden">
+        <div class="flex items-center justify-center font-medium p-1 uppercase text-xs bg-danger text-white">ENE</div>
+        <div class="flex items-center justify-center font-medium p-1">18</div>
+      </div>
+      <div class="w-full min-w-10 max-w-12 flex flex-col border border-border rounded overflow-hidden">
+        <div class="flex items-center justify-center font-medium p-1 uppercase text-xs bg-danger text-white">ENE</div>
+        <div class="flex items-center justify-center font-medium p-1">28</div>
+      </div>
+    </div>
+    <header class="flex items-center justify-between flex-1 p-3">
+      <div class="grid flex-1">
+        <h2 class="text-sm font-semibold block">Vacations</h2>
+        <p class="text-foreground/60">You have 10 days</p>
+      </div>
+      <button
+        class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+        <span class="material-icons">more_horiz</span>
+      </button>
+    </header>
+  </section>
+</article>
+
+<article
+  class="border break-inside rounded-xl mb-3 text-xs overflow-hidden border-border bg-background text-foreground"
+  data-filter="social">
+  <section class="flex items-center justify-between divide-x divide-border w-full">
+    <div class="flex items-center justify-start gap-2 p-3">
+      <div class="w-full min-w-10 max-w-12 flex flex-col border border-border rounded overflow-hidden">
+        <div class="flex items-center justify-center font-medium p-1 uppercase text-xs bg-foreground text-background">
+          ENE
+        </div>
+        <div class="flex items-center justify-center font-medium p-1">3</div>
+      </div>
+      <div class="w-full min-w-10 max-w-12 flex flex-col border border-border rounded overflow-hidden">
+        <div class="flex items-center justify-center font-medium p-1 uppercase text-xs bg-foreground text-background">
+          ENE
+        </div>
+        <div class="flex items-center justify-center font-medium p-1">11</div>
+      </div>
+    </div>
+    <header class="flex items-center justify-between flex-1 p-3 h-full">
+      <div class="grid flex-1">
+        <h2 class="text-sm font-semibold block">Vacations</h2>
+        <p class="text-foreground/60">You have 9 days</p>
+      </div>
+      <span class="material-symbols-rounded material-symbols-lg material-symbols-weight-400">cottage</span>
+    </header>
+  </section>
+</article>
+
 <article
   class="border break-inside rounded-xl mb-3 text-xs overflow-hidden border-border bg-background text-foreground"
   data-filter="social">
@@ -296,7 +587,7 @@ visible: true
         <h3 class="font-medium">Management Meeting</h3>
         <button
           class="inline-flex flex-none items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
-          <span class="material-symbols-rounded material-symbols-md">favorite</span>
+          <span class="material-symbols-rounded material-symbols-md material-symbols-weight-500">favorite</span>
         </button>
       </section>
     </article>
@@ -459,7 +750,7 @@ visible: true
   </article>
   <div
     class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full inline-flex items-center justify-center border border-border bg-background">
-    <span class="material-symbols-rounded material-symbols-lg text-foreground">compare_arrows</span>
+    <span class="material-symbols-rounded material-symbols-lg text-foreground">multiple_stop</span>
   </div>
   <article
     class="w-full max-w-1/2 border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground">
@@ -881,5 +1172,120 @@ visible: true
         north_east
       </span>
     </div>
+  </article>
+</section>
+
+<article
+  class="border break-inside rounded-xl text-xs mb-3 border-border bg-background text-foreground"
+  data-filter="social">
+  <div class="flex items-center justify-between p-3 gap-6">
+    <header class="flex items-center space-x-3">
+      <div class="flex flex-none justify-center items-center rounded font-medium border border-border px-2 h-8 gap-1">
+        <span class="material-symbols-rounded material-symbols-md">calendar_month</span>
+        <span>Feb, 24</span>
+      </div>
+      <p class="text-xs">This is a notification from the system</p>
+    </header>
+    <div class="flex-none inline-flex items-center justify-center rounded-full w-6 h-6 bg-foreground/10">
+      <span class="material-symbols-rounded material-symbols-weight-500 material-symbols-md">check</span>
+    </div>
+  </div>
+</article>
+
+<article
+  class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground"
+  data-filter="social">
+  <header class="flex items-center justify-between gap-3">
+    <div class="flex items-center justify-start gap-3">
+      <img
+        class="rounded-full max-w-none w-6 h-6"
+        src="https://randomuser.me/api/portraits/women/74.jpg"
+        alt="Avatar"
+      />
+      <div class="flex items-center gap-2 w-full flex-1">
+        <a class="font-medium" href="#">Natalia</a>
+        <span class="text-foreground/60">3 minutes ago</span>
+      </div>
+    </div>
+    <button
+      class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+      <span class="material-icons">more_horiz</span>
+    </button>
+  </header>
+  <section class="w-full mt-1">
+    <p class="text-xs">Dolor sit ameteiusmod consectetur adipi scing elit. Nulla nec purus feugiat, vestibulum.</p>
+  </section>
+  <section class="flex items-center justify-between w-full mt-3">
+    <div class="flex items-center justify-start gap-2">
+      <a class="inline-flex items-center gap-1" href="#">
+        <span class="material-symbols-rounded material-symbols-fill material-symbols-md text-danger">favorite</span>
+        <span class="text-sm font-bold">2</span>
+      </a>
+    </div>
+    <a class="inline-flex items-center">
+      <span class="-m-1 rounded-full border-2 border-background">
+        <img src="https://cdn.worldvectorlogo.com/logos/facebook-reaction-like.svg" alt="like" class="w-4 h-4" />
+      </span>
+      <span class="-m-1 rounded-full border-2 border-background">
+        <img src="https://cdn.worldvectorlogo.com/logos/facebook-reaction-love.svg" alt="like" class="w-4 h-4" />
+      </span>
+      <span class="-m-1 rounded-full border-2 border-background">
+        <img src="https://cdn.worldvectorlogo.com/logos/facebook-reaction-haha.svg" alt="like" class="w-4 h-4" />
+      </span>
+      <span class="text-sm font-bold ml-3">33</span>
+    </a>
+  </section>
+</article>
+
+<section class="break-inside grid grid-cols-2 mb-3 gap-3">
+  <div class="flex flex-col gap-3">
+    <article
+      class="border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground"
+      data-filter="social">
+      ...
+    </article>
+    <article
+      class="border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground"
+      data-filter="social">
+      ...
+    </article>
+  </div>
+  <article
+    class="border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    ...
+  </article>
+</section>
+
+<section class="break-inside grid grid-cols-2 mb-3 gap-3 columns-2">
+  <article
+    class="border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    ...
+  </article>
+  <article
+    class="border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    ...
+  </article>
+  <article
+    class="border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    ...
+  </article>
+  <article
+    class="border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    ...
+  </article>
+  <article
+    class="border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    ...
+  </article>
+  <article
+    class="border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    ...
   </article>
 </section>

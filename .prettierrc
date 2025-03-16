@@ -9,7 +9,7 @@
   "arrowParens": "always",
   "endOfLine": "lf",
   "bracketSpacing": true,
-  "printWidth": 120,
+  "printWidth": 180,
   "htmlWhitespaceSensitivity": "ignore",
   "bracketSameLine": true,
   "overrides": [

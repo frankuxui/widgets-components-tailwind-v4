@@ -198,11 +198,10 @@ const ogImage = 'https://widgets-components-v2-1.vercel.app/og-image.jpg'
   </head>
 
   <body>
-    <header class="z-30 fixed left-0 w-full top-0 py-4 bg-white/80 dark:bg-gray-950/80 backdrop-blur-lg">
-      <div class="flex items-center justify-between px-4">
-        <a href="/" class="relative overflow-hidden flex group items-center gap-2 border px-4 py-2 rounded-md shadow bg-white/60 dark:border-gray-900 dark:bg-gray-950/60">
-          <div class="absolute z-0 -bottom-12 transition-all duration-300 opacity-60 left-0 w-14 h-10 blur-lg bg-indigo-600 group-hover:blur-2xl group-hover:opacity-80"></div>
-          <h1 class="relative flex-none text-lg md:text-xl font-bold dark:text-white">Widgets</h1>
+    <header class="z-30 sticky h-14 left-0 w-full top-0 flex items-center justify-center border-b border-border bg-white/80 dark:bg-gray-950/70 backdrop-blur-lg">
+      <div class="w-full h-full flex items-center justify-between px-4">
+        <a href="/" class="relative overflow-hidden flex group items-center gap-2 px-4 py-1">
+          <span class="relative flex-none text-base font-medium text-foreground">Widgets</span>
         </a>
         <ul class="hidden lg:flex items-center justify-center w-full">
           {
@@ -213,10 +212,11 @@ const ogImage = 'https://widgets-components-v2-1.vercel.app/og-image.jpg'
                   <li>
                     <a
                       href={`/categories/${item.slug}`}
-                      class="flex items-center justify-center uppercase text-sm py-2 px-4 rounded-full tracking-wider transition-colors duration-200"
+                      class="relative flex items-center justify-center text-xs uppercase py-2 px-3 rounded-full tracking-wider transition-colors duration-200"
                       class:list={{
-                        'font-medium hover:text-black text-gray-600 dark:text-gray-500 dark:hover:text-gray-400': pageSlug !== item.slug,
-                        'font-extrabold text-black dark:text-white bg-black/10 backdrop-blur-sm dark:bg-white/5': pageSlug === item.slug,
+                        'font-normal text-foreground/70': pageSlug !== item.slug,
+                        'font-semibold text-foreground  after:absolute after:inset-0 after:border after:border-dashed after:border-sky-300/60 after:bg-sky-400/10 after:group-hover:bg-sky-400/15 dark:after:border-sky-300/30':
+                          pageSlug === item.slug,
                       }}>
                       {item.category}
                     </a>
@@ -227,21 +227,10 @@ const ogImage = 'https://widgets-components-v2-1.vercel.app/og-image.jpg'
           <li class="relative">
             <button
               data-toggle="menu-more"
-              class="flex items-center justify-center w-10 h-10 flex-none transition-colors duration-300 rounded-full hover:bg-gray-200 dark:hover:bg-gray-900 dark:text-white focus:bg-gray-300 dark:focus:bg-gray-700">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-                <circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle>
-              </svg>
+              class="z-[1] relative inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full border text-foreground border-border bg-background focus:ring-primary">
+              <span class="material-symbols-rounded">more_horiz</span>
             </button>
-            <div class="menu-dropdown flex flex-col absolute mt-2 top-full left-1/2 -translate-x-1/2 w-full min-w-[15rem]" style="display: none;">
+            <div class="menu-dropdown z-40 flex flex-col absolute mt-2 top-full left-1/2 -translate-x-1/2 w-full min-w-[15rem]" style="display: none;">
               <div class="border p-4 rounded-md shadow-xl bg-white dark:bg-gray-800 dark:border-gray-800">
                 {
                   data
@@ -381,7 +370,7 @@ const ogImage = 'https://widgets-components-v2-1.vercel.app/og-image.jpg'
   .main-expo {
     column-count: 1;
     column-gap: 0.75rem;
-    padding: 0 1.5rem;
+    padding: 1.5rem;
     margin: 0 auto;
     max-width: 100%;
     padding-bottom: 2rem;
@@ -406,9 +395,11 @@ const ogImage = 'https://widgets-components-v2-1.vercel.app/og-image.jpg'
   @media screen and (1280px >= width > 980px) {
     .main-expo {
       column-count: 3;
+      width: 100%;
       max-width: 980px;
     }
     .container {
+      width: 100%;
       max-width: 980px;
     }
   }
@@ -416,9 +407,11 @@ const ogImage = 'https://widgets-components-v2-1.vercel.app/og-image.jpg'
   @media screen and (1600px >= width > 1280px) {
     .main-expo {
       column-count: 4;
+      width: 100%;
       max-width: 1340px;
     }
     .container {
+      width: 100%;
       max-width: 1340px;
     }
   }
@@ -426,9 +419,11 @@ const ogImage = 'https://widgets-components-v2-1.vercel.app/og-image.jpg'
   @media screen and (1920px >= width > 1600px) {
     .main-expo {
       column-count: 5;
+      width: 100%;
       max-width: 1600px;
     }
     .container {
+      width: 100%;
       max-width: 1600px;
     }
   }
@@ -436,6 +431,7 @@ const ogImage = 'https://widgets-components-v2-1.vercel.app/og-image.jpg'
   @media screen and (1920px >= width > 1600px) {
     .main-expo {
       column-count: 5;
+      width: 100%;
       max-width: 1600px;
     }
   }
@@ -443,9 +439,11 @@ const ogImage = 'https://widgets-components-v2-1.vercel.app/og-image.jpg'
   @media screen and (2048px >= width > 1920px) {
     .main-expo {
       column-count: 6;
+      width: 100%;
       max-width: 1920px;
     }
     .container {
+      width: 100%;
       max-width: 1920px;
     }
   }
@@ -453,9 +451,11 @@ const ogImage = 'https://widgets-components-v2-1.vercel.app/og-image.jpg'
   @media screen and (2460px >= width > 2048px) {
     .main-expo {
       column-count: 7;
+      width: 100%;
       max-width: 2048px;
     }
     .container {
+      width: 100%;
       max-width: 2048px;
     }
   }
@@ -463,9 +463,11 @@ const ogImage = 'https://widgets-components-v2-1.vercel.app/og-image.jpg'
   @media screen and (2560px >= width > 2460px) {
     .main-expo {
       column-count: 8;
+      width: 100%;
       max-width: 2560px;
     }
     .container {
+      width: 100%;
       max-width: 2460px;
     }
   }

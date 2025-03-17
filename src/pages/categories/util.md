@@ -64,104 +64,36 @@ visible: true
   </section>
 </article>
 
-<!--  Deporte  -->
-
-<section class="break-inside mb-3 gap-3 columns-2 items-start">
-  <article class="overflow-hidden border break-inside rounded-xl mb-3 text-xs border-border bg-background text-foreground inset-shadow-sm" data-filter="social">
-    <header class="w-full relative p-4">
-      <div
-        class="h-16 z-0 pointer-events-none absolute top-0 left-0 w-full overflow-hidden rounded-lg bg-gray-950/[2.5%] after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:inset-ring after:inset-ring-gray-950/5 dark:after:inset-ring-white/10 bg-[image:radial-gradient(var(--pattern-fg)_1px,_transparent_0)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-gray-950)]/5 dark:[--pattern-fg:var(--color-white)]/10 before:pointer-events-none before:z-[1] before:absolute before:bottom-0 before:left-0 before:w-full before:h-12 before:bg-gradient-to-t before:from-background before:to-transparent">
-      </div>
-      <div class="relative grid gap-1">
-        <span class="material-symbols-rounded material-symbols-lg">snowboarding</span>
-        <h2>Snowboarding</h2>
-      </div>
-    </header>
-    <section class="grid gap-3 px-4 pb-4">
-      <p class="font-semibold leading-6 text-lg">The best snowboarding in the world</p>
-      <div class="w-full flex items-center justify-between gap-2">
-        <div class="inline-flex items-center justify-start gap-2">
-          <img src="https://cdn.worldvectorlogo.com/logos/facebook-reaction-love.svg" alt="like" class="w-4 h-4" />
-          <span class="font-semibold">24</span>
-        </div>
-        <span class="text-foreground/70">2 min ago</span>
-      </div>
-    </section>
-  </article>
-  <article class="overflow-hidden border break-inside rounded-xl mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
-    <div class="grid divide-y divide-border">
-      <div class="flex items-center justify-between divide-x divide-border transition-colors duration-200 hover:bg-foreground/5 hover:inset-shadow-sm">
-        <div class="flex flex-col items-start flex-1 p-3">
-          <p class="text-sm font-medium">Adrian</p>
-          <p class="text-foreground/50">32 min ago</p>
-        </div>
-        <div class="inline-flex items-center justify-center h-full flex-none p-3">
-          <span class="material-symbols-rounded material-symbols-md">emoji_events</span>
-        </div>
-      </div>
-      <div class="flex items-center justify-between divide-x divide-border transition-colors duration-200 hover:bg-foreground/5 hover:inset-shadow-sm">
-        <div class="flex flex-col items-start flex-1 p-3">
-          <p class="text-sm font-medium">Marloon</p>
-          <p class="text-foreground/50">45 min ago</p>
-        </div>
-        <div class="inline-flex items-center justify-center h-full flex-none p-3">
-          <span class="material-symbols-rounded material-symbols-md">emoji_events</span>
-        </div>
-      </div>
-      <div class="flex items-center justify-between divide-x divide-border transition-colors duration-200 hover:bg-foreground/5 hover:inset-shadow-sm">
-        <div class="flex flex-col items-start flex-1 p-3">
-          <p class="text-sm font-medium">Lucas</p>
-          <p class="text-foreground/50">1 hour ago</p>
-        </div>
-        <div class="inline-flex items-center justify-center h-full flex-none p-3">
-          <span class="material-symbols-rounded material-symbols-md">emoji_events</span>
-        </div>
-      </div>
-    </div>
-  </article>
-</section>
-
 <!--  Social  -->
 
-<section class="break-inside mb-3 gap-3 columns-2 items-start">
-  <article class="overflow-hidden border break-inside rounded-xl mb-3 text-xs border-border bg-background text-foreground inset-shadow-sm" data-filter="social">
-    <header class="w-full relative pt-4 px-4 pb-2">
-      <div
-        class="h-16 z-0 pointer-events-none absolute top-0 left-0 w-full overflow-hidden rounded-lg bg-gray-950/[2.5%] after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:inset-ring after:inset-ring-gray-950/5 dark:after:inset-ring-white/10 bg-[image:radial-gradient(var(--pattern-fg)_1px,_transparent_0)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-gray-950)]/5 dark:[--pattern-fg:var(--color-white)]/10 before:pointer-events-none before:z-[1] before:absolute before:bottom-0 before:left-0 before:w-full before:h-12 before:bg-gradient-to-t before:from-background before:to-transparent">
-      </div>
-      <div class="relative grid gap-1">
-        <span class="material-symbols-rounded material-symbols-lg">face_5</span>
-        <h2>Face events</h2>
-      </div>
-    </header>
-    <section class="grid gap-3 px-4 pb-4">
-      <p class="font-semibold leading-6 text-lg">Web Design templates</p>
-      <div class="w-full flex items-center justify-between gap-2">
-        <div class="inline-flex items-center justify-start gap-2">
-          <img src="https://cdn.worldvectorlogo.com/logos/facebook-reaction-love.svg" alt="like" class="w-4 h-4" />
-          <span class="font-semibold">24</span>
-        </div>
-        <span class="text-foreground/70">2 min ago</span>
-      </div>
-    </section>
+<section class="break-inside mb-3 gap-3 columns-2 items-start">..</section>
+
+<article
+  class="overflow-hidden relative border break-inside rounded-xl p-4 mb-3 gap-2 text-xs border-border bg-background text-foreground after:absolute after:top-0 after:left-0 after:w-full after:h-4 after:hidden after:border-x after:border-b after:border-border after:border-x-(--pattern-fg) after:bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] after:bg-[size:10px_10px] after:bg-fixed after:[--pattern-fg:var(--color-danger)]/15 md:after:block dark:after:[--pattern-fg:var(--color-white)]/10 before:absolute before:bottom-0 before:left-0 before:w-full before:h-4 before:hidden before:border-x before:border-t before:border-border before:border-x-(--pattern-fg) before:bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] before:bg-[size:10px_10px] before:bg-fixed before:[--pattern-fg:var(--color-danger)]/15 md:before:block dark:before:[--pattern-fg:var(--color-white)]/10"
+  data-filter="social">
+  <div
+    class="absolute left-0 top-0 h-full w-4 border-r border-border hidden border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-danger)]/15 lg:col-start-3 lg:block dark:[--pattern-fg:var(--color-white)]/10">
+  </div>
+  <div
+    class="absolute right-0 top-0 h-full w-4 border-l border-border hidden border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-danger)]/15 lg:col-start-3 lg:block dark:[--pattern-fg:var(--color-white)]/10">
+  </div>
+  ...
+</article>
+
+<section class="relative w-full flex items-center justify-between gap-3 mb-3">
+  <article class="w-full max-w-1/2 border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground">
+    <div class="flex items-center justify-start w-full gap-3">
+      <img class="flex-none w-10 h-10 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/60.jpg" alt="avatar" loading="lazy" />
+      <h2 class="text-sm font-medium">Marcos</h2>
+    </div>
   </article>
-  <article class="flex flex-col overflow-hidden border break-inside rounded-xl mb-3 p-3 text-xs border-border bg-background text-foreground" data-filter="social">
-    <header class="flex flex-col items-start">
-      <h2 class="text-base font-medium">Widgets</h2>
-      <p class="text-foreground/70">23 new messages</p>
-    </header>
-    <section class="w-full">
-      <div class="flex items-center justify-between">
-        <div class="flex flex-col items-start flex-1">
-          <p class="text-sm font-medium">Marloon</p>
-          <p class="text-foreground/50">45 min ago</p>
-        </div>
-        <div class="inline-flex items-center justify-center h-full flex-none">
-          <button>
-            <span class="material-symbols-rounded material-symbols-md">swipe_up</span>
-          </button>
-        </div>
-      </div>
-    </section>
+  <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full inline-flex items-center justify-center border border-border bg-background">
+    <span class="material-symbols-rounded material-symbols-lg text-foreground">multiple_stop</span>
+  </div>
+  <article class="w-full max-w-1/2 border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground">
+    <div class="flex items-center justify-end w-full gap-3">
+      <h2 class="text-sm font-medium">Patrick</h2>
+      <img class="flex-none w-10 h-10 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/57.jpg" alt="avatar" loading="lazy" />
+    </div>
   </article>
 </section>

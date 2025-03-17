@@ -15,9 +15,9 @@ visible: true
     </div>
     <div class="z-[1] relative flex items-center gap-2">
       <h2 class="text-base font-medium">Management</h2>
-      <span class="h-6 px-2 text-xs rounded-full flex items-center justify-center bg-emerald-100">Success</span>
+      <span class="h-6 px-2 text-xs rounded-full flex items-center justify-center bg-emerald-100 text-emerald-500 dark:bg-emerald-500/20 dark:text-emerald-400">Success</span>
     </div>
-    <button class="z-[1] relative inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full focus:ring-primary bg-foreground/5 backdrop-blur-sm">
+    <button class="z-[1] relative inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-colors rounded-full focus:ring-primary bg-foreground/5 backdrop-blur-sm">
       <span class="material-symbols-rounded">more_horiz</span>
     </button>
   </header>
@@ -64,7 +64,8 @@ visible: true
     <div class="z-[1] relative flex items-center gap-2">
       <h2 class="text-base font-medium">Management Meeting</h2>
     </div>
-    <button class="z-[1] relative inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full border border-border bg-background focus:ring-primary">
+    <button
+      class="z-[1] relative inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-colors rounded-full border border-border bg-background focus:ring-primary">
       <span class="material-symbols-rounded">more_horiz</span>
     </button>
   </header>
@@ -109,7 +110,7 @@ visible: true
       <p class="text-xs text-gray-600 dark:text-gray-400">Design a new logo for website...</p>
     </div>
   </div>
-  <button class="flex-none inline-flex items-center justify-center w-9 h-9 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+  <button class="flex-none inline-flex items-center justify-center w-9 h-9 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
     <span class="material-symbols-rounded material-symbols-lg">forward</span>
   </button>
 </article>
@@ -126,7 +127,7 @@ visible: true
       </header>
       <section class="flex items-center justify-between mt-2">
         <h3 class="font-medium">Management Meeting</h3>
-        <button class="inline-flex flex-none items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+        <button class="inline-flex flex-none items-center justify-center w-8 h-8 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
           <span class="material-symbols-rounded material-symbols-lg">edit_note</span>
         </button>
       </section>
@@ -159,7 +160,7 @@ visible: true
   <article class="relative group flex flex-col justify-start border break-inside rounded-xl text-xs border-border bg-background text-foreground" data-filter="social">
     <header class="flex items-center justify-between p-3">
       <h2 class="text-base font-bold">Meeting</h2>
-      <button class="flex-none inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+      <button class="flex-none inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
         <span class="material-symbols-rounded">more_horiz</span>
       </button>
     </header>
@@ -218,16 +219,16 @@ visible: true
 
 <article class="flex items-center justify-between gap-6 border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
   <header class="flex items-center justify-start gap-4">
-    <figure class="flex justify-center items-center bg-gray-100 dark:bg-gray-900 w-11 h-11 rounded-full">
-      <span class="material-symbols-rounded material-symbols-lg">calendar_month</span>
+    <figure class="flex justify-center items-center bg-gray-100 dark:bg-gray-900 w-10 h-10 rounded-full">
+      <span class="material-symbols-rounded material-symbols-lg material-symbols-weight-300">calendar_month</span>
     </figure>
     <div class="flex-1 grid">
       <span class="text-foreground/50">SCHEDULE DATE</span>
       <span class="text-sm font-medium block">Sat 24, September</span>
     </div>
   </header>
-  <button class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
-    <span class="material-symbols-rounded material-symbols-xl">keyboard_arrow_down</span>
+  <button class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
+    <span class="material-symbols-rounded material-symbols-lg">keyboard_arrow_down</span>
   </button>
 </article>
 
@@ -235,8 +236,8 @@ visible: true
   class="flex items-center justify-between border break-inside divide-x divide-border rounded-xl mb-3 text-xs border-border bg-background text-foreground"
   data-filter="social">
   <header class="flex items-center justify-start flex-1 gap-4 p-4">
-    <figure class="flex justify-center items-center w-11 h-11 rounded-full bg-success/20">
-      <span class="material-symbols-rounded material-symbols-lg">calendar_month</span>
+    <figure class="flex justify-center items-center w-10 h-10 rounded-full bg-success/20">
+      <span class="material-symbols-rounded material-symbols-lg material-symbols-weight-300">calendar_month</span>
     </figure>
     <div class="flex-1 grid">
       <span class="text-foreground/50">SCHEDULE DATE</span>
@@ -244,8 +245,8 @@ visible: true
     </div>
   </header>
   <section class="flex-none h-full inline-flex items-center justify-center p-4">
-    <button class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
-      <span class="material-symbols-rounded material-symbols-xl">keyboard_arrow_down</span>
+    <button class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
+      <span class="material-symbols-rounded material-symbols-lg">keyboard_arrow_down</span>
     </button>
   </section>
 </article>
@@ -258,7 +259,7 @@ visible: true
         <span class="material-symbols-rounded material-symbols-sm">edit</span>
       </button>
     </div>
-    <button class="inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+    <button class="inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
       <span class="material-symbols-rounded">more_horiz</span>
     </button>
   </header>
@@ -304,7 +305,7 @@ visible: true
       </div>
     </div>
     <div class="p-4 h-full inline-flex flex-none items-center justify-center">
-      <button class="inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+      <button class="inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
         <span class="material-symbols-rounded material-symbols-lg">keyboard_arrow_down</span>
       </button>
     </div>
@@ -345,7 +346,7 @@ visible: true
       </div>
     </div>
     <div class="p-4 h-full inline-flex flex-none items-center justify-center">
-      <button class="inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+      <button class="inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
         <span class="material-symbols-rounded material-symbols-lg">keyboard_arrow_down</span>
       </button>
     </div>
@@ -397,7 +398,7 @@ visible: true
   <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
     <header class="flex items-center justify-between gap-3">
       <img class="flex-none w-9 h-9 rounded-full" src="https://randomuser.me/api/portraits/men/85.jpg" alt="avatar" loading="lazy" />
-      <button class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+      <button class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
         <span class="material-symbols-rounded">more_horiz</span>
       </button>
     </header>
@@ -447,7 +448,7 @@ visible: true
       <p class="text-foreground/70">23 new messages</p>
     </header>
     <div class="grid border-t border-border divide-y divide-border">
-      <div class="flex items-center justify-between divide-x divide-border transition-colors duration-200 hover:bg-foreground/5 hover:inset-shadow-sm">
+      <div class="flex items-center justify-between divide-x divide-border transition-colors duration-200 hover:bg-foreground/3 hover:inset-shadow-sm">
         <div class="flex flex-col items-start flex-1 p-3">
           <p class="text-sm font-medium">Adrian</p>
           <p class="text-foreground/50">32 min ago</p>
@@ -458,7 +459,7 @@ visible: true
           </button>
         </div>
       </div>
-      <div class="flex items-center justify-between divide-x divide-border transition-colors duration-200 hover:bg-foreground/5 hover:inset-shadow-sm">
+      <div class="flex items-center justify-between divide-x divide-border transition-colors duration-200 hover:bg-foreground/3 hover:inset-shadow-sm">
         <div class="flex flex-col items-start flex-1 p-3">
           <p class="text-sm font-medium">Marloon</p>
           <p class="text-foreground/50">45 min ago</p>
@@ -535,7 +536,7 @@ visible: true
           <br />
           Anderson
         </h2>
-        <button class="inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+        <button class="inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
           <span class="material-symbols-rounded">more_horiz</span>
         </button>
       </div>
@@ -573,7 +574,7 @@ visible: true
     </header>
     <div class="flex items-center justify-between w-full mt-3">
       <span class="flex items-center justify-center px-2 h-5 text-[11px] rounded font-medium bg-amber-100 text-black">Missing</span>
-      <button class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+      <button class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
         <span class="material-symbols-rounded">more_horiz</span>
       </button>
     </div>
@@ -589,7 +590,7 @@ visible: true
     </header>
     <div class="flex items-center justify-between w-full mt-3">
       <span class="flex items-center justify-center px-2 h-5 text-[11px] rounded font-medium bg-green-100 text-black">Online</span>
-      <button class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+      <button class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
         <span class="material-symbols-rounded">more_horiz</span>
       </button>
     </div>
@@ -607,10 +608,39 @@ visible: true
     </header>
     <div class="flex items-center justify-between w-full p-4 bg-foreground/5">
       <span class="flex items-center justify-center px-2 h-5 text-[11px] rounded font-medium bg-background shadow-xs">Inactive</span>
-      <button class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+      <button class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
         <span class="material-symbols-rounded">more_horiz</span>
       </button>
     </div>
+  </article>
+  <article class="flex flex-col overflow-hidden border break-inside rounded-xl mb-3 gap-2 text-xs border-border bg-background text-foreground" data-filter="social">
+    <header class="flex flex-col items-start p-3">
+      <h2 class="text-base font-medium">Offers</h2>
+      <p class="text-foreground/70">23 available offers</p>
+    </header>
+    <section class="flex items-center justify-between gap-2 w-full p-3 border-t border-border bg-foreground/2">
+      <div class="flex flex-col items-start flex-1">
+        <p class="text-foreground/50">45 min ago</p>
+      </div>
+      <button class="inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
+        <span class="material-symbols-rounded">more_horiz</span>
+      </button>
+    </section>
+  </article>
+  <article class="flex flex-col overflow-hidden border break-inside rounded-xl mb-3 gap-2 text-xs border-border bg-background text-foreground" data-filter="social">
+    <header class="flex flex-col items-start p-3">
+      <span class="material-symbols-rounded material-symbols-xl material-symbols-weight-300">familiar_face_and_zone</span>
+      <h2 class="mt-3 text-base font-medium">Your profile</h2>
+      <p class="text-foreground/70">Configure your profile settings</p>
+    </header>
+    <section class="flex items-center justify-between gap-2 w-full p-3 border-t border-border inset-shadow-sm">
+      <div class="flex flex-col items-start flex-1">
+        <p class="text-foreground/50">45 min ago</p>
+      </div>
+      <button class="flex items-center justify-center w-6 h-6 rounded-full transition-colors duration-200 hover:bg-foreground/5 focus:bg-foreground/10">
+        <span class="material-symbols-rounded material-symbols-sm">edit</span>
+      </button>
+    </section>
   </article>
   <article
     class="border break-inside rounded-xl px-3 py-20 mb-3 text-xs border-border bg-background text-foreground hidden border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-black)]/5 md:block dark:[--pattern-fg:var(--color-white)]/10"
@@ -620,6 +650,21 @@ visible: true
   <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">...</article>
   <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">...</article>
 </section>
+
+<article
+  class="flex items-center justify-between border break-inside rounded-xl mb-3 pl-4 text-xs overflow-hidden border-border bg-background text-foreground"
+  data-filter="social">
+  <button class="flex-none flex items-center justify-center w-10 h-10 focus:ring-2 transition-colors rounded-full hover:bg-foreground/5 bg-background focus:ring-primary">
+    <span class="material-symbols-rounded material-symbols-lg material-symbols-weight-300">settings</span>
+  </button>
+  <header class="flex-1 flex items-center gap-2 lg:gap-4">
+    <div class="flex-auto text-right">
+      <a href="#" class="text-sm font-medium block">Leandro</a>
+      <span class="text-foreground/60">Software Engineer</span>
+    </div>
+    <img class="flex-none w-full max-w-14 object-cover" src="https://randomuser.me/api/portraits/men/46.jpg" alt="avatar" loading="lazy" />
+  </header>
+</article>
 
 <article class="border break-inside rounded-xl mb-3 text-xs overflow-hidden border-border bg-background text-foreground" data-filter="social">
   <section class="flex items-center justify-between divide-x divide-border gap-2 w-full">
@@ -638,7 +683,7 @@ visible: true
         <h2 class="text-sm font-semibold block">Vacations</h2>
         <p class="text-foreground/60">You have 10 days</p>
       </div>
-      <button class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+      <button class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
         <span class="material-symbols-rounded">more_horiz</span>
       </button>
     </header>
@@ -714,7 +759,7 @@ visible: true
         <span class="material-symbols-rounded material-symbols-sm">edit</span>
       </button>
     </div>
-    <button class="inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+    <button class="inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
       <span class="material-symbols-rounded">more_horiz</span>
     </button>
   </header>
@@ -735,7 +780,7 @@ visible: true
     </div>
     <div class="col-span-10">
       <div class="flex-1 relative">
-        <button class="absolute top-2 right-2 inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+        <button class="absolute top-2 right-2 inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
           <span class="material-symbols-rounded material-symbols-md">more_horiz</span>
         </button>
         <div class="flex items-center gap-2">
@@ -765,7 +810,7 @@ visible: true
         <div class="col-span-10">
           <div class="flex-1 relative pr-10">
             <button
-              class="flex absolute right-0 top-0 group-hover:flex items-center justify-center rounded-full w-8 h-8 transition-all bg-rose-200 text-rose-700 hover:bg-rose-300 dark:bg-rose-500/20 dark:text-rose-400 dark:hover:bg-rose-500/30 focus:ring-2 focus:ring-rose-500">
+              class="flex absolute right-0 top-0 group-hover:flex items-center justify-center rounded-full w-8 h-8 transition-colors bg-rose-200 text-rose-700 hover:bg-rose-300 dark:bg-rose-500/20 dark:text-rose-400 dark:hover:bg-rose-500/30 focus:ring-2 focus:ring-rose-500">
               <span class="material-symbols-rounded material-symbols-sm">delete</span>
             </button>
             <div class="flex items-center gap-2">
@@ -785,7 +830,7 @@ visible: true
     <article class="flex flex-col justify-start gap-2 border break-inside rounded-xl text-xs border-border bg-background text-foreground" data-filter="social">
       <header class="relative w-full flex items-center justify-between gap-3 px-3 pt-3 pb-5 border-b border-border">
         <h2 class="text-base font-bold">Company</h2>
-        <button class="flex-none inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+        <button class="flex-none inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
           <span class="material-symbols-rounded">more_horiz</span>
         </button>
       </header>
@@ -795,7 +840,7 @@ visible: true
           <span class="inline-flex items-center justify-center w-full h-full rounded-full bg-foreground/5">M</span>
         </div>
         <h3 class="font-medium">Management Meeting</h3>
-        <button class="inline-flex flex-none items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+        <button class="inline-flex flex-none items-center justify-center w-8 h-8 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
           <span class="material-symbols-rounded material-symbols-md material-symbols-weight-500">favorite</span>
         </button>
       </section>
@@ -825,7 +870,7 @@ visible: true
         loading="lazy"
       />
       <button
-        class="relative z-[1] flex-none inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5 backdrop-blur-sm">
+        class="relative z-[1] flex-none inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5 backdrop-blur-sm">
         <span class="material-symbols-rounded">more_horiz</span>
       </button>
     </header>
@@ -1002,6 +1047,23 @@ visible: true
   </section>
 </article>
 
+<article
+  class="overflow-hidden relative border break-inside rounded-xl p-4 mb-3 gap-2 text-xs border-border bg-background text-foreground before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-1 before:h-full before:max-h-1/2 before:bg-indigo-500"
+  data-filter="social">
+  <section class="flex items-center justify-between gap-4">
+    <div class="flex items-start flex-col justify-between flex-1">
+      <h2 class="font-medium text-sm">Reunión</h2>
+      <p class="text-foreground/70">Loren ipsum dolor sit amet, conct etur adip iscing elit.</p>
+    </div>
+    <div class="flex-none flex flex-col items-end gap-1.5">
+      <span class="text-foreground/60">10:00 AM</span>
+      <button class="flex items-center justify-center cursor-pointer rounded-full h-7 px-3 font-medium transition-colors duration-200 bg-indigo-500 hover:saturate-150 text-white">
+        Join
+      </button>
+    </div>
+  </section>
+</article>
+
 <section class="relative w-full flex items-center justify-between gap-3 mb-3">
   <article class="w-full max-w-1/2 border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground">
     <div class="flex items-center justify-start w-full gap-3">
@@ -1020,7 +1082,28 @@ visible: true
   </article>
 </section>
 
-<article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
+<section class="relative w-full flex items-center justify-between gap-3 mb-3">
+  <article class="w-full max-w-1/2 border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground">
+    <div class="flex items-center justify-start w-full gap-3">
+      <img class="flex-none w-9 h-9 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/50.jpg" alt="avatar" loading="lazy" />
+      <h2 class="text-sm font-medium">Jhoan</h2>
+    </div>
+  </article>
+  <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full">
+    <div class="absolute top-0 left-0 w-full h-full rounded-full bg-indigo-500 motion-safe:animate-ping interva"></div>
+    <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-full h-full rounded-full inline-flex items-center justify-center border border-border bg-background">
+      <span class="material-symbols-rounded material-symbols-lg text-foreground">multiple_stop</span>
+    </div>
+  </div>
+  <article class="w-full max-w-1/2 border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground">
+    <div class="flex items-center justify-end w-full gap-3">
+      <h2 class="text-sm font-medium">Mariam</h2>
+      <img class="flex-none w-9 h-9 rounded-full object-cover" src="https://randomuser.me/api/portraits/women/47.jpg" alt="avatar" loading="lazy" />
+    </div>
+  </article>
+</section>
+
+<article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
   <div class="w-full flex items-center justify-between">
     <header class="flex items-center gap-3">
       <span class="text-sm font-medium">01</span>
@@ -1032,16 +1115,34 @@ visible: true
         </div>
       </div>
     </header>
-    <button class="inline-flex items-center justify-center w-9 h-9 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
-      <span class="material-symbols-rounded material-symbols-lg">phone_enabled</span>
+    <button class="inline-flex items-center justify-center w-9 h-9 focus:ring-2 transition-colors duration-200 rounded-full focus:ring-primary hover:bg-foreground/5">
+      <span class="material-symbols-rounded material-symbols-lg material-symbols-weight-300">phone_enabled</span>
     </button>
   </div>
 </article>
 
-<article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
+<article
+  class="overflow-hidden relative border break-inside rounded-xl p-4 mb-3 gap-2 text-xs border-border bg-background text-foreground after:absolute after:top-0 after:left-0 after:w-full after:h-4 after:hidden after:border-x after:border-b after:border-border after:border-x-(--pattern-fg) after:bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] after:bg-[size:10px_10px] after:bg-fixed after:[--pattern-fg:var(--color-danger)]/15 md:after:block dark:after:[--pattern-fg:var(--color-white)]/10 before:absolute before:bottom-0 before:left-0 before:w-full before:h-4 before:hidden before:border-x before:border-t before:border-border before:border-x-(--pattern-fg) before:bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] before:bg-[size:10px_10px] before:bg-fixed before:[--pattern-fg:var(--color-danger)]/15 md:before:block dark:before:[--pattern-fg:var(--color-white)]/10"
+  data-filter="social">
+  <div
+    class="absolute left-0 top-0 h-full w-4 border-r border-border hidden border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-danger)]/15 lg:col-start-3 lg:block dark:[--pattern-fg:var(--color-white)]/10">
+  </div>
+  <div
+    class="absolute right-0 top-0 h-full w-4 border-l border-border hidden border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-danger)]/15 lg:col-start-3 lg:block dark:[--pattern-fg:var(--color-white)]/10">
+  </div>
+  <section class="p-2">
+    <span class="material-symbols-rounded material-symbols-xl material-symbols-weight-300 text-rose-500">colors</span>
+    <div class="grid gap-1">
+      <h2 class="text-base font-semibold">Your <span class="text-rose-500">favorite</span> colors</h2>
+      <p class="text-foreground/70">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedd...</p>
+    </div>
+  </section>
+</article>
+
+<article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground focus-within:bg-foreground/3" data-filter="social">
   <div class="w-full flex items-center justify-between">
     <header class="flex items-center gap-3">
-      <span class="material-symbols-rounded material-symbols-lg material-symbols-weight-400">check</span>
+      <span class="material-symbols-rounded material-symbols-md material-symbols-weight-300 material-symbols-fill text-indigo-600">check_circle</span>
       <div class="flex items-center gap-4">
         <img class="flex-none w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/85.jpg" alt="avatar" loading="lazy" />
         <div class="flex-auto">
@@ -1059,7 +1160,6 @@ visible: true
 
 <article class="relative overflow-hidden border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
   <div class="absolute pointer-events-none top-0 left-1/2 w-12 h-12 bg-danger/30 blur-2xl"></div>
-
   <section class="relative z-[1] flex items-center justify-between">
     <div class="flex items-center gap-4">
       <a href="#">
@@ -1079,6 +1179,20 @@ visible: true
       <span class="material-symbols-rounded material-symbols-lg">delete</span>
     </button>
   </section>
+</article>
+
+<article class="overflow-hidden relative border break-inside rounded-xl mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
+  <div class="absolute left-1/2 top-0 w-14 h-14 bg-indigo-500/20 blur-2xl"></div>
+  <div class="absolute right-0 top-0 w-14 h-14 bg-green-500/10 blur-2xl"></div>
+  <header class="flex items-center justify-start w-full gap-4 p-3">
+    <div class="inline-flex items-center justify-center flex-none w-14 h-14 bg-indigo-500/5 rounded-full">
+      <span class="material-symbols-rounded material-symbols-xl flex-none material-symbols-weight-300">star_shine</span>
+    </div>
+    <section class="space-y-0.5">
+      <h2 class="text-sm font-semibold block"><span class="text-indigo-500">Upgrading</span> to Pro</h2>
+      <p class="text-foreground/70">Lorem ipsum dolor sit amet, conse ctetur adipiscing...</p>
+    </section>
+  </header>
 </article>
 
 <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
@@ -1113,7 +1227,7 @@ visible: true
         <span class="text-foreground/70">Last seen 2 hours ago</span>
       </div>
     </div>
-    <button class="flex flex-none items-center justify-center w-8 h-8 transition-all rounded-full focus:ring-2 focus:ring-primary hover:bg-foreground/5">
+    <button class="flex flex-none items-center justify-center w-8 h-8 transition-colors rounded-full focus:ring-2 focus:ring-primary hover:bg-foreground/5">
       <span class="material-symbols-rounded material-symbols-md">edit</span>
     </button>
   </div>
@@ -1129,7 +1243,7 @@ visible: true
       </div>
     </div>
     <div class="p-4 h-full">
-      <button class="flex flex-none items-center justify-center w-9 h-9 transition-all rounded-full focus:ring-2 focus:ring-primary hover:bg-foreground/5">
+      <button class="flex flex-none items-center justify-center w-9 h-9 transition-colors rounded-full focus:ring-2 focus:ring-primary hover:bg-foreground/5">
         <span class="material-symbols-rounded material-symbols-xl">camera</span>
       </button>
     </div>
@@ -1141,7 +1255,7 @@ visible: true
     <div class="flex items-center gap-2">
       <h2 class="font-medium text-sm">Director Meeting</h2>
     </div>
-    <button class="flex flex-none items-center justify-center w-7 h-7 transition-all rounded hover:bg-foreground/5 focus:ring-2 focus:ring-primary">
+    <button class="flex flex-none items-center justify-center w-7 h-7 transition-colors rounded hover:bg-foreground/5 focus:ring-2 focus:ring-primary">
       <span class="material-symbols-rounded material-symbols-xl">keyboard_arrow_down</span>
     </button>
   </header>
@@ -1273,7 +1387,7 @@ visible: true
   <article class="group flex flex-col justify-start border break-inside rounded-xl text-xs border-border bg-background text-foreground" data-filter="social">
     <header class="flex items-center justify-between p-4">
       <span class="h-6 px-2 text-xs font-medium rounded flex items-center leading-5 justify-center bg-emerald-200 dark:bg-emerald-500/30 dark:text-emerald-300">NEW</span>
-      <button class="inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+      <button class="inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
         <span class="material-symbols-rounded">more_horiz</span>
       </button>
     </header>
@@ -1418,7 +1532,7 @@ visible: true
         <span class="text-foreground/60">3 minutes ago</span>
       </div>
     </div>
-    <button class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+    <button class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
       <span class="material-symbols-rounded">more_horiz</span>
     </button>
   </header>

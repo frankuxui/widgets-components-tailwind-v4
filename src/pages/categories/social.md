@@ -1163,7 +1163,7 @@ visible: true
 <section class="grid grid-cols-2 gap-3 mb-3">
   <article class="flex flex-col justify-start gap-2 border break-inside rounded-xl p-4 text-xs border-border bg-background text-foreground" data-filter="social">
     <header>
-      <span class="material-symbols-rounded material-symbols-xl">bed</span>
+      <span class="material-symbols-rounded material-symbols-lg material-symbols-weight-300">bed</span>
     </header>
     <section>
       <h2 class="text-sm">Bed time</h2>
@@ -1173,7 +1173,7 @@ visible: true
   </article>
   <article class="flex flex-col justify-start gap-2 border break-inside rounded-xl p-4 text-xs border-border bg-background text-foreground" data-filter="social">
     <header>
-      <span class="material-symbols-rounded material-symbols-xl">notifications</span>
+      <span class="material-symbols-rounded material-symbols-lg material-symbols-weight-300">notifications</span>
     </header>
     <section>
       <h2 class="text-sm">Wake up</h2>
@@ -1183,7 +1183,7 @@ visible: true
   </article>
   <article class="flex flex-col justify-start gap-2 border break-inside rounded-xl p-4 text-xs border-border bg-background text-foreground" data-filter="social">
     <header>
-      <span class="material-symbols-rounded material-symbols-xl">calendar_month</span>
+      <span class="material-symbols-rounded material-symbols-lg material-symbols-weight-300">calendar_month</span>
     </header>
     <section>
       <h2 class="text-sm">Calendar</h2>
@@ -1193,7 +1193,7 @@ visible: true
   </article>
   <article class="flex flex-col justify-start gap-2 border break-inside rounded-xl p-4 text-xs border-border bg-background text-foreground" data-filter="social">
     <header>
-      <span class="material-symbols-rounded material-symbols-xl">thumb_up</span>
+      <span class="material-symbols-rounded material-symbols-lg material-symbols-weight-300">thumb_up</span>
     </header>
     <section>
       <h2 class="text-sm">Interactions</h2>
@@ -1462,9 +1462,11 @@ visible: true
       class="z-0 opacity-80 pointer-events-none h-full absolute top-0 right-0 w-4 hidden border-b border-border border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-black)]/5 md:block dark:[--pattern-fg:var(--color-white)]/10">
     </div>
     <div class="grid gap-2 p-2 place-items-start">
-      <span class="px-2 h-5 rounded inline-flex items-center justify-center font-medium bg-emerald-200 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-400">NEW</span>
+      <span class="px-2 h-5 rounded inline-flex items-center justify-center leading-5 font-medium bg-emerald-200 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-400">
+        NEW
+      </span>
       <div class="w-full flex items-center justify-between gap-2">
-        <h2 class="font-semibold text-base">Draw a minimal <br />logo for a startup</h2>
+        <h2 class="font-medium text-base">Draw a minimal <br />logo for a startup</h2>
         <div class="w-12 h-12 rounded-full inline-flex items-center justify-center flex-none bg-indigo-500/10">
           <span class="material-symbols-rounded material-symbols-lg">draw</span>
         </div>

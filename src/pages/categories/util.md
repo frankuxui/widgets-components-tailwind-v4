@@ -145,34 +145,23 @@ visible: true
       </div>
     </section>
   </article>
-  <article class="flex flex-col overflow-hidden border break-inside rounded-xl mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
-    <header class="flex flex-col items-start p-4">
+  <article class="flex flex-col overflow-hidden border break-inside rounded-xl mb-3 p-3 text-xs border-border bg-background text-foreground" data-filter="social">
+    <header class="flex flex-col items-start">
       <h2 class="text-base font-medium">Widgets</h2>
       <p class="text-foreground/70">23 new messages</p>
     </header>
-    <div class="grid border-t border-border divide-y divide-border">
-      <div class="flex items-center justify-between divide-x divide-border transition-colors duration-200 hover:bg-foreground/5 hover:inset-shadow-sm">
-        <div class="flex flex-col items-start flex-1 p-3">
-          <p class="text-sm font-medium">Adrian</p>
-          <p class="text-foreground/50">32 min ago</p>
-        </div>
-        <div class="inline-flex items-center justify-center h-full flex-none p-3">
-          <button>
-            <span class="material-symbols-rounded material-symbols-md">phone_enabled</span>
-          </button>
-        </div>
-      </div>
-      <div class="flex items-center justify-between divide-x divide-border transition-colors duration-200 hover:bg-foreground/5 hover:inset-shadow-sm">
-        <div class="flex flex-col items-start flex-1 p-3">
+    <section class="w-full">
+      <div class="flex items-center justify-between">
+        <div class="flex flex-col items-start flex-1">
           <p class="text-sm font-medium">Marloon</p>
           <p class="text-foreground/50">45 min ago</p>
         </div>
-        <div class="inline-flex items-center justify-center h-full flex-none p-3">
+        <div class="inline-flex items-center justify-center h-full flex-none">
           <button>
-            <span class="material-symbols-rounded material-symbols-md">phone_enabled</span>
+            <span class="material-symbols-rounded material-symbols-md">swipe_up</span>
           </button>
         </div>
       </div>
-    </div>
+    </section>
   </article>
 </section>

@@ -100,18 +100,20 @@ visible: true
   </div>
 </article>
 
-<article class="flex items-center justify-between gap-2 border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
-  <div class="flex items-center gap-2">
+<article
+  class="flex items-center justify-between border break-inside rounded-xl gap-2 p-4 mb-3 text-xs border-border bg-background text-foreground inset-shadow inset-shadow-xs"
+  data-filter="social">
+  <div class="flex flex-1 items-center gap-4">
     <div class="flex-none w-10 h-10 rounded-xl flex items-center justify-center text-lg font-semibold bg-violet-100 text-violet-500 dark:bg-violet-600/50 dark:text-white">
       <span class="material-symbols-rounded material-symbols-lg">palette</span>
     </div>
-    <div class="flex-auto">
+    <div class="flex-1">
       <h2 class="text-sm font-medium block">New widget</h2>
-      <p class="text-xs text-gray-600 dark:text-gray-400">Design a new logo for website...</p>
+      <p class="truncate text-foreground/70">Design now your new widget.</p>
     </div>
   </div>
   <button class="flex-none inline-flex items-center justify-center w-9 h-9 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
-    <span class="material-symbols-rounded material-symbols-lg">forward</span>
+    <span class="material-symbols-rounded material-symbols-lg">format_color_reset</span>
   </button>
 </article>
 
@@ -165,12 +167,12 @@ visible: true
       </button>
     </header>
     <section class="flex items-center justify-between p-3 gap-2 border-y border-border">
-      <div class="flex-none inline-flex items-center justify-center rounded-full w-6 h-6 bg-foreground/10">
-        <span class="material-symbols-rounded material-symbols-weight-500 material-symbols-md">check</span>
+      <div class="flex-none inline-flex items-center justify-center rounded-full w-5.5 h-5.5 bg-foreground/10">
+        <span class="material-symbols-rounded material-symbols-weight-500 material-symbols-sm">check</span>
       </div>
-      <p class="text-foreground/80">We are a startup company.</p>
+      <p class="text-foreground/80">We are a startup comp...</p>
     </section>
-    <div class="grid p-4 gap-2">
+    <div class="grid pt-4 px-4 pb-6 gap-2">
       <div class="flex items-center justify-between">
         <label for="enabled" class="text-sm font-medium">Enabled</label>
         <input
@@ -267,7 +269,7 @@ visible: true
 </article>
 
 <article class="border break-inside grid rounded-xl mb-3 text-xs divide-y divide-border border-border bg-background text-foreground" data-filter="social">
-  <section class="flex items-center justify-between gap-2 p-4">
+  <section class="flex items-center justify-between gap-2 p-3">
     <div class="inline-flex items-center gap-2">
       <img src="https://randomuser.me/api/portraits/men/88.jpg" class="w-8 h-8 flex-none rounded-full" />
       <div class="flex-1 grid">
@@ -279,7 +281,7 @@ visible: true
       <span class="material-symbols-rounded material-symbols-sm">edit</span>
     </button>
   </section>
-  <section class="flex items-center justify-between gap-2 p-4">
+  <section class="flex items-center justify-between gap-2 p-3">
     <div class="inline-flex items-center gap-2">
       <img src="https://randomuser.me/api/portraits/men/86.jpg" class="w-8 h-8 flex-none rounded-full" />
       <div class="flex-1 grid">
@@ -295,7 +297,7 @@ visible: true
 
 <article class="border break-inside grid rounded-xl mb-3 text-xs overflow-hidden divide-y divide-border border-border bg-background text-foreground" data-filter="social">
   <header class="flex items-center justify-between divide-x divide-border">
-    <div class="flex flex-1 items-center gap-3 p-4">
+    <div class="flex flex-1 items-center gap-3 p-3">
       <div class="w-9 h-9 inline-flex items-center justify-center rounded-full flex-none bg-foreground/5">
         <span class="material-symbols-rounded material-symbols-md">groups</span>
       </div>
@@ -304,13 +306,13 @@ visible: true
         <p class="text-foreground/70">List of members in the team</p>
       </div>
     </div>
-    <div class="p-4 h-full inline-flex flex-none items-center justify-center">
+    <div class="p-3 h-full inline-flex flex-none items-center justify-center">
       <button class="inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
         <span class="material-symbols-rounded material-symbols-lg">keyboard_arrow_down</span>
       </button>
     </div>
   </header>
-  <section class="flex items-center justify-between gap-2 p-4">
+  <section class="flex items-center justify-between gap-2 p-3">
     <div class="inline-flex items-center gap-2">
       <img src="https://randomuser.me/api/portraits/women/88.jpg" class="w-8 h-8 flex-none rounded-full" />
       <div class="flex-1 grid">
@@ -322,7 +324,7 @@ visible: true
       <span class="material-symbols-rounded material-symbols-sm">edit</span>
     </button>
   </section>
-  <section class="flex items-center justify-between gap-2 p-4">
+  <section class="flex items-center justify-between gap-2 p-3">
     <div class="inline-flex items-center gap-2">
       <img src="https://randomuser.me/api/portraits/men/36.jpg" class="w-8 h-8 flex-none rounded-full" />
       <div class="flex-1 grid">
@@ -334,6 +336,25 @@ visible: true
       <span class="material-symbols-rounded material-symbols-sm">edit</span>
     </button>
   </section>
+</article>
+
+<article class="flex items-center justify-start overflow-hidden border break-inside rounded-xl mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
+  <img
+    class="w-full max-w-20 h-full max-h-22 object-cover"
+    src="https://images.pexels.com/photos/3182452/pexels-photo-3182452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    data-author="Alex Azabache"
+    data-author-profile="https://www.pexels.com/es-es/@alexazabache/"
+    loading="lazy"
+  />
+  <div class="h-full flex items-center flex-1">
+    <div class="flex items-center gap-3 relative py-4 pr-4">
+      <img class="flex-none mt-1 w-11 h-11 rounded-full -ml-6 border-3 border-background" src="https://randomuser.me/api/portraits/men/95.jpg" alt="avatar" loading="lazy" />
+      <div class="flex flex-col">
+        <h2 class="text-sm font-semibold">Roman</h2>
+        <span class="text-foreground/70">Photographer</span>
+      </div>
+    </div>
+  </div>
 </article>
 
 <article class="overflow-hidden border break-inside grid rounded-xl mb-3 text-xs divide-y divide-border border-border bg-background text-foreground" data-filter="social">
@@ -395,7 +416,7 @@ visible: true
 </article>
 
 <section class="break-inside mb-3 gap-3 columns-2 items-start">
-  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
+  <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
     <header class="flex items-center justify-between gap-3">
       <img class="flex-none w-9 h-9 rounded-full" src="https://randomuser.me/api/portraits/men/85.jpg" alt="avatar" loading="lazy" />
       <button class="inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
@@ -432,7 +453,7 @@ visible: true
       </div>
     </header>
     <section class="grid gap-3 px-4 pb-4">
-      <p class="font-semibold leading-6 text-lg">Web Design templates</p>
+      <p class="font-semibold leading-6 text-base">Web Design templates</p>
       <div class="w-full flex items-center justify-between gap-2">
         <div class="inline-flex items-center justify-start gap-2">
           <img src="https://cdn.worldvectorlogo.com/logos/facebook-reaction-love.svg" alt="like" class="w-4 h-4" />
@@ -488,7 +509,7 @@ visible: true
       </a>
     </section>
   </article>
-  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
+  <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
     <span class="material-symbols-rounded material-symbols-fill material-symbols-md text-danger">favorite</span>
     <section>
       <h2>Events</h2>
@@ -502,7 +523,7 @@ visible: true
       <h5 class="font-semibold">23</h5>
     </div>
   </article>
-  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
+  <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
     <header class="flex items-center gap-2 justify-start">
       <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/65.jpg" alt="avatar" loading="lazy" />
       <div class="flex flex-col">
@@ -563,7 +584,7 @@ visible: true
       Connect
     </button>
   </article>
-  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
+  <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
     <header class="flex items-start gap-2">
       <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/41.jpg" alt="avatar" loading="lazy" />
       <h2 class="text-sm font-medium">
@@ -579,7 +600,7 @@ visible: true
       </button>
     </div>
   </article>
-  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
+  <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
     <header class="flex items-start gap-2">
       <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/40.jpg" alt="avatar" loading="lazy" />
       <h2 class="text-sm font-medium">
@@ -598,7 +619,7 @@ visible: true
   <article
     class="overflow-hidden border break-inside rounded-xl mb-3 flex flex-col divide-y divide-border text-xs border-border bg-background text-foreground"
     data-filter="social">
-    <header class="flex items-start gap-2 p-4">
+    <header class="flex items-start gap-2 p-3">
       <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/42.jpg" alt="avatar" loading="lazy" />
       <h2 class="text-sm font-medium">
         Angel
@@ -1103,6 +1124,30 @@ visible: true
   </article>
 </section>
 
+<section class="relative w-full flex items-center justify-between gap-3 mb-3">
+  <article class="w-full max-w-1/2 border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground inset-shadow-sm inset-shadow-black/02">
+    <div class="flex items-center justify-start w-full gap-3">
+      <img class="flex-none w-10 h-10 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/60.jpg" alt="avatar" loading="lazy" />
+      <div class="flex flex-col items-start text-left">
+        <h2 class="text-sm font-medium">Marcos</h2>
+        <span class="text-foreground/70">Designer</span>
+      </div>
+    </div>
+  </article>
+  <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full inline-flex items-center justify-center border border-border bg-background">
+    <span class="material-symbols-rounded material-symbols-md text-foreground">waving_hand</span>
+  </div>
+  <article class="w-full max-w-1/2 border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground inset-shadow-sm inset-shadow-black/02">
+    <div class="flex items-center justify-end w-full gap-3">
+      <div class="flex flex-col items-end text-right">
+        <h2 class="text-sm font-medium">Patrick</h2>
+        <span class="text-foreground/70">Developer</span>
+      </div>
+      <img class="flex-none w-10 h-10 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/57.jpg" alt="avatar" loading="lazy" />
+    </div>
+  </article>
+</section>
+
 <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
   <div class="w-full flex items-center justify-between">
     <header class="flex items-center gap-3">
@@ -1580,9 +1625,9 @@ visible: true
         NEW
       </span>
       <div class="w-full flex items-center justify-between gap-2">
-        <h2 class="font-medium text-base">Draw a minimal <br />logo for a startup</h2>
-        <div class="w-12 h-12 rounded-full inline-flex items-center justify-center flex-none bg-indigo-500/10">
-          <span class="material-symbols-rounded material-symbols-lg">draw</span>
+        <h2 class="font-medium text-sm">Draw a minimal <br />logo for a startup</h2>
+        <div class="w-11 h-11 rounded-full inline-flex items-center justify-center flex-none bg-indigo-500/10">
+          <span class="material-symbols-rounded material-symbols-lg material-symbols-weight-300">draw</span>
         </div>
       </div>
       <p class="text-foreground/70">Design a new logo for our website, we are a startup company.</p>

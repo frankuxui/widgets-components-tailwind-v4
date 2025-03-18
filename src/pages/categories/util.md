@@ -80,20 +80,17 @@ visible: true
   ...
 </article>
 
-<section class="relative w-full flex items-center justify-between gap-3 mb-3">
-  <article class="w-full max-w-1/2 border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground">
-    <div class="flex items-center justify-start w-full gap-3">
-      <img class="flex-none w-10 h-10 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/60.jpg" alt="avatar" loading="lazy" />
-      <h2 class="text-sm font-medium">Marcos</h2>
+<article
+  class="flex items-center justify-start overflow-hidden border break-inside rounded-xl text-xs border-border bg-background text-foreground inset-shadow-sm inset-shadow-black/01"
+  data-filter="social">
+  <div class="w-full max-w-26 h-full min-h-26 object-cover bg-primary"></div>
+  <div class="h-full flex items-center flex-1">
+    <div class="flex items-center gap-3 relative py-4 pr-4">
+      <img class="flex-none mt-1 w-14 h-14 rounded-full -ml-6 border-3 border-background" src="https://randomuser.me/api/portraits/men/18.jpg" alt="avatar" loading="lazy" />
+      <div class="flex flex-col">
+        <a href="#" class="text-sm font-semibold">Marcos</a>
+        <span class="text-foreground/70">Artist and Designer</span>
+      </div>
     </div>
-  </article>
-  <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full inline-flex items-center justify-center border border-border bg-background">
-    <span class="material-symbols-rounded material-symbols-lg text-foreground">multiple_stop</span>
   </div>
-  <article class="w-full max-w-1/2 border break-inside rounded-xl p-3 text-xs border-border bg-background text-foreground">
-    <div class="flex items-center justify-end w-full gap-3">
-      <h2 class="text-sm font-medium">Patrick</h2>
-      <img class="flex-none w-10 h-10 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/57.jpg" alt="avatar" loading="lazy" />
-    </div>
-  </article>
-</section>
+</article>

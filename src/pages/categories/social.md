@@ -1148,6 +1148,52 @@ visible: true
   </article>
 </section>
 
+<article class="border break-inside rounded-xl mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
+  <div class="flex items-center justify-between divide-x divide-border">
+    <div class="flex items-center gap-4 p-4 h-full flex-1">
+      <img
+        class="flex-none w-10 h-10 rounded-full"
+        src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+        alt="avatar"
+        loading="lazy"
+      />
+      <div class="flex-auto">
+        <h2 class="text-sm font-medium">Fabrizio</h2>
+        <span class="text-foreground/70">Last seen 2 hours ago</span>
+      </div>
+    </div>
+    <div class="p-4 h-full relative w-full max-w-12">
+      <button
+        class="absolute top-1/2 -translate-y-1/2 right-full translate-x-1/2 flex flex-none items-center justify-center w-9 h-9 transition-colors rounded-full focus:ring-2 ring-1 ring-border border-2 border-background bg-background focus:ring-primary">
+        <span class="material-symbols-rounded material-symbols-md">favorite</span>
+      </button>
+    </div>
+  </div>
+</article>
+
+<article
+  class="flex items-center justify-start overflow-hidden border break-inside rounded-xl mb-3 text-xs border-border bg-background text-foreground inset-shadow-sm inset-shadow-black/01"
+  data-filter="social">
+  <div class="w-full max-w-26 h-full min-h-26 object-cover relative bg-gradient-to-r from-violet-600 to-indigo-600">
+    <span class="absolute top-3 left-3 h-5 px-1.5 inline-flex items-center justify-center font-medium text-[10px] rounded bg-white">NEW</span>
+    <span class="absolute bottom-3 left-3 inline-flex items-center justify-center font-medium text-[10px] text-white">March 2025</span>
+  </div>
+  <div class="h-full flex items-center flex-1">
+    <div class="flex items-center gap-3 relative py-4 pr-4">
+      <img
+        class="flex-none mt-1 w-14 h-14 rounded-full -ml-6 border-3 border-background"
+        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+        alt="avatar"
+        loading="lazy"
+      />
+      <div class="flex flex-col">
+        <a href="#" class="text-base font-semibold">Anabel</a>
+        <span class="text-foreground/70">Artist and Designer</span>
+      </div>
+    </div>
+  </div>
+</article>
+
 <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
   <div class="w-full flex items-center justify-between">
     <header class="flex items-center gap-3">
@@ -1385,20 +1431,18 @@ visible: true
         <h2 class="text-sm font-medium">Members</h2>
         <span class="flex items-center justify-center w-5 h-5 text-[11px] rounded-full font-medium bg-warning/50">5</span>
       </header>
-      <section class="flex items-center justify-between mt-2">
+      <section class="flex items-center justify-between mt-1">
         <div class="block">
           <dt class="sr-only">Users</dt>
           <dd class="flex justify-start -space-x-1">
             <a href="#" class="inline-block">
-              <img class="w-6 h-6 rounded-full ring-2 ring-white dark:ring-gray-950" src="https://randomuser.me/api/portraits/women/12.jpg" alt="avatar" loading="lazy" />
+              <img class="w-6 h-6 rounded-full ring-2 ring-background" src="https://randomuser.me/api/portraits/women/12.jpg" alt="avatar" loading="lazy" />
             </a>
             <a href="#" class="inline-block">
-              <img class="w-6 h-6 rounded-full ring-2 ring-white dark:ring-gray-950" src="https://randomuser.me/api/portraits/men/13.jpg" alt="avatar" loading="lazy" />
+              <img class="w-6 h-6 rounded-full ring-2 ring-background" src="https://randomuser.me/api/portraits/men/13.jpg" alt="avatar" loading="lazy" />
             </a>
             <a href="#" class="inline-block">
-              <span class="flex items-center justify-center text-[11px] font-medium w-6 h-6 rounded-full bg-rose-200 ring-2 ring-white dark:bg-gray-600 dark:ring-gray-950">
-                +3
-              </span>
+              <span class="flex items-center justify-center text-[11px] font-medium w-6 h-6 rounded-full ring-2 ring-background bg-foreground text-background">+3</span>
             </a>
           </dd>
         </div>
@@ -1413,15 +1457,15 @@ visible: true
         </div>
         <span class="flex items-center justify-center w-5 h-5 text-[11px] rounded-full font-medium bg-green-200 text-black">2</span>
       </header>
-      <section class="flex items-center justify-between mt-2">
+      <section class="flex items-center justify-between mt-1">
         <div class="block">
           <dt class="sr-only">Users</dt>
           <dd class="flex justify-start -space-x-1.5">
             <a href="#" class="inline-block -ml-1">
-              <img class="w-6 h-6 rounded-full ring-2 ring-white dark:ring-gray-950" src="https://randomuser.me/api/portraits/women/14.jpg" alt="avatar" loading="lazy" />
+              <img class="w-6 h-6 rounded-full ring-2 ring-background" src="https://randomuser.me/api/portraits/women/14.jpg" alt="avatar" loading="lazy" />
             </a>
             <a href="#" class="inline-block -ml-1">
-              <img class="w-6 h-6 rounded-full ring-2 ring-white dark:ring-gray-950" src="https://randomuser.me/api/portraits/men/15.jpg" alt="avatar" loading="lazy" />
+              <img class="w-6 h-6 rounded-full ring-2 ring-background" src="https://randomuser.me/api/portraits/men/15.jpg" alt="avatar" loading="lazy" />
             </a>
           </dd>
         </div>
@@ -1436,22 +1480,22 @@ visible: true
         <span class="material-symbols-rounded">more_horiz</span>
       </button>
     </header>
-    <section class="grid gap-2 px-4">
-      <h2 class="text-base font-bold">Project members</h2>
-      <p class="text-foreground/70">03:00 PM - 05:00 PM</p>
+    <section class="grid gap-1 px-4">
+      <h2 class="text-base leading-5 font-bold">Project members</h2>
+      <p class="text-foreground/70">Event planning and management</p>
     </section>
     <div class="flex items-center justify-between mt-auto p-4 border-t border-border">
       <div class="block">
         <dt class="sr-only">Users</dt>
         <dd class="flex justify-start -space-x-1.5">
           <a href="#" class="inline-block -m-1">
-            <img class="w-6 h-6 rounded-full ring-2 ring-white dark:ring-gray-950" src="https://randomuser.me/api/portraits/women/48.jpg" alt="avatar" loading="lazy" />
+            <img class="w-6 h-6 rounded-full ring-2 ring-background" src="https://randomuser.me/api/portraits/women/48.jpg" alt="avatar" loading="lazy" />
           </a>
           <a href="#" class="inline-block -m-1">
-            <img class="w-6 h-6 rounded-full ring-2 ring-white dark:ring-gray-950" src="https://randomuser.me/api/portraits/men/15.jpg" alt="avatar" loading="lazy" />
+            <img class="w-6 h-6 rounded-full ring-2 ring-background" src="https://randomuser.me/api/portraits/men/15.jpg" alt="avatar" loading="lazy" />
           </a>
           <a href="#" class="inline-block -m-1">
-            <img class="w-6 h-6 rounded-full ring-2 ring-white dark:ring-gray-950" src="https://randomuser.me/api/portraits/women/37.jpg" alt="avatar" loading="lazy" />
+            <img class="w-6 h-6 rounded-full ring-2 ring-background" src="https://randomuser.me/api/portraits/women/37.jpg" alt="avatar" loading="lazy" />
           </a>
         </dd>
       </div>
@@ -1459,6 +1503,39 @@ visible: true
     </div>
   </article>
 </section>
+
+<article class="border break-inside rounded-xl text-xs mb-3 border-border bg-background text-foreground" data-filter="social">
+  <header class="w-full flex items-center justify-between gap-3 p-4">
+    <div class="flex items-center gap-3">
+      <img
+        src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+        alt="avatar"
+        class="w-10 h-10 rounded-full"
+        loading="lazy"
+      />
+      <div class="grid flex-1">
+        <h2 class="font-medium text-sm">Charlie Flint</h2>
+        <p>Applied at February 10, 2025</p>
+      </div>
+    </div>
+    <button class="flex-none inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-colors rounded-full focus:ring-primary hover:bg-foreground/5">
+      <span class="material-symbols-rounded">more_horiz</span>
+    </button>
+  </header>
+  <section class="grid gap-3 w-full border-t border-border p-4">
+    <h3 class="text-sm font-medium">Summary of the interview</h3>
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="p-2 rounded border border-border inline-flex items-center justify-center font-semibold">98%</span>
+        <p class="text-foreground/70">Information and Technology</p>
+      </div>
+      <button
+        class="flex-none cursor-pointer inline-flex items-center justify-center h-7 px-3 rounded-full font-medium bg-cyan-200 text-cyan-900 dark:bg-cyan-500/30 dark:text-cyan-300 hover:saturate-150">
+        View more
+      </button>
+    </div>
+  </section>
+</article>
 
 <article class="border break-inside rounded-xl text-xs mb-3 border-border bg-background text-foreground" data-filter="social">
   <div class="flex items-center justify-between p-3 gap-6">
@@ -1632,6 +1709,140 @@ visible: true
       </div>
       <p class="text-foreground/70">Design a new logo for our website, we are a startup company.</p>
     </div>
+  </section>
+</article>
+
+<article
+  class="flex items-center justify-between border break-inside rounded-xl text-xs mb-3 divide-x divide-border border-border bg-background text-foreground"
+  data-filter="social">
+  <div class="grid flex-1 gap-0.5 h-full p-4">
+    <h2 class="font-semibold text-sm">Cynthia Houston</h2>
+    <p>February 10, 2025</p>
+  </div>
+  <div class="flex-none h-full p-4">
+    <button class="flex-none inline-flex items-center justify-center px-3 h-7 focus:ring-2 transition-colors duration-300 rounded bg-violet-500 text-white hover:saturate-150">
+      Follow
+    </button>
+  </div>
+</article>
+
+<article
+  class="overflow-hidden grid grid-cols-12 border break-inside rounded-xl text-xs mb-3 divide-x divide-border border-border bg-background text-foreground"
+  data-filter="social">
+  <div class="grid flex-1 h-full divide-y col-span-8 divide-border">
+    <div class="px-4 py-3 flex flex-col items-start justify-center gap-0.5">
+      <h2 class="font-semibold text-sm">Cynthia Flick</h2>
+      <p>Designer and Developer</p>
+    </div>
+    <div class="px-4 py-3 flex items-center justify-start bg-foreground/2">
+      <p>February 10, 2025</p>
+    </div>
+  </div>
+  <div class="flex-none grid gap-1 h-full col-span-4 p-4 place-items-center text-center">
+    <img
+      src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+      alt="avatar"
+      class="w-10 h-10 rounded-full"
+      loading="lazy"
+    />
+    <p>Worked at Google</p>
+  </div>
+</article>
+
+<article
+  class="overflow-hidden grid grid-cols-12 border break-inside rounded-xl text-xs mb-3 divide-x divide-border border-border bg-background text-foreground"
+  data-filter="social">
+  <section class="grid flex-1 h-full divide-y col-span-8 divide-border">
+    <div class="px-4 py-3 flex flex-col items-start justify-center gap-0.5">
+      <div class="w-full flex items-center justify-between gap-2">
+        <div class="grid">
+          <h2 class="font-semibold text-sm">Harrison Wells</h2>
+          <p>Photographer</p>
+        </div>
+        <button class="inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+          <span class="material-symbols-rounded">more_horiz</span>
+        </button>
+      </div>
+    </div>
+    <div class="px-4 py-3 flex items-center justify-start bg-emerald-50 dark:bg-emerald-500/5">
+      <p>February 10, 2025</p>
+    </div>
+  </section>
+  <section class="flex-none grid gap-1 h-full col-span-4 p-4 place-items-center text-center bg-amber-50 dark:bg-amber-500/5">
+    <img
+      src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+      alt="avatar"
+      class="w-10 h-10 rounded-full"
+      loading="lazy"
+    />
+    <p class="font-medium">Worked at Google</p>
+  </section>
+</article>
+
+<article
+  class="overflow-hidden grid grid-cols-12 border break-inside rounded-xl text-xs mb-3 divide-x divide-border border-border bg-background text-foreground"
+  data-filter="social">
+  <section class="grid flex-1 h-full divide-y col-span-8 divide-border">
+    <div class="relative px-4 py-3 flex flex-col items-start justify-center gap-0.5">
+      <div class="absolute pointer-events-none top-0 left-0 w-full h-2 bg-foreground/3"></div>
+      <div class="absolute pointer-events-none bottom-0 left-0 w-full h-2 bg-foreground/3"></div>
+      <div class="w-full flex items-center justify-between gap-2">
+        <div class="grid">
+          <h2 class="font-semibold text-sm">Harrison Wells</h2>
+          <p>Photographer</p>
+        </div>
+        <button class="inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+          <span class="material-symbols-rounded material-symbols-md">menu</span>
+        </button>
+      </div>
+    </div>
+    <div class="relative px-4 py-3 flex items-center justify-start">
+      <div
+        class="z-0 opacity-80 pointer-events-none h-full absolute top-0 left-0 w-full hidden border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-black)]/5 md:block dark:[--pattern-fg:var(--color-white)]/10">
+      </div>
+      <p>February 10, 2025</p>
+    </div>
+  </section>
+  <section class="flex-none grid gap-2 h-full col-span-4 p-4 place-items-center text-center bg-blue-50/30 dark:bg-blue-500/5">
+    <img
+      src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+      alt="avatar"
+      class="w-10 h-10 rounded-full"
+      loading="lazy"
+    />
+    <p class="font-medium">Analyst at Google</p>
+  </section>
+</article>
+
+<article
+  class="overflow-hidden grid grid-cols-12 border break-inside rounded-xl text-xs mb-3 divide-x divide-border border-border bg-background text-foreground"
+  data-filter="social">
+  <section class="grid flex-1 h-full divide-y col-span-8 divide-border">
+    <div class="relative flex flex-col items-start justify-center">
+      <div class="flex-1 w-full flex items-center justify-between divide-x divide-border">
+        <div class="grid flex-1 h-full px-4 py-3">
+          <h2 class="font-semibold text-sm">Adrian Fisher</h2>
+          <p>Dessert Chef</p>
+        </div>
+        <div class="flex-none px-4 py-3 h-full inline-flex items-center justify-center">
+          <button class="inline-flex items-center justify-center w-7 h-7 focus:ring-2 transition-all rounded-full focus:ring-primary hover:bg-foreground/5">
+            <span class="material-symbols-rounded material-symbols-sm">edit</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="px-4 py-3 flex items-center justify-start">
+      <p>September 10, 2025</p>
+    </div>
+  </section>
+  <section class="flex-none grid gap-2 h-full col-span-4 p-4 place-items-center text-center">
+    <img
+      src="https://images.unsplash.com/photo-1456327102063-fb5054efe647?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+      alt="avatar"
+      class="w-10 h-10 rounded-full"
+      loading="lazy"
+    />
+    <p class="font-medium">Chef at Google</p>
   </section>
 </article>
 

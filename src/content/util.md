@@ -1,10 +1,8 @@
 ---
-layout: '../../layouts/Expo.astro'
+title: 'Widget components with tailwind CSS - Social'
 description: 'Multiple widgets for user interfaces related to finance and economics'
 slug: 'util'
 category: 'util'
-tags: ['util']
-title: 'Widget components with tailwind CSS - Social'
 visible: true
 ---
 

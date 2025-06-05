@@ -1,8 +1,9 @@
 {
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#230369",
-    "titleBar.activeBackground": "#2a0888",
-    "titleBar.activeForeground": "#ebe3ff"
-  },
   "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "never"
+  },
+  "markdown.validate.enabled": true,
+  "eslint.enable": false
 }

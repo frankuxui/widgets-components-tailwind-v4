@@ -1,10 +1,8 @@
 ---
-layout: '../../layouts/Expo.astro'
+title: 'Widget components with tailwind CSS'
 description: 'Multiple widgets for user interfaces related to finance and economics'
 slug: 'sport'
 category: 'Sport'
-tags: ['sport']
-title: 'Widget components with tailwind CSS'
 visible: false
 ---
 

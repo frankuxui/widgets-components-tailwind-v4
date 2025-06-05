@@ -1,10 +1,8 @@
 ---
-layout: '../../layouts/Expo.astro'
+title: 'Widget components with tailwind CSS'
 description: 'Multiple widgets for user interfaces related to finance and economics'
 slug: 'multimedia'
 category: 'Multimedia'
-tags: ['multimedia']
-title: 'Widget components with tailwind CSS'
 visible: true
 ---
 

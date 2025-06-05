@@ -1,0 +1,234 @@
+---
+import { getCollection } from 'astro:content'
+
+const widgets = await getCollection('widgets')
+const data = widgets.map((item) => {
+  return {
+    slug: item.id,
+    category: item.data.category,
+    visible: item.data.visible ?? true,
+  }
+})
+const pageSlug = Astro.url.pathname.split('/')[1] || 'all'
+---
+
+<header class="z-30 sticky h-16 left-0 w-full top-0 flex items-center justify-center border-b border-border bg-white/80 dark:bg-gray-950/70 backdrop-blur-lg">
+  <div class="w-full h-full flex items-center justify-between px-4">
+    <a href="/" class="relative overflow-hidden flex group items-center gap-2 px-4 py-1">
+      <span class="relative flex-none text-base font-medium text-foreground">Widgets</span>
+    </a>
+    <ul class="hidden lg:flex items-center justify-center w-full">
+      {
+        data
+          .filter((item) => item.visible)
+          .map((item) => {
+            return (
+              <li>
+                <a
+                  href={`/categories/${item.slug}`}
+                  class="relative flex items-center justify-center text-xs uppercase py-2 px-3 rounded-full tracking-wider transition-colors duration-200"
+                  class:list={{
+                    'font-normal text-foreground/70': pageSlug !== item.slug,
+                    'font-semibold text-foreground  after:absolute after:inset-0 after:border after:border-dashed after:border-sky-300/60 after:bg-sky-400/10 after:group-hover:bg-sky-400/15 dark:after:border-sky-300/30':
+                      pageSlug === item.slug,
+                  }}>
+                  {item.category}
+                </a>
+              </li>
+            )
+          })
+      }
+      <li class="relative">
+        <button
+          data-toggle="menu-more"
+          class="z-[1] relative inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full border text-foreground border-border bg-background focus:ring-primary">
+          <span class="material-symbols-rounded">more_horiz</span>
+        </button>
+        <div class="menu-dropdown z-40 flex flex-col absolute mt-2 top-full left-1/2 -translate-x-1/2 w-full min-w-[15rem]" style="display: none;">
+          <div class="border p-4 rounded-md shadow-xl bg-white dark:bg-gray-800 dark:border-gray-800">
+            {
+              data
+                .filter((item) => item.visible === false)
+                .map((item) => {
+                  return (
+                    <a
+                      href={`/categories/${item.slug}`}
+                      class="relative block py-2 px-4 w-full rounded transition-colors duration-200"
+                      class:list={{
+                        'text-gray-600 hover:text-black hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-white/5 dark:hover:text-white': pageSlug !== item.slug,
+                        'text-black font-bold dark:text-white hover:bg-black/5 dark:hover:bg-white/5': pageSlug === item.slug,
+                      }}>
+                      {item.category}
+                    </a>
+                  )
+                })
+            }
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="flex items-center flex-none gap-4">
+      <input
+        type="checkbox"
+        data-toggle="theme"
+        class="h-[20px] px-[3px] w-[38px] relative flex-none cursor-pointer appearance-none rounded-full bg-gray-300 dark:bg-gray-700 before:transition-transform before:duration-200 before:pointer-events-none before:absolute before:top-1/2 before:-translate-y-1/2 before:h-4 before:w-4 before:rounded-full before:content-[''] before:transform before:translate-x-0 before:bg-white focus:bg-gray-400 dark:focus:bg-gray-600 focus:checked:bg-emerald-500 checked:bg-emerald-500 checked:before:translate-x-full checked:before:bg-white"
+      />
+
+      <!-- Menu button -->
+      <button
+        data-toggle="aside"
+        class="flex lg:hidden items-center justify-center w-10 h-10 flex-none transition-colors duration-300 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-white">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <!-- End menu button -->
+    </div>
+  </div>
+</header>
+
+<script>
+  const themeToggle = document.querySelectorAll('[data-toggle="theme"]')
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)')
+  const prefersLight = window.matchMedia('(prefers-color-scheme: light)')
+  const prefersNone = window.matchMedia('(prefers-color-scheme: no-preference)')
+
+  const setTheme = (theme: string) => {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark')
+      document.documentElement.classList.remove('light')
+      themeToggle.forEach((toggle) => {
+        ;(toggle as HTMLInputElement).checked = true
+      })
+    } else {
+      document.documentElement.classList.add('light')
+      document.documentElement.classList.remove('dark')
+      themeToggle.forEach((toggle) => {
+        ;(toggle as HTMLInputElement).checked = false
+      })
+    }
+  }
+
+  if (prefersDark.matches) {
+    setTheme('dark')
+  }
+  if (prefersLight.matches) {
+    setTheme('light')
+  }
+  if (prefersNone.matches) {
+    setTheme('light')
+  }
+
+  // Save the user's theme preference to localStorage
+
+  const savedTheme = localStorage.getItem('theme')
+
+  if (savedTheme) {
+    setTheme(savedTheme)
+  }
+
+  themeToggle.forEach((toggle) => {
+    toggle.addEventListener('change', (e: Event) => {
+      const isChecked = (e.target as HTMLInputElement).checked
+      const theme = localStorage.getItem('theme')
+
+      if (theme === 'dark') {
+        localStorage.setItem('theme', 'light')
+        setTheme('light')
+      } else {
+        localStorage.setItem('theme', 'dark')
+        setTheme('dark')
+      }
+    })
+  })
+
+  prefersDark.addEventListener('change', (e) => {
+    if (e.matches) {
+      setTheme('dark')
+    }
+  })
+
+  prefersLight.addEventListener('change', (e) => {
+    if (e.matches) {
+      setTheme('light')
+    }
+  })
+
+  prefersNone.addEventListener('change', (e) => {
+    if (e.matches) {
+      setTheme('light')
+    }
+  })
+
+  // Aside toggle
+
+  const asideToggle = document.querySelectorAll('[data-toggle="aside"]')
+  const asideContent = document.querySelector('.aside-content') as HTMLElement
+  const aside = document.querySelector('aside') as HTMLElement
+
+  asideToggle.forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+      if (aside.style.display === 'none') {
+        aside.style.display = 'block'
+        document.body.style.overflow = 'hidden'
+        setTimeout(() => {
+          asideContent.style.transform = 'translateX(0)'
+        }, 100)
+      } else {
+        asideContent.style.transform = 'translateX(-100%)'
+        document.body.style.overflow = 'auto'
+        setTimeout(() => {
+          aside.style.display = 'none'
+        }, 300)
+      }
+    })
+  })
+
+  // Menu more toggle
+
+  const menuMoreToggle = document.querySelectorAll('[data-toggle="menu-more"]')
+  const menuDropdown = document.querySelectorAll('.menu-dropdown')
+
+  menuMoreToggle.forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+      const dropdown = toggle.nextElementSibling as HTMLElement
+
+      if (dropdown.style.display === 'none') {
+        dropdown.style.display = 'block'
+      } else {
+        dropdown.style.display = 'none'
+      }
+    })
+  })
+
+  // Close menu more dropdown when clicking outside of it
+
+  document.addEventListener('click', (e) => {
+    menuMoreToggle.forEach((item) => {
+      if (!item.contains(e.target as Node)) {
+        menuDropdown.forEach((dropdown) => {
+          ;(dropdown as HTMLElement).style.display = 'none'
+        })
+      }
+    })
+  })
+
+  // Close menu more dropdown when clicking the escape key
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      menuDropdown.forEach((dropdown) => {
+        ;(dropdown as HTMLElement).style.display = 'none'
+      })
+    }
+  })
+</script>

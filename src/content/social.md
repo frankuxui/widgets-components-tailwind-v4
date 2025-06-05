@@ -1,10 +1,8 @@
 ---
-layout: '../../layouts/Expo.astro'
-description: 'Multiple widgets for user interfaces related to finance and economics'
+title: 'Widgets y Cards Minimalistas para Redes Sociales | Tailwind CSS 4'
+description: 'Descubre una colección exclusiva de widgets y diseños minimalistas para proyectos sociales y de redes sociales. Creados con Tailwind CSS 4 y Astro, optimizados para velocidad, diseño limpio y máxima personalización.'
 slug: 'social'
 category: 'Social'
-tags: ['social']
-title: 'Widget components with tailwind CSS - Social'
 visible: true
 ---
 
@@ -1212,14 +1210,18 @@ visible: true
   </div>
 </article>
 
-<article
-  class="overflow-hidden relative border break-inside rounded-xl p-4 mb-3 gap-2 text-xs border-border bg-background text-foreground after:absolute after:top-0 after:left-0 after:w-full after:h-4 after:hidden after:border-x after:border-b after:border-border after:border-x-(--pattern-fg) after:bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] after:bg-[size:10px_10px] after:bg-fixed after:[--pattern-fg:var(--color-danger)]/15 md:after:block dark:after:[--pattern-fg:var(--color-white)]/10 before:absolute before:bottom-0 before:left-0 before:w-full before:h-4 before:hidden before:border-x before:border-t before:border-border before:border-x-(--pattern-fg) before:bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] before:bg-[size:10px_10px] before:bg-fixed before:[--pattern-fg:var(--color-danger)]/15 md:before:block dark:before:[--pattern-fg:var(--color-white)]/10"
-  data-filter="social">
+<article class="overflow-hidden relative border break-inside rounded-xl p-4 mb-3 gap-2 text-xs border-border bg-background text-foreground" data-filter="social">
   <div
-    class="absolute left-0 top-0 h-full w-4 border-r border-border hidden border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-danger)]/15 lg:col-start-3 lg:block dark:[--pattern-fg:var(--color-white)]/10">
+    class="z-0 opacity-80 pointer-events-none h-4 absolute top-0 left-0 w-full hidden border-b border-border border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-black)]/5 md:block dark:[--pattern-fg:var(--color-white)]/10">
   </div>
   <div
-    class="absolute right-0 top-0 h-full w-4 border-l border-border hidden border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-danger)]/15 lg:col-start-3 lg:block dark:[--pattern-fg:var(--color-white)]/10">
+    class="z-0 opacity-80 pointer-events-none h-4 absolute bottom-0 left-0 w-full hidden border-t border-border border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-black)]/5 md:block dark:[--pattern-fg:var(--color-white)]/10">
+  </div>
+  <div
+    class="z-0 opacity-80 pointer-events-none h-full absolute top-0 left-0 w-4 hidden border-b border-border border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-black)]/5 md:block dark:[--pattern-fg:var(--color-white)]/10">
+  </div>
+  <div
+    class="z-0 opacity-80 pointer-events-none h-full absolute top-0 right-0 w-4 hidden border-b border-border border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-black)]/5 md:block dark:[--pattern-fg:var(--color-white)]/10">
   </div>
   <section class="p-2">
     <span class="material-symbols-rounded material-symbols-xl material-symbols-weight-300 text-rose-500">colors</span>

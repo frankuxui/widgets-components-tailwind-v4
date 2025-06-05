@@ -1,0 +1,113 @@
+---
+import { getCollection } from 'astro:content'
+
+const widgets = await getCollection('widgets')
+const data = widgets
+  .map((item) => ({
+    slug: item.id,
+    category: item.data.category,
+    visible: item.data.visible ?? true,
+  }))
+  .filter((item) => item.visible)
+
+const pageSlug = Astro.url.pathname.split('/')[1]
+---
+
+<aside class="fixed top-0 left-0 h-full w-full z-50" style="display: none;">
+  <div data-toggle="aside" class="absolute top-0 left-0 w-full h-full bg-foreground/10 backdrop-blur-xs"></div>
+
+  <div class="aside-content relative flex flex-col w-full h-full max-w-xs z-10 bg-background" style="transition: transform 200ms ease-in-out; transform: translateX(-100%);">
+    <header class="w-full flex items-center justify-between px-6 p-4 border-b border-border">
+      <h2 class="text-lg font-medium text-foreground">Widgets</h2>
+
+      <!-- Close button -->
+      <button
+        data-toggle="aside"
+        class="flex lg:hidden items-center justify-center w-9 h-9 flex-none transition-colors duration-300 text-foreground rounded-full hover:bg-foreground/10">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <!-- End close button -->
+    </header>
+    <section class="flex-1 py-8 px-6 overflow-y-auto">
+      <h2 class="text-lg font-medium text-foreground">Categories</h2>
+      <ul class="flex flex-col w-full mt-4">
+        {
+          data.map((item) => {
+            return (
+              <li>
+                <a
+                  href={`/categories/${item.slug}`}
+                  class="relative block py-2 w-full rounded transition-colors duration-200"
+                  class:list={{
+                    'text-foreground/70 hover:text-foreground': pageSlug !== item.slug,
+                    'text-foreground font-bold': pageSlug === item.slug,
+                  }}>
+                  {item.category}
+                </a>
+              </li>
+            )
+          })
+        }
+      </ul>
+    </section>
+
+    <footer class="flex items-center justify-between w-full bg-background py-8 px-6">
+      <h2 class="text-base font-medium text-foreground">Settings</h2>
+      <!-- Theme toggle -->
+      <label class="relative inline-flex items-center cursor-pointer">
+        <input type="checkbox" value="" class="sr-only peer" data-toggle="theme" />
+        <div
+          class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600">
+        </div>
+      </label>
+      <!-- End theme toggle -->
+    </footer>
+  </div>
+</aside>
+
+<script>
+  // Aside toggle
+
+  const asideToggle = document.querySelectorAll('[data-toggle="aside"]') as NodeListOf<HTMLButtonElement>
+  const asideContent = document.querySelector('.aside-content') as HTMLElement
+  const aside = document.querySelector('aside') as HTMLElement
+  const asideOverlay = document.getElementById('aside-overlay') as HTMLElement
+
+  asideToggle.forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+      if (aside.style.display === 'none') {
+        aside.style.display = 'block'
+        document.body.style.overflow = 'hidden'
+        setTimeout(() => {
+          asideContent.style.transform = 'translateX(0)'
+        }, 100)
+      } else {
+        asideContent.style.transform = 'translateX(-100%)'
+        document.body.style.overflow = 'auto'
+        setTimeout(() => {
+          aside.style.display = 'none'
+        }, 300)
+      }
+    })
+  })
+
+  // Aquí agregamos el evento para cerrar al hacer click en el overlay
+  asideOverlay.addEventListener('click', () => {
+    asideContent.style.transform = 'translateX(-100%)'
+    document.body.style.overflow = 'auto'
+    setTimeout(() => {
+      aside.style.display = 'none'
+    }, 300)
+  })
+</script>

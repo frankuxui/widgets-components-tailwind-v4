@@ -18,6 +18,17 @@
   --breakpoint-4xl: 2560px;
 
   --family-roboto: 'Roboto', sans-serif;
+
+  --animate-rotate-infinite: rotate-infinite 15s linear infinite;
+
+  @keyframes rotate-infinite {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 /* Material Symbols Rounded */

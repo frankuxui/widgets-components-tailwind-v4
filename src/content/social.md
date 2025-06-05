@@ -340,17 +340,20 @@ visible: true
   <img
     class="w-full max-w-20 h-full max-h-22 object-cover"
     src="https://images.pexels.com/photos/3182452/pexels-photo-3182452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-    data-author="Alex Azabache"
-    data-author-profile="https://www.pexels.com/es-es/@alexazabache/"
+    data-author="https://www.pexels.com/es-es/@alexazabache/"
     loading="lazy"
   />
-  <div class="h-full flex items-center flex-1">
-    <div class="flex items-center gap-3 relative py-4 pr-4">
+  <div class="h-full w-full flex items-center flex-1 py-4 pr-4">
+    <div class="w-full flex items-center justify-between gap-3 relative">
       <img class="flex-none mt-1 w-11 h-11 rounded-full -ml-6 border-3 border-background" src="https://randomuser.me/api/portraits/men/95.jpg" alt="avatar" loading="lazy" />
       <div class="flex flex-col">
         <h2 class="text-sm font-semibold">Roman</h2>
         <span class="text-foreground/70">Photographer</span>
       </div>
+      <button
+        class="ml-auto flex-none inline-flex items-center justify-center px-3 h-7 text-xs font-medium focus:ring-2 transition-colors rounded-full bg-foreground text-background">
+        Profile
+      </button>
     </div>
   </div>
 </article>
@@ -410,6 +413,71 @@ visible: true
         <span class="material-symbols-rounded material-symbols-md text-danger">delete</span>
       </button>
     </div>
+  </section>
+</article>
+
+<article class="flex items-center justify-between border break-inside rounded-full py-1 pl-1 pr-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
+  <header class="flex items-center justify-start gap-3 flex-1">
+    <div class="w-10 h-10 rounded-full inline-flex items-center justify-center bg-foreground/5">
+      <span class="material-symbols-rounded text-foreground/70 material-symbols-weight-300">inbox_text</span>
+    </div>
+    <h2 class="font-medium text-sm">Emails assigned</h2>
+    <spam class="w-5 h-5 rounded-full inline-flex items-center justify-center font-medium bg-foreground/10">3</spam>
+  </header>
+  <span class="material-symbols-rounded material-symbols-md material-symbols-weight-600">expand_circle_down</span>
+</article>
+
+<article
+  class="flex items-center justify-between border break-inside rounded-full mb-3 text-xs divide-x divide-border border-border bg-background text-foreground"
+  data-filter="social">
+  <header class="flex items-center justify-start gap-3 flex-1 p-1">
+    <div class="w-10 h-10 rounded-full inline-flex items-center justify-center bg-foreground text-background">
+      <span class="material-symbols-rounded material-symbols-weight-300">article</span>
+    </div>
+    <div class="flex-1 grid">
+      <h2 class="font-medium text-sm leading-4">Articles</h2>
+      <p class="text-foreground/70">September 2025</p>
+    </div>
+  </header>
+  <section class="px-4 py-1 inline-flex items-center justify-between flex-none">
+    <span class="inline-flex items-center justify-center px-3 h-6 text-xs font-medium rounded-full bg-foreground/5">New</span>
+  </section>
+</article>
+
+<article
+  class="flex items-center justify-between border break-inside rounded-full py-1 pl-1 pr-4 gap-2 mb-3 text-xs border-border bg-background text-foreground"
+  data-filter="social">
+  <header class="flex items-center justify-start gap-2 flex-1">
+    <div class="w-10 h-10 rounded-full inline-flex items-center justify-center bg-foreground/5">
+      <span class="material-symbols-rounded material-symbols-weight-300">description</span>
+    </div>
+    <div class="flex-1 grid">
+      <h2 class="font-medium text-sm leading-4">Interviews</h2>
+      <p class="text-foreground/70">Interviews assigned</p>
+    </div>
+    <spam class="w-5 h-5 rounded-full inline-flex items-center justify-center font-medium bg-primary text-white">3</spam>
+  </header>
+  <span class="inline-flex items-center justify-center px-2 h-6 text-xs font-medium rounded-full bg-foreground/5">New</span>
+</article>
+
+<article class="overflow-hidden border break-inside rounded-xl text-xs mb-3 border-border bg-background text-foreground" data-filter="social">
+  <header class="relative p-4 min-h-14 bg-gradient-to-r from-emerald-500 to-emerald-900">
+    <span class="absolute top-3 right-3 inline-flex items-center justify-center font-medium text-xs text-white">NEW</span>
+    <img
+      src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+      alt="avatar"
+      class="w-12 h-12 rounded-full absolute top-full -translate-y-1/2 border-3 border-background"
+      loading="lazy"
+    />
+  </header>
+  <section class="pb-4 pt-8 px-4 flex items-center justify-between gap-4">
+    <div class="grid flex-1 gap-0.5">
+      <h2 class="font-semibold text-sm">Cynthia Houston</h2>
+      <p>Applied at February 10, 2025</p>
+    </div>
+    <button class="flex-none inline-flex items-center justify-center px-3 h-7 focus:ring-2 transition-colors duration-300 rounded bg-emerald-500 text-white hover:saturate-150">
+      Follow
+    </button>
   </section>
 </article>
 
@@ -499,7 +567,7 @@ visible: true
       </h2>
     </header>
     <section class="flex flex-col items-start gap-2 border-t p-3 border-border">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Apacionado del frontend y el diseño de interfaces...</p>
       <a
         href="https://frankuxui.com/"
         class="px-3 h-6 rounded font-medium inline-flex items-center justify-center transition-colors duration-300 bg-indigo-100 text-indigo-500 hover:bg-indigo-200 dark:bg-indigo-500/20 dark:text-indigo-400 dark:hover:bg-indigo-500/40">
@@ -668,6 +736,62 @@ visible: true
   </article>
   <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">...</article>
   <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="social">...</article>
+</section>
+
+<section class="break-inside mb-3 gap-3 columns-2 items-start">
+  <article
+    class="inline-flex items-center justify-between gap-2 w-full border break-inside rounded-full p-1 mb-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    <img
+      src="https://images.unsplash.com/photo-1615851943632-ffb942c2fceb?q=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+      alt="avatar"
+      class="w-8 h-8 rounded-full"
+      loading="lazy"
+    />
+    <h2 class="flex-1 font-medium text-xs">Alex Johnson</h2>
+  </article>
+  <article
+    class="overflow-hidden pr-3 inline-flex items-center justify-between gap-2 w-full border break-inside rounded-full p-1 mb-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    <img
+      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+      alt="avatar"
+      class="w-9 h-9 rounded-full"
+      loading="lazy"
+    />
+    <div class="grid">
+      <h2 class="flex-1 font-medium text-xs">Marcos</h2>
+      <p class="truncate text-foreground/70">Designer at XYZ</p>
+    </div>
+  </article>
+  <article
+    class="inline-flex items-center justify-start gap-2 w-full border break-inside rounded-full p-1 mb-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    <img
+      src="https://images.unsplash.com/photo-1533101585792-27f81a845550?q=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+      alt="avatar"
+      class="w-8 h-8 rounded-full"
+      loading="lazy"
+    />
+    <h2 class="flex-1 font-medium text-xs">Alessio</h2>
+    <button class="flex items-center justify-center w-7 h-7 rounded-full transition-colors duration-200 bg-foreground/5 hover:bg-foreground/10 focus:bg-foreground/10">
+      <span class="material-symbols-rounded material-symbols-sm">edit</span>
+    </button>
+  </article>
+  <article
+    class="inline-flex items-center justify-start gap-2 w-full border break-inside rounded-full p-1 mb-3 text-xs border-border bg-background text-foreground"
+    data-filter="social">
+    <img
+      src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?q=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+      alt="avatar"
+      class="w-9 h-9 rounded-full"
+      loading="lazy"
+    />
+    <div class="grid">
+      <h2 class="flex-1 font-medium text-xs">Fabian</h2>
+      <p class="truncate text-foreground/70">Developer</p>
+    </div>
+  </article>
 </section>
 
 <article
@@ -1210,18 +1334,14 @@ visible: true
   </div>
 </article>
 
-<article class="overflow-hidden relative border break-inside rounded-xl p-4 mb-3 gap-2 text-xs border-border bg-background text-foreground" data-filter="social">
+<article
+  class="overflow-hidden relative border break-inside rounded-xl p-4 mb-3 gap-2 text-xs border-border bg-background text-foreground after:absolute after:top-0 after:left-0 after:w-full after:h-4 after:hidden after:border-x after:border-b after:border-border after:border-x-(--pattern-fg) after:bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] after:bg-[size:10px_10px] after:bg-fixed after:[--pattern-fg:var(--color-danger)]/15 md:after:block dark:after:[--pattern-fg:var(--color-white)]/10 before:absolute before:bottom-0 before:left-0 before:w-full before:h-4 before:hidden before:border-x before:border-t before:border-border before:border-x-(--pattern-fg) before:bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] before:bg-[size:10px_10px] before:bg-fixed before:[--pattern-fg:var(--color-danger)]/15 md:before:block dark:before:[--pattern-fg:var(--color-white)]/10"
+  data-filter="social">
   <div
-    class="z-0 opacity-80 pointer-events-none h-4 absolute top-0 left-0 w-full hidden border-b border-border border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-black)]/5 md:block dark:[--pattern-fg:var(--color-white)]/10">
+    class="absolute left-0 top-0 h-full w-4 border-r border-border hidden border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-danger)]/15 lg:col-start-3 lg:block dark:[--pattern-fg:var(--color-white)]/10">
   </div>
   <div
-    class="z-0 opacity-80 pointer-events-none h-4 absolute bottom-0 left-0 w-full hidden border-t border-border border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-black)]/5 md:block dark:[--pattern-fg:var(--color-white)]/10">
-  </div>
-  <div
-    class="z-0 opacity-80 pointer-events-none h-full absolute top-0 left-0 w-4 hidden border-b border-border border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-black)]/5 md:block dark:[--pattern-fg:var(--color-white)]/10">
-  </div>
-  <div
-    class="z-0 opacity-80 pointer-events-none h-full absolute top-0 right-0 w-4 hidden border-b border-border border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-black)]/5 md:block dark:[--pattern-fg:var(--color-white)]/10">
+    class="absolute right-0 top-0 h-full w-4 border-l border-border hidden border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-danger)]/15 lg:col-start-3 lg:block dark:[--pattern-fg:var(--color-white)]/10">
   </div>
   <section class="p-2">
     <span class="material-symbols-rounded material-symbols-xl material-symbols-weight-300 text-rose-500">colors</span>
@@ -1367,7 +1487,7 @@ visible: true
   </section>
 </article>
 
-<section class="grid grid-cols-2 gap-3 mb-3">
+<section class="grid grid-cols-2 gap-3 mb-3 break-inside">
   <article class="flex flex-col justify-start gap-2 border break-inside rounded-xl p-4 text-xs border-border bg-background text-foreground" data-filter="social">
     <header>
       <span class="material-symbols-rounded material-symbols-lg material-symbols-weight-300">bed</span>
@@ -1426,7 +1546,7 @@ visible: true
   </article>
 </section>
 
-<section class="break-inside grid grid-cols-2 mb-3 gap-3">
+<section class="break-inside grid grid-cols-2 mb-3 gap-3 break-inside">
   <div class="flex flex-col gap-3">
     <article class="group flex flex-col justify-start gap-2 border break-inside rounded-xl p-4 text-xs border-border bg-background text-foreground" data-filter="social">
       <header class="w-full flex items-center justify-between">
@@ -1618,6 +1738,45 @@ visible: true
     </div>
     <span class="text-sm font-semibold">&euro; 38,500</span>
   </div>
+</article>
+
+<article class="overflow-hidden border break-inside rounded-xl mb-3 text-xs border-border bg-background text-foreground" data-filter="social">
+  <section class="pb-4 relative divide-y divide-border">
+    <div
+      class="z-0 opacity-80 pointer-events-none h-4 absolute bottom-0 left-0 w-full hidden border-t border-border border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-black)]/5 md:block dark:[--pattern-fg:var(--color-white)]/10">
+    </div>
+    <div class="grid gap-2 p-4">
+      <div class="flex items-center justify-start gap-1">
+        <div class="grid w-full max-w-1/2 gap-0.5">
+          <span class="text-xs font-medium">50%</span>
+          <div class="h-2 w-full rounded-full bg-blue-600"></div>
+        </div>
+        <div class="grid w-full max-w-1/3 gap-0.5">
+          <span class="text-xs font-medium">30%</span>
+          <div class="h-2 w-full rounded-full bg-green-600"></div>
+        </div>
+        <div class="grid w-full max-w-1/4 gap-0.5">
+          <span class="text-xs font-medium">20%</span>
+          <div class="h-2 w-full rounded-full bg-lime-500"></div>
+        </div>
+      </div>
+      <div class="flex items-center mt-1 gap-3">
+        <div class="inline-flex items-center justify-start gap-2">
+          <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+          <span class="font-medium">Exelent</span>
+        </div>
+        <div class="inline-flex items-center justify-start gap-2">
+          <span class="w-2 h-2 rounded-full bg-green-600"></span>
+          <span class="font-medium">Good</span>
+        </div>
+        <div class="inline-flex items-center justify-start gap-2">
+          <span class="w-2 h-2 rounded-full bg-lime-500"></span>
+          <span class="font-medium">Average</span>
+        </div>
+      </div>
+      <p class="text-foreground/70">Design a new logo for our website, we are a startup company.</p>
+    </div>
+  </section>
 </article>
 
 <article class="border break-inside rounded-xl text-xs mb-3 border-border bg-background text-foreground" data-filter="social">

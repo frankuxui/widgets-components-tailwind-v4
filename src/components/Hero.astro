@@ -1,0 +1,53 @@
+---
+import PresentationWidgets from '@/components/PresentationWidgets.astro'
+import Root from '@/layouts/Root.astro'
+---
+
+<main class="w-full h-screen overflow-hidden">
+  <div class="w-full h-screen mx-auto">
+    <div class="grid h-screen grid-cols-2 gap-10">
+      <section class="flex flex-col items-end justify-center w-full h-screen">
+        <div class="flex flex-col items-start justify-center gap-6 w-full max-w-2xl h-full pr-10">
+          <h1 class="font-black leading-14 text-5xl 3xl:leading-18 3xl:text-6xl">
+            <span>Widgets</span>
+            <br />
+            <span>Components with</span>
+            <span class="bg-gradient-to-r from-blue-600 via-green-500 to-cyan-500 inline-block text-transparent bg-clip-text">Tailwindcss 4</span>
+          </h1>
+          <p class="leading-8 text-lg">
+            Colección de widgets, componentes y diseños minimalistas creados con Tailwind CSS 4 y Astro. Recursos modernos y personalizables para fomentar ideas y mejorar la
+            creatividad.
+          </p>
+          <div class="flex items-center justify-start gap-2">
+            <a
+              href=""
+              class="px-6 h-10 rounded-full inline-flex items-center justify-center font-medium text-base border-2 transition-all duration-300 border-transparent bg-foreground text-background hover:bg-foreground/90">
+              Widgets
+            </a>
+            <a
+              href="https://github.com/frankuxui/widgets-components-tailwind-v4"
+              target="_blank"
+              class="px-6 h-10 rounded-full inline-flex items-center justify-center font-medium text-base border-2 transition-all duration-300 border-border bg-background text-foreground hover:ring-2 hover:border-transparent">
+              Github
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="relative w-full h-screen md:max-w-[1050px]">
+        <div
+          class="pointer-events-none h-full absolute top-0 -left-10 w-10 hidden border-l border-border bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-black)]/5 md:block dark:[--pattern-fg:var(--color-white)]/10">
+        </div>
+        <div class="relative w-full h-full overflow-hidden">
+          <div class="relative overflow-hidden w-full h-full min-h-[30rem] pt-16 rounded-xl border-l border-border">
+            <div
+              class="absolute z-0 pointer-events-none top-0 left-0 w-full h-full bg-foreground/2 after:pointer-events-none after:absolute after:inset-0 after:rounded-lg bg-[image:radial-gradient(var(--pattern-fg)_1px,_transparent_0)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-gray-950)]/5 dark:[--pattern-fg:var(--color-white)]/10">
+            </div>
+            <div class="w-full overflow-auto relative px-10 z-10 h-full">
+              <PresentationWidgets />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>

@@ -1,38 +1,10 @@
 ---
-import PresentationWidgets from '@/components/PresentationWidgets.astro'
 import Root from '@/layouts/Root.astro'
-import Layout from '@/layouts/Root.astro'
+import Hero from '@/components/Hero.astro'
+import Hero2 from '@/components/Hero2.astro'
 ---
 
 <Root>
-  <main class="w-full mt-10 md:mt-20">
-    <div class="w-full mx-auto max-w-[100rem] md:px-10">
-      <div class="flex items-start md:items-center justify-between flex-col md:flex-row gap-12">
-        <section class="flex flex-col items-start gap-4 flex-none max-w-xl px-10 md:px-0">
-          <h1 class="font-black leading-16 text-5xl md:leading-18 md:text-6xl">
-            <span>Widgets</span>
-            <br />
-            <span>Components with</span>
-            <span class="bg-gradient-to-r from-blue-600 via-green-500 to-cyan-500 inline-block text-transparent bg-clip-text">Tailwindcss 4</span>
-          </h1>
-          <p class="leading-8 text-lg">
-            Explora una colección de widgets, componentes y diseños minimalistas creados con Tailwind CSS 4 y Astro. Recursos modernos y personalizables para proyectos de finanzas,
-            redes sociales, deportes, viajes y más.
-          </p>
-        </section>
-        <section class="w-full md:max-w-[1050px]">
-          <div class="relative w-full h-full overflow-hidden md:rounded-2xl border p-10 border-border">
-            <div class="relative overflow-hidden w-full max-h-[30rem] rounded-xl border border-border">
-              <div
-                class="absolute z-0 pointer-events-none top-0 left-0 w-full h-full bg-foreground/2 after:pointer-events-none after:absolute after:inset-0 after:rounded-lg bg-[image:radial-gradient(var(--pattern-fg)_1px,_transparent_0)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-gray-950)]/5 dark:[--pattern-fg:var(--color-white)]/10">
-              </div>
-              <div class="w-full overflow-auto relative z-10 h-[30rem]">
-                <PresentationWidgets />
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-  </main>
+  <Hero />
+  <!-- <Hero2 /> -->
 </Root>

@@ -12,7 +12,7 @@ const data = widgets.map((item) => {
 const pageSlug = Astro.url.pathname.split('/')[1] || 'all'
 ---
 
-<header class="z-30 sticky h-16 left-0 w-full top-0 flex items-center justify-center border-b border-border bg-white/80 dark:bg-gray-950/70 backdrop-blur-lg">
+<header class="z-30 fixed h-16 left-0 w-full top-0 flex items-center justify-center border-b border-border bg-white/80 dark:bg-gray-950/70 backdrop-blur-lg">
   <div class="w-full h-full flex items-center justify-between px-10 max-w-[160rem]">
     <a href="/" class="text-base font-medium text-foreground">Widgets</a>
     <ul class="hidden lg:flex items-center justify-center w-full">

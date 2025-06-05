@@ -499,7 +499,7 @@ visible: true
       </h2>
     </header>
     <section class="flex flex-col items-start gap-2 border-t p-3 border-border">
-      <p>Apacionado del frontend y el diseño de interfaces...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <a
         href="https://frankuxui.com/"
         class="px-3 h-6 rounded font-medium inline-flex items-center justify-center transition-colors duration-300 bg-indigo-100 text-indigo-500 hover:bg-indigo-200 dark:bg-indigo-500/20 dark:text-indigo-400 dark:hover:bg-indigo-500/40">

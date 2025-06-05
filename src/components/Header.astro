@@ -25,7 +25,7 @@ const pageSlug = Astro.url.pathname.split('/')[1] || 'all'
             return (
               <li>
                 <a
-                  href={`/categories/${item.slug}`}
+                  href={`/${item.slug}`}
                   class="relative flex items-center justify-center text-xs uppercase py-2 px-3 rounded-full tracking-wider transition-colors duration-200"
                   class:list={{
                     'font-normal text-foreground/70': pageSlug !== item.slug,
@@ -52,7 +52,7 @@ const pageSlug = Astro.url.pathname.split('/')[1] || 'all'
                 .map((item) => {
                   return (
                     <a
-                      href={`/categories/${item.slug}`}
+                      href={`/${item.slug}`}
                       class="relative block py-2 px-4 w-full rounded transition-colors duration-200"
                       class:list={{
                         'text-gray-600 hover:text-black hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-white/5 dark:hover:text-white': pageSlug !== item.slug,

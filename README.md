@@ -87,6 +87,14 @@ npm run dev
   }
 }
 
+/* Tema dark */
+
+.dark {
+  --color-background: hsl(230 9.41% 6.14%);
+  --color-foreground: var(--color-white);
+  --color-border: var(--color-gray-800);
+}
+
 /* Material Symbols Rounded */
 
 .material-symbols-rounded {

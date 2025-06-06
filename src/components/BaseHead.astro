@@ -1,23 +1,24 @@
 ---
-import { siteConfig } from '@/config'
+import { siteConfig } from "@/config";
 
 interface Props {
-  title?: string
-  description?: string
+  title?: string;
+  description?: string;
 }
 
-const pathname = Astro.url.pathname === '/' ? '/' : Astro.url.pathname.replace(/\/$/, '')
-const canonicalURL = new URL(pathname, Astro.site).toString()
-const { title = siteConfig.title, description = siteConfig.description } = Astro.props as Props
-const ogImage = new URL(siteConfig.ogImage, Astro.site?.href || 'https://frankuxui.dev').href
+const pathname = Astro.url.pathname === "/" ? "/" : Astro.url.pathname.replace(/\/$/, "");
+const canonicalURL = new URL(pathname, Astro.site).toString();
+const { title = siteConfig.title, description = siteConfig.description } = Astro.props as Props;
+// const ogImage = new URL(siteConfig.ogImage, Astro.site?.href || "https://frankuxui.dev").href;
+const ogImage = `${new URL(Astro.url.origin)}og.jpg`;
 
 const JsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'ProfilePage',
-  dateCreated: '2024-12-23T12:34:00-05:00',
-  dateModified: '2024-12-26T14:53:00-05:00',
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  dateCreated: "2024-12-23T12:34:00-05:00",
+  dateModified: "2024-12-26T14:53:00-05:00",
   mainEntity: {
-    '@type': 'Person',
+    "@type": "Person",
     name: siteConfig.author.name,
     alternateName: siteConfig.author.alternateName,
     identifier: siteConfig.author.alternateName,
@@ -33,15 +34,15 @@ const JsonLd = {
       siteConfig.social.instagram,
     ],
     publisher: {
-      '@type': 'Organization',
+      "@type": "Organization",
       name: siteConfig.author.alternateName,
       logo: {
-        '@type': 'ImageObject',
+        "@type": "ImageObject",
         url: new URL(siteConfig.logo, Astro.site).toString(),
       },
     },
   },
-}
+};
 ---
 
 <!-- Global Metadata -->
@@ -61,12 +62,12 @@ const JsonLd = {
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
 <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
-<link rel="sitemap" href={new URL('sitemap-index.xml', Astro.site)} />
-<link rel="alternate" type="application/rss+xml" title={siteConfig.title} href={new URL('rss.xml', Astro.site)} />
+<link rel="sitemap" href={new URL("sitemap-index.xml", Astro.site)} />
+<link rel="alternate" type="application/rss+xml" title={siteConfig.title} href={new URL("rss.xml", Astro.site)} />
 <meta name="generator" content={Astro.generator} />
 
 <!-- SEO Metadata -->
-<meta name="keywords" content={siteConfig.keywords.join(', ')} />
+<meta name="keywords" content={siteConfig.keywords.join(", ")} />
 <meta name="author" content="Frankuxui" />
 <meta name="application-name" content={siteConfig.title} />
 <meta name="theme-color" content="#ffffff" />

@@ -53,6 +53,111 @@ npm install
 npm run dev
 ```
 
+## Configuración de Tailwind CSS
+
+```css
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-gray-950);
+  --color-border: var(--color-gray-200);
+
+  --breakpoint-*: initial;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1920px;
+  --breakpoint-4xl: 2560px;
+
+  --family-roboto: "Roboto", sans-serif;
+
+  --animate-rotate-infinite: rotate-infinite 15s linear infinite;
+
+  @keyframes rotate-infinite {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+/* Material Symbols Rounded */
+
+.material-symbols-rounded {
+  font-family: "Material Symbols Rounded" !important;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Relleno */
+
+.material-symbols-fill {
+  font-family: "Material Symbols Rounded" !important;
+  font-variation-settings:
+    "FILL" 1,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24 !important;
+}
+
+/* Variaciones de peso */
+
+.material-symbols-weight-100 {
+  font-variation-settings: "wght" 100;
+}
+.material-symbols-weight-200 {
+  font-variation-settings: "wght" 200;
+}
+.material-symbols-weight-300 {
+  font-variation-settings: "wght" 300;
+}
+.material-symbols-weight-400 {
+  font-variation-settings: "wght" 400;
+}
+.material-symbols-weight-500 {
+  font-variation-settings: "wght" 500;
+}
+
+/* Tamaños */
+.material-symbols-xs {
+  font-size: 0.75rem;
+}
+.material-symbols-sm {
+  font-size: 1rem;
+}
+.material-symbols-md {
+  font-size: 1.25rem;
+}
+.material-symbols-lg {
+  font-size: 1.5rem;
+}
+.material-symbols-xl {
+  font-size: 2rem;
+}
+.material-symbols-2xl {
+  font-size: 2.5rem;
+}
+```
+
 ## Palabras clave
 
 - componentes

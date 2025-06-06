@@ -9,8 +9,7 @@ interface Props {
 const pathname = Astro.url.pathname === "/" ? "/" : Astro.url.pathname.replace(/\/$/, "");
 const canonicalURL = new URL(pathname, Astro.site).toString();
 const { title = siteConfig.title, description = siteConfig.description } = Astro.props as Props;
-// const ogImage = new URL(siteConfig.ogImage, Astro.site?.href || "https://frankuxui.dev").href;
-const ogImage = `${new URL(Astro.url.origin)}og.jpg`;
+const ogImage = new URL(siteConfig.ogImage, Astro.site?.href).toString();
 
 const JsonLd = {
   "@context": "https://schema.org",

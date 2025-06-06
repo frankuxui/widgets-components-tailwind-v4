@@ -10,6 +10,7 @@ const pathname = Astro.url.pathname === "/" ? "/" : Astro.url.pathname.replace(/
 const canonicalURL = new URL(pathname, Astro.site).toString();
 const { title = siteConfig.title, description = siteConfig.description } = Astro.props as Props;
 const ogImage = new URL(siteConfig.ogImage, Astro.site?.href).toString();
+const logo = new URL(siteConfig.logo, Astro.site).toString();
 
 const JsonLd = {
   "@context": "https://schema.org",
@@ -79,20 +80,40 @@ const JsonLd = {
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 
-<!-- Open Graph / Facebook -->
+<!-- Og / Logo -->
+<meta property="og:logo" content={logo} />
+<meta property="og:locale" content="es_ES" />
 <meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:site_name" content={siteConfig.title} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:image:alt" content={title} />
+
+<!-- Open Graph / Facebook -->
 <meta property="og:url" content={canonicalURL} />
+<meta property="og:type" content="website" />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={ogImage} />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain" content="widgets-components-tailwind-v4.vercel.app" />
 <meta name="twitter:site" content="@frankuxui" />
 <meta name="twitter:creator" content="@frankuxui" />
 <meta property="twitter:url" content={canonicalURL} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={ogImage} />
+
+<!-- HTML Meta Tags -->
+<title>Widgets y Componentes UI con Tailwind CSS 4</title>
+<meta
+  name="description"
+  content="Explora una colección de widgets, componentes y diseños minimalistas creados con Tailwind CSS 4 y Astro. Recursos modernos y personalizables para proyectos de finanzas, redes sociales, deportes, viajes y más."
+/>
+
+<!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
 {JsonLd && <script type="application/ld+json" is:inline set:html={JSON.stringify(JsonLd)} />}

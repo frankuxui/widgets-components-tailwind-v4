@@ -6,391 +6,865 @@ category: "Multimedia"
 visible: true
 ---
 
-<article
-  class="border shadow-sm break-inside grid grid-cols-12 rounded-xl overflow-hidden mb-3 text-sm bg-white dark:bg-gray-950 dark:text-white dark:border-gray-900"
-  data-filter="multimedia"
->
-  <div class="flex-none col-span-4">
-    <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/343701/pexels-photo-343701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="avatar" loading="lazy" />
-  </div>
-  <section class="col-span-8 flex justify-between flex-col p-3">
-    <header class="flex flex-row justify-between items-start">
-      <span class="font-medium text-base">Pirates of the caribbean</span>
-      <div class="flex justify-center items-center gap-2">
-        <svg viewBox="0 0 24 24" class="-mt-0.5" width="18" height="18">
-          <path fill="#ff00ea" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path>
-        </svg>
-        <span class="font-medium">4.95</span>
-      </div>
-    </header>
-    <p class="text-xs text-gray-600 dark:text-gray-400">2022 · Action · Runtime · 2h 5m</p>
-  </section>
-</article>
-
-<article
-  class="border shadow-sm break-inside grid grid-cols-12 rounded-xl overflow-hidden mb-3 text-sm bg-white dark:bg-gray-950 dark:text-white dark:border-gray-900"
-  data-filter="multimedia"
->
-  <figure class="col-span-5 relative">
-    <div class="absolute left-4 bottom-4 rounded-sm text-xs py-1 px-2 text-white bg-black/60 backdrop-blur-sm">April, 2018</div>
-    <img
-      src="https://images.pexels.com/photos/5152572/pexels-photo-5152572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-      alt="Imagen"
-      class="w-full min-h-[7rem] object-cover"
-      loading="lazy"
-    />
-  </figure>
-  <section class="col-span-7 flex flex-col justify-between p-3 flex-1">
-    <h2 class="text-base font-medium leading-5">Comme un Boomerang</h2>
-    <div class="flex flex-row justify-between items-center space-x-2">
-      <p class="flex-1 text-xs leading-4">Justine Forever - feder and Therapie</p>
-      <button class="flex flex-none items-center justify-center rounded-full w-8 h-8 bg-yellow-400 text-black">
-        <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" fill="currentColor"></path>
-        </svg>
+<section class="columns-2 gap-3 mb-3 break-inside">
+  <article class="w-full border break-inside flex items-start flex-col justify-between rounded-xl gap-2 p-4 mb-3 text-xs bg-background border-border">
+    <header>
+      <button class="flex justify-center items-center rounded-full w-8 h-8 transition-colors duration-300 bg-foreground text-background">
+        <span class="material-symbols-fill material-symbols-md">play_arrow</span>
       </button>
-    </div>
-  </section>
-</article>
-
-<article
-  class="border shadow-sm break-inside relative flex items-center justify-between overflow-hidden rounded-t-xl p-4 mb-3 gap-4 text-sm bg-white dark:bg-gray-950 dark:text-white dark:border-gray-900"
-  data-filter="multimedia"
->
-  <div class="flex items-center justify-center w-10 h-10 rounded-full text-lg bg-blue-700 text-white">02</div>
-  <header class="flex-auto flex flex-col">
-    <span class="text-xs text-gray-600">Clubbed to death</span>
-    <h2 class="font-semibold block">
-      <a href="#">Robert D.</a>
-    </h2>
-  </header>
-  <button
-    class="w-8 h-8 flex flex-none justify-center items-center rounded-full transition-all duration-200 bg-white dark:bg-gray-900 border border-gray-300 text-black dark:border-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
-  >
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-      <path
-        fill-rule="evenodd"
-        d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-        clip-rule="evenodd"
-      >
-      </path>
-    </svg>
-  </button>
-  <div class="absolute bottom-0 left-0 w-full rounded-full overflow-hidden bg-gray-100 h-[3px] whitespace-nowrap dark:bg-gray-900">
-    <div class="bg-blue-700 h-full w-4/6">
-      <span class="sr-only">33%</span>
-    </div>
-  </div>
-</article>
-
-<article
-  class="border shadow-sm break-inside grid grid-cols-12 rounded-xl overflow-hidden mb-3 text-sm bg-white dark:bg-gray-950 dark:text-white dark:border-gray-900"
-  data-filter="multimedia"
->
-  <div class="col-span-3">
-    <img
-      src="https://images.pexels.com/photos/462510/pexels-photo-462510.jpeg?auto=compress&cs=tinysrgb&w=1600"
-      alt="Imagen"
-      class="w-full h-full aspect-square object-cover"
-      loading="lazy"
-    />
-  </div>
-  <div class="col-span-9 flex items-center justify-between p-3 flex-1">
-    <header class="flex flex-col gap-1">
-      <h2 class="text-base font-semibold leading-5">The Weeknd</h2>
-      <p>Take My Breath Offi...</p>
     </header>
-    <button class="flex flex-none justify-center items-center rounded-full w-8 h-8 transition-color duration-200 bg-indigo-500 hover:bg-indigo-700 text-white">
-      <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z"></path>
-      </svg>
-    </button>
-  </div>
-</article>
-
-<article
-  class="border shadow-sm break-inside grid grid-cols-12 rounded-xl overflow-hidden mb-3 text-sm bg-white dark:bg-gray-950 dark:text-white dark:border-gray-900"
-  data-filter="multimedia"
->
-  <div class="col-span-4">
-    <img
-      src="https://images.pexels.com/photos/7022370/pexels-photo-7022370.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-      alt="Imagen"
-      class="w-full h-full aspect-square object-cover"
-      loading="lazy"
-    />
-  </div>
-  <div class="col-span-8 flex items-center justify-between p-3 flex-1 gap-3">
-    <header class="flex flex-col gap-1">
-      <h2 class="text-base font-semibold leading-5">Massive</h2>
-      <p class="text-xs">Mat cipher neto, Freakpass and Nik...</p>
-    </header>
-    <button class="flex flex-none justify-center items-center rounded-full w-8 h-8 transition-color duration-200 bg-gray-800 hover:bg-gray-700 text-white">
-      <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z"></path>
-      </svg>
-    </button>
-  </div>
-</article>
-
-<article
-  class="border shadow-sm break-inside grid grid-cols-12 rounded-xl overflow-hidden mb-3 text-sm bg-white dark:bg-gray-950 dark:text-white dark:border-gray-900"
-  data-filter="multimedia"
->
-  <figure class="col-span-3">
-    <div class="flex items-center justify-center flex-col w-full h-full p-3 bg-gray-900 text-white dark:bg-gray-200 dark:text-black">
-      <span>Ene</span>
-      <span class="text-3xl font-semibold">12</span>
-    </div>
-  </figure>
-  <section class="col-span-9 flex items-center justify-between p-3 flex-1">
-    <header class="flex flex-col">
-      <p class="text-xs text-gray-500">Concert in the park</p>
-      <h2 class="text-sm font-semibold leading-5">Massive</h2>
-      <p>Jueves 12 de enero de 2022</p>
-    </header>
-  </section>
-</article>
-
-<article
-  class="border shadow-sm break-inside grid grid-cols-12 rounded-xl overflow-hidden mb-3 text-sm bg-white dark:bg-gray-950 dark:text-white dark:border-gray-900"
-  data-filter="multimedia"
->
-  <figure class="col-span-4">
-    <img
-      src="https://images.pexels.com/photos/733767/pexels-photo-733767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-      alt="Imagen"
-      class="w-full h-full aspect-square object-cover"
-      loading="lazy"
-    />
-  </figure>
-  <section class="col-span-8 flex flex-col items-start p-3 flex-1 gap-2">
-    <header class="flex items-start justify-between">
-      <h2 class="text-base font-semibold leading-5">Deep house music</h2>
-      <div class="flex justify-center items-center gap-2">
-        <svg viewBox="0 0 24 24" class="-mt-0.5 text-rose-500" width="18" height="18">
-          <path fill="currentColor" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path>
-        </svg>
-        <span class="font-medium">4.95</span>
-      </div>
-    </header>
-    <p class="text-xs text-gray-600">This song is a remix of the original song...</p>
-    <div class="w-full rounded-full overflow-hidden bg-gray-100 h-[3px] whitespace-nowrap dark:bg-gray-900">
-      <div class="bg-blue-700 h-full w-4/6">
-        <span class="sr-only">33%</span>
+    <section class="w-full mt-1 grid gap-1">
+      <h2 class="text-xs">Bed time</h2>
+      <h3 class="text-sm leading-5 font-semibold">Good Together Filatov</h3>
+    </section>
+    <div class="flex items-center gap-3">
+      <img class="flex-none w-8 h-8 rounded-full object-cover" src="https://randomuser.me/api/portraits/women/68.jpg" alt="cover" loading="lazy" />
+      <div class="grid">
+        <h5 class="truncate text-xs font-semibold">Sunshine sound</h5>
+        <p class="text-xs truncate text-foreground/50">Lookee Stefane</p>
       </div>
     </div>
-  </section>
-</article>
-
-<section class="grid grid-cols-2 gap-3" data-filter="multimedia">
-  <article
-    class="border shadow-sm break-inside flex items-center flex-col justify-between rounded-xl mb-3 text-sm gap-4 p-4 bg-gradient-to-t from-rose-500 to-pink-600 text-white dark:border-gray-900"
-  >
-    <svg width="45" height="45" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z"
-      >
-      </path>
-    </svg>
-    <h2 class="text-base text-center">Play your favorite songs</h2>
-    <button class="px-2 w-full h-8 rounded-full font-medium transition-colors duration-200 bg-white text-black hover:bg-gray-200">Try now</button>
   </article>
   <article
-    class="border shadow-sm break-inside flex items-center flex-col justify-between rounded-xl overflow-hidden mb-3 text-sm bg-gradient-to-r from-purple-600 to-indigo-600 text-white dark:border-gray-900"
+    class="relative border break-inside flex items-start flex-col justify-between rounded-xl gap-2 p-4 mb-3 text-xs overflow-hidden border-emerald-600/50 bg-white dark:bg-gray-950 dark:text-white"
   >
-    <img
-      src="https://images.pexels.com/photos/9008803/pexels-photo-9008803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-      class="object-cover w-full h-full"
-      alt="cover"
-      loading="lazy"
-    />
-    <div class="flex flex-col items-start w-full p-4 gap-1">
-      <h2>Sultans Of Swing</h2>
-      <span class="text-xs">Dire Straits</span>
+    <div class="absolute left-1/2 top-0 w-14 h-14 bg-emerald-500/30 blur-2xl"></div>
+    <header class="w-full">
+      <button class="inline-flex items-center justify-center relative w-8 h-8 z-1">
+        <span class="w-full h-full pointer-events-none animate-ping top-0 left-0 rounded-full absolute bg-emerald-600"></span>
+        <div class="inline-flex items-center justify-center absolute z-[1] w-full h-full flex-none rounded-full bg-emerald-600 dark:border-gray-950 text-white">
+          <span class="material-symbols-fill material-symbols-md">pause</span>
+        </div>
+      </button>
+    </header>
+    <section class="w-full mt-1 grid gap-1">
+      <h2 class="text-xs">Wake up</h2>
+      <h3 class="text-sm leading-5 font-semibold">I Feel It Coming The Weeknd</h3>
+    </section>
+    <div class="flex items-center gap-3">
+      <img class="flex-none w-8 h-8 rounded-full object-cover" src="https://randomuser.me/api/portraits/men/32.jpg" alt="cover" loading="lazy" />
+      <div class="grid">
+        <h5 class="truncate text-xs font-semibold">Fellip Mathias</h5>
+        <p class="text-xs truncate text-gray-500">The look m.Stefane</p>
+      </div>
     </div>
   </article>
-</section>
-
-<article
-  class="border shadow-sm break-inside flex items-center justify-between rounded-xl p-4 mb-3 text-sm bg-white dark:bg-gray-950 dark:text-white dark:border-gray-900"
-  data-filter="multimedia"
->
-  coming soon...
-</article>
-
-<article
-  class="border shadow-sm break-inside flex items-center justify-between rounded-xl p-4 mb-3 text-sm bg-white dark:bg-gray-950 dark:text-white dark:border-gray-900"
-  data-filter="multimedia"
->
-  coming soon...
-</article>
-
-<article
-  class="border shadow-sm break-inside flex items-center justify-between rounded-xl p-4 mb-3 text-sm bg-white dark:bg-gray-950 dark:text-white dark:border-gray-900"
-  data-filter="multimedia"
->
-  coming soon...
-</article>
-
-<article
-  class="border shadow-sm break-inside flex items-center justify-between rounded-xl p-4 mb-3 text-sm bg-white dark:bg-gray-950 dark:text-white dark:border-gray-900"
-  data-filter="multimedia"
->
-  <div class="flex items-center justify-between w-full">
-    <div class="flex items-center space-x-3">
-      <div class="relative overflow-hidden rounded-md">
-        <div class="absolute left-0 top-0 w-full h-full flex items-center justify-center text-white bg-black/40">
-          <button class="w-8 h-8 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-              <path
-                fill-rule="evenodd"
-                d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z"
-                clip-rule="evenodd"
-              >
-              </path>
-            </svg>
+  <article class="relative flex items-center justify-between gap-4 border break-inside rounded-lg p-3 mb-3 text-xs overflow-hidden bg-background border-border">
+    <div class="flex flex-col w-full gap-3">
+      <div class="w-full flex items-start justify-between">
+        <img
+          src="https://images.pexels.com/photos/7586658/pexels-photo-7586658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          data-author="https://www.pexels.com/es-es/@cristian-rojas/"
+          alt="cover"
+          loading="lazy"
+          class="w-16 h-20 object-cover rounded-md"
+        />
+        <button class="w-8 h-8 rounded-full inline-flex flex-none items-center justify-center transition-all duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-blue-500">
+          <span class="material-symbols-rounded material-symbols-lg text-base">more_horiz</span>
+        </button>
+      </div>
+      <section class="grid gap-2">
+        <h2 class="text-sm font-semibold">The best pop sounds</h2>
+        <p class="text-xs">The best songs of the moment</p>
+        <div class="flex w-full items-center justify-between gap-1">
+          <span class="font-medium px-2 py-1 rounded bg-emerald-500/10 text-emerald-500">20 songs</span>
+          <button class="flex justify-center items-center rounded-full w-7 h-7 transition-all duration-300 bg-foreground text-background focus:ring-2 focus:ring-foreground">
+            <span class="material-symbols-fill material-symbols-sm text-base">play_arrow</span>
           </button>
         </div>
+      </section>
+    </div>
+  </article>
+  <article class="relative flex items-center justify-between gap-4 border break-inside rounded-lg p-3 mb-3 text-xs overflow-hidden bg-background border-border">
+    <div class="flex flex-col w-full gap-3">
+      <div class="w-full flex items-start justify-between">
         <img
-          src="https://images.pexels.com/photos/9980327/pexels-photo-9980327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          alt="Cover"
+          src="https://images.pexels.com/photos/8512648/pexels-photo-8512648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          data-author="https://www.pexels.com/es-es/@bigbagfilms/"
+          alt="cover"
           loading="lazy"
-          class="object-cover w-11 h-11"
+          class="w-16 h-20 object-cover rounded-md"
+        />
+        <button class="w-8 h-8 rounded-full inline-flex flex-none items-center justify-center transition-all duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-blue-500">
+          <span class="material-symbols-rounded material-symbols-lg text-base">more_horiz</span>
+        </button>
+      </div>
+      <section class="grid gap-2">
+        <h2 class="text-sm font-semibold">Summer chill vibes</h2>
+        <p class="text-xs">The best songs of the moment</p>
+        <div class="flex w-full items-center justify-between gap-1">
+          <span class="font-medium px-2 py-1 rounded bg-foreground/5">18 songs</span>
+          <button class="flex justify-center items-center rounded-full w-7 h-7 transition-all duration-300 bg-foreground/10 text-foreground focus:ring-2 focus:ring-foreground">
+            <span class="material-symbols-fill material-symbols-sm text-base">play_arrow</span>
+          </button>
+        </div>
+      </section>
+    </div>
+  </article>
+  <article class="relative flex items-center justify-between border break-inside rounded-lg mb-3 text-xs overflow-hidden bg-background border-border">
+    <div class="flex flex-col w-full">
+      <div class="w-full grid grid-cols-12 border-b border-border divide-x divide-border">
+        <figure class="col-span-7">
+          <img
+            src="https://images.pexels.com/photos/7586658/pexels-photo-7586658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            data-author="https://www.pexels.com/es-es/@cristian-rojas/"
+            alt="cover"
+            loading="lazy"
+            class="w-full h-20 object-cover"
+          />
+        </figure>
+        <div class="flex items-center justify-end p-3 col-span-5">
+          <button class="w-8 h-8 rounded-full inline-flex flex-none items-center justify-center transition-all duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-blue-500">
+            <span class="material-symbols-rounded material-symbols-lg text-base">more_horiz</span>
+          </button>
+        </div>
+      </div>
+      <section class="grid gap-2 p-3">
+        <h2 class="text-sm font-semibold">The best pop sounds</h2>
+        <p class="text-xs">The best songs of the moment</p>
+        <div class="flex w-full items-center justify-between gap-1">
+          <span class="font-medium px-2 py-1 rounded bg-emerald-500/10 text-emerald-500">20 songs</span>
+          <button class="flex justify-center items-center rounded-full w-7 h-7 transition-all duration-300 bg-blue-600 text-white">
+            <span class="material-symbols-fill material-symbols-sm text-base">play_arrow</span>
+          </button>
+        </div>
+      </section>
+    </div>
+  </article>
+  <article class="relative flex items-center justify-between border break-inside rounded-lg mb-3 text-xs overflow-hidden bg-background border-border">
+    <div class="flex flex-col w-full">
+      <div class="w-full min-h-20 relative">
+        <img
+          src="https://images.pexels.com/photos/7586658/pexels-photo-7586658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          data-author="https://www.pexels.com/es-es/@cristian-rojas/"
+          alt="cover"
+          loading="lazy"
+          class="w-full h-full bject-cover"
         />
       </div>
-      <div class="flex flex-col">
-        <h5 class="text-base font-medium">You Don't Know</h5>
-        <p class="text-slate-500 dark:text-slate-400">Sonique</p>
-      </div>
+      <section class="grid gap-2 p-3">
+        <h2 class="text-sm font-semibold">The best rock sounds</h2>
+        <p class="text-xs">Collection of metal and rock music</p>
+        <div class="flex w-full items-center justify-between gap-1">
+          <span class="font-medium px-2 py-1 rounded bg-blue-500/10 text-blue-500">20 songs</span>
+          <div class="flex justify-center items-center rounded-full w-9 h-9 bg-foreground/2">
+            <span class="material-symbols-rounded material-symbols-lg material-symbols-weight-200">equalizer</span>
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="flex items-center space-x-1">
-      <button class="flex flex-none items-center justify-center rounded-full p-1 text-rose-500">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" width="20" height="20">
-          <path
-            d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z"
-          >
-          </path>
-        </svg>
+  </article>
+</section>
+
+<section class="break-inside grid grid-cols-2 mb-3 gap-3">
+  <article class="border relative overflow-hidden break-inside flex flex-col justify-between rounded-xl p-4 text-xs bg-rose-600 border-rose-600 text-white">
+    <header class="relative flex items-center justify-between">
+      <span class="h-6 px-2 font-semibold rounded-sm flex items-center justify-center bg-white text-rose-700">NEW</span>
+      <button class="flex justify-center items-center rounded-full w-7 h-7 transition-all duration-300 bg-white text-rose-700 focus:ring-2 focus:ring-white">
+        <span class="material-symbols-fill material-symbols-md">play_arrow</span>
       </button>
-      <button class="flex flex-none items-center justify-center rounded-full w-8 h-8 transition-colors duration-200 hover:bg-gray-200 dark:hover:bg-gray-900">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2.2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <circle cx="12" cy="12" r="1"></circle>
-          <circle cx="12" cy="5" r="1"></circle>
-          <circle cx="12" cy="19" r="1"></circle>
-        </svg>
+    </header>
+    <section class="grid gap-1 mt-3">
+      <h2 class="text-base font-semibold">The best of Dire Straits Album</h2>
+      <p class="text-white/90">Three authors will be present at..</p>
+    </section>
+    <div class="relative flex items-center justify-between mt-3 gap-3">
+      <div class="flex gap-[1px] items-center flex-row justify-between w-full h-9 cursor-pointer">
+        <div class="w-0.5 h-[15%] rounded-full bg-white"></div>
+        <div class="w-0.5 h-[20%] rounded-full bg-white"></div>
+        <div class="w-0.5 h-[30%] rounded-full bg-white"></div>
+        <div class="w-0.5 h-[30%] rounded-full bg-white"></div>
+        <div class="w-0.5 h-[40%] rounded-full bg-white"></div>
+        <div class="w-0.5 h-[40%] rounded-full bg-white"></div>
+        <div class="w-0.5 h-[40%] rounded-full bg-white"></div>
+        <div class="w-0.5 h-[30%] rounded-full bg-white/50"></div>
+        <div class="w-0.5 h-[20%] rounded-full bg-white/50"></div>
+        <div class="w-0.5 h-[15%] rounded-full bg-white/50"></div>
+        <div class="w-0.5 h-[10%] rounded-full bg-white/50"></div>
+      </div>
+      <button class="inline-flex items-center justify-center w-7 h-7 flex-none transition-all duration-300 rounded-full hover:bg-white/30 focus:ring-2 focus:ring-white">
+        <span class="material-symbols-rounded material-symbols-lg text-base">more_horiz</span>
+      </button>
+    </div>
+  </article>
+  <div class="flex flex-col gap-3">
+    <article class="border break-inside flex flex-col items-start justify-between gap-2 rounded-xl p-3 flex-1 text-xs bg-background border-border">
+      <header class="flex items-start gap-2">
+        <img class="w-9 h-9 rounded-full" src="https://randomuser.me/api/portraits/men/41.jpg" alt="avatar" loading="lazy" />
+        <h2 class="text-sm font-medium">Jhonatan <br /> Smith</h2>
+      </header>
+      <div class="flex items-center justify-between w-full gap-4">
+        <div class="flex gap-[1px] items-center flex-row justify-between w-full h-9 cursor-pointer">
+          <div class="w-0.5 h-[15%] rounded-full bg-foreground"></div>
+          <div class="w-0.5 h-[20%] rounded-full bg-foreground"></div>
+          <div class="w-0.5 h-[30%] rounded-full bg-foreground"></div>
+          <div class="w-0.5 h-[40%] rounded-full bg-foreground"></div>
+          <div class="w-0.5 h-[40%] rounded-full bg-foreground"></div>
+          <div class="w-0.5 h-[30%] rounded-full bg-foreground"></div>
+          <div class="w-0.5 h-[30%] rounded-full bg-foreground"></div>
+          <div class="w-0.5 h-[20%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[15%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[10%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[15%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[20%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[30%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[30%] rounded-full bg-foreground/30"></div>
+        </div>
+        <button class="flex-none flex justify-center items-center rounded-full w-6 h-6 transition-all duration-300 bg-foreground text-background focus:ring-2 focus:ring-foreground">
+          <span class="material-symbols-fill material-symbols-sm">pause</span>
+        </button>
+      </div>
+    </article>
+    <article class="border break-inside flex flex-col items-start justify-between gap-2 rounded-xl p-3 flex-1 text-xs bg-background border-border">
+      <header class="flex items-start gap-2">
+        <img class="w-9 h-9 rounded-full" src="https://randomuser.me/api/portraits/women/40.jpg" alt="avatar" loading="lazy" />
+        <h2 class="text-sm font-medium">Marianna <br /> Green</h2>
+      </header>
+      <div class="flex items-center justify-between w-full gap-4">
+        <div class="flex gap-[1px] items-center flex-row justify-between w-full h-9 cursor-pointer">
+          <div class="w-0.5 h-[15%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[20%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[30%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[30%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[40%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[40%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[30%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[15%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[20%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[30%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[30%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[30%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[20%] rounded-full bg-foreground/30"></div>
+          <div class="w-0.5 h-[10%] rounded-full bg-foreground/30"></div>
+        </div>
+        <button class="flex-none flex justify-center items-center rounded-full w-6 h-6 transition-all duration-300 bg-foreground text-background focus:ring-2 focus:ring-foreground">
+          <span class="material-symbols-fill material-symbols-sm">play_arrow</span>
+        </button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<article class="relative flex items-center justify-between gap-4 border break-inside rounded-lg p-4 mb-3 text-xs overflow-hidden bg-background border-border">
+  <div class="grid w-full gap-3">
+    <div class="w-full flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img class="flex-none w-10 h-10 rounded-full object-cover" src="https://randomuser.me/api/portraits/women/67.jpg" alt="cover" loading="lazy" />
+        <div class="grid">
+          <h5 class="truncate text-sm font-medium">Sunshine sound</h5>
+          <p class="text-xs text-gray-500">Lookee Stefane</p>
+        </div>
+      </div>
+      <button class="inline-flex items-center justify-center w-8 h-8 rounded-full transition-colors duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-foreground">
+        <span class="material-symbols-fill material-symbols-lg">more_horiz</span>
+      </button>
+    </div>
+    <div class="w-full flex justify-between items-center">
+      <button
+        class="flex justify-center items-center rounded-full w-9 h-9 transition-colors duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-foreground focus:bg-foreground focus:text-background"
+      >
+        <span class="material-symbols-fill material-symbols-md">repeat</span>
+      </button>
+      <button
+        class="flex justify-center items-center rounded-full w-9 h-9 transition-colors duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-foreground focus:bg-foreground focus:text-background"
+      >
+        <span class="material-symbols-fill material-symbols-md">skip_previous</span>
+      </button>
+      <button class="flex justify-center items-center rounded-full w-9 h-9 transition-colors duration-300 bg-foreground text-background">
+        <span class="material-symbols-fill material-symbols-md">play_arrow</span>
+      </button>
+      <button
+        class="flex justify-center items-center rounded-full w-9 h-9 transition-colors duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-foreground focus:bg-foreground focus:text-background"
+      >
+        <span class="material-symbols-fill material-symbols-md">skip_next</span>
+      </button>
+      <button
+        class="flex justify-center items-center rounded-full w-9 h-9 transition-colors duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-foreground focus:bg-foreground focus:text-background"
+      >
+        <span class="material-symbols-fill material-symbols-md">shuffle</span>
+      </button>
+    </div>
+  </div>
+</article>
+<article class="relative flex items-center justify-between border break-inside rounded-lg mb-3 text-xs overflow-hidden bg-background border-border">
+  <div class="grid w-full divide-y divide-border">
+    <div class="w-full flex items-center justify-between gap-4 p-4">
+      <div class="flex items-center gap-3">
+        <img class="flex-none w-10 h-10 rounded-full object-cover" src="https://randomuser.me/api/portraits/women/57.jpg" alt="cover" loading="lazy" />
+        <div class="grid">
+          <h5 class="truncate text-sm font-medium">Mariam Green</h5>
+          <p class="text-xs text-gray-500">The look stefane and lookee</p>
+        </div>
+      </div>
+      <button class="inline-flex items-center justify-center w-8 h-8 rounded-full transition-colors duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-foreground">
+        <span class="material-symbols-fill material-symbols-lg">more_horiz</span>
+      </button>
+    </div>
+    <div class="w-full flex justify-between items-center p-4">
+      <button
+        class="flex justify-center items-center rounded-full w-9 h-9 transition-colors duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-foreground focus:bg-foreground focus:text-background"
+      >
+        <span class="material-symbols-fill material-symbols-md">repeat</span>
+      </button>
+      <button
+        class="flex justify-center items-center rounded-full w-9 h-9 transition-colors duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-foreground focus:bg-foreground focus:text-background"
+      >
+        <span class="material-symbols-fill material-symbols-md">skip_previous</span>
+      </button>
+      <button class="flex justify-center items-center rounded-full w-9 h-9 transition-colors duration-300 bg-foreground text-background">
+        <span class="material-symbols-fill material-symbols-md">play_arrow</span>
+      </button>
+      <button
+        class="flex justify-center items-center rounded-full w-9 h-9 transition-colors duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-foreground focus:bg-foreground focus:text-background"
+      >
+        <span class="material-symbols-fill material-symbols-md">skip_next</span>
+      </button>
+      <button
+        class="flex justify-center items-center rounded-full w-9 h-9 transition-colors duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-foreground focus:bg-foreground focus:text-background"
+      >
+        <span class="material-symbols-fill material-symbols-md">shuffle</span>
       </button>
     </div>
   </div>
 </article>
 
-<section class="grid grid-cols-2 gap-3" data-filter="multimedia">
-  <article class="border flex flex-col items-center justify-between overflow-hidden text-sm bg-white text-black dark:bg-gray-900 dark:text-white rounded-xl mb-4 dark:border-gray-900">
-    <div class="relative">
-      <button class="absolute right-2 top-2 flex items-center justify-center rounded-full p-1 transition-colors duration-200 bg-white text-black">
-        <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z"
-            fill="currentColor"
-          >
-          </path>
-        </svg>
-      </button>
+<article class="relative flex items-center flex-col justify-between gap-4 border break-inside rounded-xl mb-3 text-xs overflow-hidden bg-background border-border">
+  <section class="relative">
+    <button
+      class="absolute top-3 right-3 z-10 inline-flex items-center justify-center w-8 h-8 rounded-full transition-all duration-200 hover:bg-white/20 text-white focus:ring-2 focus:ring-white"
+    >
+      <span class="material-symbols-fill material-symbols-lg">more_horiz</span>
+    </button>
+    <img
+      src="https://images.pexels.com/photos/28096553/pexels-photo-28096553/free-photo-of-musica-musico-rock-roca.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      data-author="https://www.pexels.com/es-es/@keksopad-1753273998/"
+      class="w-full max-w-full"
+      alt="music"
+      loading="lazy"
+    />
+    <div class="w-full absolute right-0 bottom-0 p-3">
+      <div class="rounded-2xl flex gap-4 p-4 items-center w-full bg-blue-900/20 backdrop-blur-md text-white">
+        <div class="flex-1 grid">
+          <h2 class="text-base font-medium">David Martín</h2>
+          <p class="truncate text-white/80">The best music for your ears</p>
+        </div>
+        <button class="inline-flex items-center justify-center z-[1] w-8 h-8 flex-none rounded-full bg-white text-black transition-all duration-200 hover:ring-2 ring-white">
+          <span class="material-symbols-fill material-symbols-lg">play_arrow</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="w-full grid gap-2 px-2 pb-2">
+    <div
+      class="w-full px-4 py-2 rounded-lg flex flex-row items-center group cursor-pointer transition-colors duration-200 ring-2 ring-transparent gap-4 relative hover:bg-gray-100 dark:hover:bg-gray-900 focus-within:ring-rose-500 focus-within:bg-rose-50 focus-within:hover:bg-rose-50 dark:focus-within:hover:bg-rose-500/10 dark:focus-within:bg-rose-500/10"
+    >
+      <div class="flex-1 flex items-center gap-3">
+        <img
+          src="https://images.pexels.com/photos/8044064/pexels-photo-8044064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          data-author="https://www.pexels.com/es-es/@anthonyshkraba-production/"
+          class="w-11 h-11 rounded-full object-cover"
+          alt="avatar"
+          loading="lazy"
+        />
+        <div class="flex-1 grid">
+          <h2 class="text-sm font-medium">Tatianna Jaquez</h2>
+          <p class="text-xs truncate">Alone in the dark</p>
+        </div>
+      </div>
       <button
-        class="flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full w-10 h-10 transition-colors duration-200 bg-[#000000c1] hover:bg-black"
+        class="inline-flex items-center justify-center z-[1] w-8 h-8 flex-none group rounded-full transition-colors duration-300 ring-2 ring-transparent focus:bg-rose-600 focus:text-white focus:ring-rose-600 hover:bg-gray-300 dark:hover:bg-gray-800 dark:focus:hover:bg-rose-600"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polygon points="5 3 19 12 5 21 5 3"></polygon>
-        </svg>
-      </button>
-      <img src="https://images.pexels.com/photos/185030/pexels-photo-185030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="object-cover" alt="cover" loading="lazy" />
-    </div>
-    <div class="flex flex-col items-start w-full p-4 space-y-2">
-      <header>
-        <h2 class="font-medium">You Don't Know</h2>
-        <span class="text-xs">Smoove &amp; Turell</span>
-      </header>
-      <button class="flex items-center justify-center text-xs rounded-full px-2 py-1 space-x-1 bg-black text-white dark:bg-white dark:text-black">
-        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
-          <path
-            fill="currentColor"
-            d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"
-          >
-          </path>
-        </svg>
-        <span>Music</span>
+        <span class="material-symbols-rounded material-symbols-lg text-rose-600 group-focus-within:text-white">favorite</span>
       </button>
     </div>
-  </article>
-  <article class="border flex flex-col items-center justify-between overflow-hidden text-sm bg-emerald-600 text-white rounded-xl mb-4 dark:border-gray-900">
-    <div class="relative">
-      <button class="absolute right-2 top-2 flex items-center justify-center hover:bg-white hover:text-black rounded-full p-1 transition-colors duration-200">
-        <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z"
-            fill="currentColor"
-          >
-          </path>
-        </svg>
-      </button>
+    <div
+      class="w-full px-4 py-2 rounded-lg flex flex-row items-center group cursor-pointer transition-colors duration-200 ring-2 ring-transparent gap-4 relative hover:bg-gray-100 dark:hover:bg-gray-900 focus-within:ring-rose-500 focus-within:bg-rose-50 focus-within:hover:bg-rose-50 dark:focus-within:hover:bg-rose-500/10 dark:focus-within:bg-rose-500/10"
+    >
+      <div class="flex-1 flex items-center gap-3">
+        <img
+          src="https://images.pexels.com/photos/3388900/pexels-photo-3388900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          data-author="https://www.pexels.com/es-es/@papa-yaw-956993/"
+          class="w-11 h-11 rounded-full object-cover"
+          alt="avatar"
+          loading="lazy"
+        />
+        <div class="flex-1 grid">
+          <h2 class="text-sm font-medium">Anthony Shkraba</h2>
+          <p class="text-xs truncate">First time in the city &amp; I love it</p>
+        </div>
+      </div>
       <button
-        class="flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full w-10 h-10 transition-colors duration-200 bg-[#000000c1] hover:bg-black"
+        class="inline-flex items-center justify-center z-[1] w-8 h-8 flex-none group rounded-full transition-colors duration-300 ring-2 ring-transparent focus:bg-rose-600 focus:text-white focus:ring-rose-600 hover:bg-gray-300 dark:hover:bg-gray-800 dark:focus:hover:bg-rose-600"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polygon points="5 3 19 12 5 21 5 3"></polygon>
-        </svg>
-      </button>
-      <img src="https://images.pexels.com/photos/144428/pexels-photo-144428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="object-cover" alt="cover" loading="lazy" />
-    </div>
-    <div class="flex flex-col items-start w-full p-4 space-y-2">
-      <header>
-        <h2 class="font-medium">Why did you do it</h2>
-        <span class="text-xs">Stretch</span>
-      </header>
-      <button class="flex items-center justify-center text-xs rounded-full px-2 py-1 space-x-1 bg-white text-black">
-        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
-          <path
-            fill="currentColor"
-            d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"
-          >
-          </path>
-        </svg>
-        <span>Music</span>
+        <span class="material-symbols-rounded material-symbols-lg text-rose-600 group-focus-within:text-white">favorite</span>
       </button>
     </div>
-  </article>
-</section>
+  </section>
+</article>
 
-<section class="grid grid-cols-12 gap-3 mb-3">
-  <a
-    href="#"
-    class="w-full col-span-8 sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700"
-    data-filter="multimedia"
-  >
-    <svg class="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-      <path
-        fill="currentColor"
-        d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"
-      >
-      </path>
-    </svg>
-    <div class="text-left rtl:text-right">
-      <div class="mb-1 text-xs">Download on the</div>
-      <div class="-mt-1 font-sans text-sm font-semibold">Mac App Store</div>
+<article class="relative flex items-center justify-between gap-4 border break-inside rounded p-4 mb-3 text-xs overflow-hidden bg-background border-border">
+  <div class="w-full flex items-center justify-start gap-3">
+    <img
+      class="flex-none w-16 h-16 rounded-full object-cover"
+      src="https://images.pexels.com/photos/17413080/pexels-photo-17413080/free-photo-of-hombre-silueta-musica-concierto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      data-author="https://www.pexels.com/es-es/@riccardo-vespa-594469796/"
+      alt="album cover"
+      loading="lazy"
+    />
+    <div class="grid flex-1 gap-2">
+      <div class="flex items-center justify-between gap-4">
+        <div class="grid">
+          <h2 class="text-sm font-medium">Roman RSK</h2>
+          <p class="text-xs truncate text-foreground/70">The sound of the future</p>
+        </div>
+        <button class="inline-flex items-center justify-center z-[1] w-7 h-7 flex-none rounded-full bg-gradient-to-tr from-rose-500 to-amber-600 text-white">
+          <span class="material-symbols-fill material-symbols-sm">pause</span>
+        </button>
+      </div>
+      <div class="w-full flex-1 flex items-center justify-between gap-4">
+        <span class="font-medium">01:30</span>
+        <div class="w-full flex items-center justify-between h-4 gap-0.5">
+          <div class="w-0.5 h-[10%] rounded bg-foreground"></div>
+          <div class="w-0.5 h-[20%] rounded bg-foreground"></div>
+          <div class="w-0.5 h-[30%] rounded bg-foreground"></div>
+          <div class="w-0.5 h-[30%] rounded bg-foreground"></div>
+          <div class="w-0.5 h-[30%] rounded bg-foreground"></div>
+          <div class="w-0.5 h-[43%] rounded bg-foreground"></div>
+          <div class="w-0.5 h-[45%] rounded bg-foreground"></div>
+          <div class="w-0.5 h-[48%] rounded bg-foreground"></div>
+          <div class="w-0.5 h-[50%] rounded bg-foreground"></div>
+          <div class="w-0.5 h-[60%] rounded bg-foreground"></div>
+          <div class="w-0.5 h-[70%] rounded bg-foreground"></div>
+          <div class="w-0.5 h-[35%] rounded bg-foreground/20"></div>
+          <div class="w-0.5 h-[30%] rounded bg-foreground/20"></div>
+          <div class="w-0.5 h-[80%] rounded bg-foreground/20"></div>
+          <div class="w-0.5 h-[70%] rounded bg-foreground/20"></div>
+          <div class="w-0.5 h-[60%] rounded bg-foreground/20"></div>
+          <div class="w-0.5 h-[50%] rounded bg-foreground/20"></div>
+          <div class="w-0.5 h-[40%] rounded bg-foreground/20"></div>
+        </div>
+        <span class="font-medium">03:45</span>
+      </div>
     </div>
-  </a>
-</section>
+  </div>
+</article>
 
-<article class="border shadow-sm break-inside flex items-center justify-between rounded-xl p-4 mb-3 text-xs bg-background" data-filter="multimedia">coming soon...</article>
+<article class="relative gap-4 break-inside rounded-xl mb-3 text-sm overflow-hidden bg-black">
+  <img
+    src="https://images.pexels.com/photos/8044064/pexels-photo-8044064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    data-author="https://www.pexels.com/es-es/@anthonyshkraba-production/"
+    class="w-full h-full max-w-full absolute top-0 left-0 object-cover pointer-events-none z-0"
+    alt="avatar"
+    loading="lazy"
+  />
+  <div class="flex items-center flex-col justify-between backdrop-blur-sm bg-black/50">
+    <div class="relative z-1 grid w-full p-4">
+      <div class="w-full flex items-center justify-between gap-4">
+        <div class="grid flex-1">
+          <h2 class="text-base font-medium text-white">Adrian Sava</h2>
+          <p class="text-sm truncate text-white/60">Love is in the air &amp; the music</p>
+        </div>
+        <button
+          class="inline-flex items-center justify-center z-[1] w-8 h-8 flex-none group rounded-full transition-colors duration-300 ring-2 ring-transparent text-white focus:bg-white focus:text-black"
+        >
+          <span class="material-symbols-fill material-symbols-lg">more_horiz</span>
+        </button>
+      </div>
+      <div class="py-4 flex items-center justify-between">
+        <button class="w-8 h-8 rounded-full inline-flex items-center justify-center flex-none text-white hover:bg-white/10 focus:ring-2 focus:ring-white transition-all duration-300">
+          <span class="material-symbols-fill material-symbols-md">repeat</span>
+        </button>
+        <button class="w-8 h-8 rounded-full inline-flex items-center justify-center flex-none text-white hover:bg-white/10 focus:ring-2 focus:ring-white transition-all duration-300">
+          <span class="material-symbols-fill material-symbols-lg">skip_previous</span>
+        </button>
+        <button class="w-9 h-9 rounded-full inline-flex items-center justify-center flex-none bg-white text-black focus:ring-2 focus:ring-white transition-all duration-300">
+          <span class="material-symbols-fill material-symbols-lg">play_arrow</span>
+        </button>
+        <button class="w-8 h-8 rounded-full inline-flex items-center justify-center flex-none text-white hover:bg-white/10 focus:ring-2 focus:ring-white transition-all duration-300">
+          <span class="material-symbols-fill material-symbols-lg">skip_next</span>
+        </button>
+        <button class="w-8 h-8 rounded-full inline-flex items-center justify-center flex-none text-white hover:bg-white/10 focus:ring-2 focus:ring-white transition-all duration-300">
+          <span class="material-symbols-fill material-symbols-lg">speed_2x</span>
+        </button>
+      </div>
+      <div class="flex items-center justify-between gap-4">
+        <span class="text-xs font-semibold text-white">1:30</span>
+        <div class="flex flex-1 items-center justify-between h-6 gap-0.5">
+          <div class="w-0.5 h-[10%] rounded bg-white"></div>
+          <div class="w-0.5 h-[20%] rounded bg-white"></div>
+          <div class="w-0.5 h-[30%] rounded bg-white"></div>
+          <div class="w-0.5 h-[40%] rounded bg-white"></div>
+          <div class="w-0.5 h-[40%] rounded bg-white"></div>
+          <div class="w-0.5 h-[50%] rounded bg-white"></div>
+          <div class="w-0.5 h-[50%] rounded bg-white"></div>
+          <div class="w-0.5 h-[60%] rounded bg-white"></div>
+          <div class="w-0.5 h-[30%] rounded bg-white"></div>
+          <div class="w-0.5 h-[30%] rounded bg-white"></div>
+          <div class="w-0.5 h-[45%] rounded bg-white"></div>
+          <div class="w-0.5 h-[88%] rounded bg-white"></div>
+          <div class="w-0.5 h-[30%] rounded bg-white"></div>
+          <div class="w-0.5 h-[22%] rounded bg-white/20"></div>
+          <div class="w-0.5 h-[20%] rounded bg-white/20"></div>
+          <div class="w-0.5 h-[18%] rounded bg-white/20"></div>
+          <div class="w-0.5 h-[16%] rounded bg-white/20"></div>
+          <div class="w-0.5 h-[36%] rounded bg-white/20"></div>
+          <div class="w-0.5 h-[30%] rounded bg-white/20"></div>
+          <div class="w-0.5 h-[28%] rounded bg-white/20"></div>
+          <div class="w-0.5 h-[26%] rounded bg-white/20"></div>
+          <div class="w-0.5 h-[24%] rounded bg-white/20"></div>
+          <div class="w-0.5 h-[22%] rounded bg-white/20"></div>
+          <div class="w-0.5 h-[18%] rounded bg-white/20"></div>
+          <div class="w-0.5 h-[10%] rounded bg-white/20"></div>
+          <div class="w-0.5 h-[12%] rounded bg-white/20"></div>
+          <div class="w-0.5 h-[14%] rounded bg-white/20"></div>
+          <div class="w-0.5 h-[16%] rounded bg-white/20"></div>
+          <div class="w-0.5 h-[18%] rounded bg-white/20"></div>
+          <div class="w-0.5 h-[22%] rounded bg-white/20"></div>
+        </div>
+        <span class="text-xs font-semibold text-white">3:00</span>
+      </div>
+    </div>
+    <section class="w-full grid gap-1 px-2 pb-2">
+      <div
+        class="w-full px-4 py-2 rounded-lg flex flex-row items-center group cursor-pointer transition-colors duration-200 ring-2 ring-transparent gap-4 relative text-white hover:bg-white/10 focus-within:ring-white/40 focus-within:bg-white/20 focus-within:hover:bg-white/20"
+      >
+        <div class="flex-1 flex items-center gap-3">
+          <img
+            src="https://images.pexels.com/photos/8044064/pexels-photo-8044064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            data-author="https://www.pexels.com/es-es/@anthonyshkraba-production/"
+            class="w-11 h-11 rounded-full object-cover"
+            alt="avatar"
+            loading="lazy"
+          />
+          <div class="flex-1 grid">
+            <h2 class="text-sm font-medium">Tatianna Jaquez</h2>
+            <p class="text-xs truncate text-white/60">Alone in the dark</p>
+          </div>
+        </div>
+        <button
+          class="inline-flex items-center justify-center z-[1] w-8 h-8 flex-none group rounded-full transition-colors duration-300 ring-2 ring-transparent focus:bg-amber-500 focus:text-white focus:ring-amber-500 hover:bg-white/20"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+            <path
+              fill="none"
+              stroke-width="2"
+              class="transition-colors duration-200 stroke-white group-focus:stroke-white group-focus:fill-white"
+              d="M1 8.4C1 4 4.5 3 6.5 3C9 3 11 5 12 6.5C13 5 15 3 17.5 3c2 0 5.5 1 5.5 5.4C23 15 12 21 12 21S1 15 1 8.4Z"></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        class="w-full px-4 py-2 rounded-lg flex flex-row items-center group cursor-pointer transition-colors duration-200 ring-2 ring-transparent gap-4 relative text-white hover:bg-white/10 focus-within:ring-white/40 focus-within:bg-white/20 focus-within:hover:bg-white/20"
+      >
+        <div class="flex-1 flex items-center gap-3">
+          <img
+            src="https://images.pexels.com/photos/3388900/pexels-photo-3388900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            data-author="https://www.pexels.com/es-es/@papa-yaw-956993/"
+            class="w-11 h-11 rounded-full object-cover"
+            alt="avatar"
+            loading="lazy"
+          />
+          <div class="flex-1 grid">
+            <h2 class="text-sm font-medium">Anthony Shkraba</h2>
+            <p class="text-xs truncate text-white/60">First time in the city &amp; I love it</p>
+          </div>
+        </div>
+        <button
+          class="inline-flex items-center justify-center z-[1] w-8 h-8 flex-none group rounded-full transition-colors duration-300 ring-2 ring-transparent focus:bg-amber-500 focus:text-white focus:ring-amber-500 hover:bg-white/20"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+            <path
+              fill="none"
+              stroke-width="2"
+              class="transition-colors duration-200 stroke-white group-focus:stroke-white group-focus:fill-white"
+              d="M1 8.4C1 4 4.5 3 6.5 3C9 3 11 5 12 6.5C13 5 15 3 17.5 3c2 0 5.5 1 5.5 5.4C23 15 12 21 12 21S1 15 1 8.4Z"></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        class="w-full px-4 py-2 rounded-lg flex flex-row items-center group cursor-pointer transition-colors duration-200 ring-2 ring-transparent gap-4 relative text-white hover:bg-white/10 focus-within:ring-white/40 focus-within:bg-white/20 focus-within:hover:bg-white/20"
+      >
+        <div class="flex-1 flex items-center gap-3">
+          <img
+            src="https://images.pexels.com/photos/9009499/pexels-photo-9009499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            data-author="https://www.pexels.com/es-es/@yankrukov/"
+            class="w-11 h-11 rounded-full object-cover"
+            alt="avatar"
+            loading="lazy"
+          />
+          <div class="flex-1 grid">
+            <h2 class="text-sm font-medium">Fabrizio Verrecchia</h2>
+            <p class="text-xs truncate text-white/60">The best music</p>
+          </div>
+        </div>
+        <button class="inline-flex items-center justify-center z-[1] w-8 h-8 flex-none group rounded-full transition-colors duration-300 ring-2 ring-transparent bg-rose-500 text-white">
+          <span class="material-symbols-fill material-symbols-sm">favorite</span>
+        </button>
+      </div>
+    </section>
+  </div>
+</article>
+
+<article class="relative overflow-hidden break-inside rounded p-px mb-3 text-sm">
+  <div class="absolute -top-4 -left-4 -right-8 -bottom-4 flex z-0 blur-md transition-all duration-500">
+    <div class="flex-1 bg-amber-600"></div>
+    <div class="flex-1 bg-rose-600"></div>
+    <div class="flex-1 bg-red-600"></div>
+    <div class="flex-1 bg-pink-600"></div>
+    <div class="flex-1 bg-blue-600"></div>
+    <div class="flex-1 bg-cyan-600"></div>
+    <div class="flex-1 bg-green-600"></div>
+  </div>
+  <div class="flex items-center justify-between relative z-1 w-full rounded gap-4 p-3 bg-background">
+    <div class="w-full flex items-center justify-start gap-4">
+      <img class="flex-none rounded-full w-9 h-9" src="https://randomuser.me/api/portraits/men/77.jpg" alt="avatar" loading="lazy" />
+      <div class="flex gap-px items-center flex-row justify-between w-full h-9 cursor-pointer">
+        <div class="w-0.5 h-[15%] rounded-full bg-foreground"></div>
+        <div class="w-0.5 h-[20%] rounded-full bg-foreground"></div>
+        <div class="w-0.5 h-[20%] rounded-full bg-foreground"></div>
+        <div class="w-0.5 h-[24%] rounded-full bg-foreground"></div>
+        <div class="w-0.5 h-[28%] rounded-full bg-foreground"></div>
+        <div class="w-0.5 h-[30%] rounded-full bg-foreground"></div>
+        <div class="w-0.5 h-[34%] rounded-full bg-foreground"></div>
+        <div class="w-0.5 h-[35%] rounded-full bg-foreground/20"></div>
+        <div class="w-0.5 h-[30%] rounded-full bg-foreground/20"></div>
+        <div class="w-0.5 h-[30%] rounded-full bg-foreground/20"></div>
+        <div class="w-0.5 h-[30%] rounded-full bg-foreground/20"></div>
+        <div class="w-0.5 h-[20%] rounded-full bg-foreground/20"></div>
+        <div class="w-0.5 h-[25%] rounded-full bg-foreground/20"></div>
+        <div class="w-0.5 h-[15%] rounded-full bg-foreground/20"></div>
+        <div class="w-0.5 h-[10%] rounded-full bg-foreground/20"></div>
+        <div class="w-0.5 h-[15%] rounded-full bg-foreground/20"></div>
+        <div class="w-0.5 h-[20%] rounded-full bg-foreground/20"></div>
+        <div class="w-0.5 h-[30%] rounded-full bg-foreground/20"></div>
+        <div class="w-0.5 h-[10%] rounded-full bg-foreground/20"></div>
+      </div>
+    </div>
+    <div class="inline-flex items-center justify-end gap-1 flex-1 p-1 rounded bg-foreground/5">
+      <button class="flex justify-center items-center rounded w-7 h-7 transition-colors duration-300 text-black dark:text-white">
+        <span class="material-symbols-fill material-symbols-md">skip_previous</span>
+      </button>
+      <button class="flex justify-center items-center rounded w-7 h-7 transition-colors duration-300 bg-white text-black">
+        <span class="material-symbols-fill material-symbols-md">pause</span>
+      </button>
+      <button class="flex justify-center items-center rounded w-7 h-7 transition-colors duration-300 text-black dark:text-white">
+        <span class="material-symbols-fill material-symbols-md">skip_next</span>
+      </button>
+    </div>
+  </div>
+</article>
+
+<article class="flex items-center overflow-hidden break-inside rounded-xl mb-3 p-4 gap-4 text-xs border bg-background border-border">
+  <img class="flex-none rounded-full w-10 h-10" src="https://randomuser.me/api/portraits/men/17.jpg" alt="avatar" loading="lazy" />
+  <h2 class="font-medium text-sm">Leonardo Brown</h2>
+  <div class="inline-flex items-center justify-center flex-1 gap-1 p-1 rounded-full border border-border bg-foreground/5">
+    <button class="flex justify-center items-center rounded-full w-7 h-7 transition-colors duration-300 text-black dark:text-white hover:bg-foreground/5">
+      <span class="material-symbols-fill material-symbols-md">skip_previous</span>
+    </button>
+    <button class="flex justify-center items-center rounded-full w-7 h-7 transition-colors duration-300 bg-foreground text-background">
+      <span class="material-symbols-fill material-symbols-sm material-symbols-weight-200">pause</span>
+    </button>
+    <button class="flex justify-center items-center rounded-full w-7 h-7 transition-colors duration-300 text-black dark:text-white hover:bg-foreground/5">
+      <span class="material-symbols-fill material-symbols-md">skip_next</span>
+    </button>
+  </div>
+</article>
+
+<article class="relative flex items-center justify-between gap-4 border break-inside rounded-xl py-4 mb-3 text-xs overflow-hidden bg-background border-border">
+  <div class="w-full flex flex-col overflow-hidden">
+    <div class="space-y-4 relative overflow-hidden">
+      <section class="flex items-center justify-between px-4">
+        <h2 class="text-base font-semibold">Recommended</h2>
+      </section>
+      <section class="flex items-center justify-start overflow-auto pl-4 gap-2 pb-2">
+        <div class="w-full max-w-20 flex-none flex flex-col gap-1 group">
+          <div class="h-14 rounded overflow-hidden">
+            <img
+              src="https://images.pexels.com/photos/9008763/pexels-photo-9008763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              data-author="https://www.pexels.com/es-es/@yankrukov/"
+              alt="Cover"
+              class="w-full h-full max-w-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div class="w-full">
+            <h4 class="truncate font-medium">The saxo of the 80s</h4>
+            <p class="truncate">Yan Krukau and Pavel</p>
+          </div>
+        </div>
+        <div class="w-full max-w-20 flex-none flex flex-col gap-1 group">
+          <div class="h-14 rounded overflow-hidden">
+            <img
+              src="https://images.pexels.com/photos/8044098/pexels-photo-8044098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              data-author="https://www.pexels.com/es-es/@anthonyshkraba-production/"
+              alt="Cover"
+              class="w-full h-full max-w-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div class="w-full">
+            <h4 class="truncate font-medium">The saxo of the 80s</h4>
+            <p class="truncate">Yan Krukau and Pavel</p>
+          </div>
+        </div>
+        <div class="w-full max-w-20 flex-none flex flex-col gap-1 group">
+          <div class="h-14 rounded overflow-hidden">
+            <img
+              src="https://images.pexels.com/photos/8132766/pexels-photo-8132766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              data-author="https://www.pexels.com/es-es/@anna-pou/"
+              alt="Cover"
+              class="w-full h-full max-w-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div class="w-full">
+            <h4 class="truncate font-medium">The saxo of the 80s</h4>
+            <p class="truncate">Yan Krukau and Pavel</p>
+          </div>
+        </div>
+        <div class="w-full max-w-20 flex-none flex flex-col gap-1 group">
+          <div class="h-14 rounded overflow-hidden">
+            <img
+              src="https://images.pexels.com/photos/8132766/pexels-photo-8132766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              data-author="https://www.pexels.com/es-es/@anna-pou/"
+              alt="Cover"
+              class="w-full h-full max-w-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+          <div class="w-full">
+            <h4 class="truncate font-medium">The saxo of the 80s</h4>
+            <p class="truncate">Yan Krukau and Pavel</p>
+          </div>
+        </div>
+      </section>
+      <section class="flex items-center justify-between px-4">
+        <h2 class="text-base font-semibold">Recommended artists</h2>
+      </section>
+      <section class="flex items-center justify-start overflow-auto pl-4 gap-1 pb-2">
+        <button class="w-full flex-none max-w-14 grid place-items-center p-1 rounded-md transition-colors duration-200 hover:bg-foreground/5">
+          <img class="flex-none rounded-full w-10 h-10" src="https://randomuser.me/api/portraits/men/76.jpg" alt="avatar" loading="lazy" />
+          <h2 class="text-xs font-medium mt-1">Jhon</h2>
+        </button>
+        <button class="w-full flex-none max-w-14 grid place-items-center p-1 rounded-md transition-colors duration-200 hover:bg-foreground/5">
+          <img class="flex-none rounded-full w-10 h-10" src="https://randomuser.me/api/portraits/women/76.jpg" alt="avatar" loading="lazy" />
+          <h2 class="text-xs font-medium mt-1">Tina</h2>
+        </button>
+        <button class="w-full flex-none max-w-14 grid place-items-center p-1 rounded-md transition-colors duration-200 hover:bg-foreground/5">
+          <img class="flex-none rounded-full w-10 h-10" src="https://randomuser.me/api/portraits/men/78.jpg" alt="avatar" loading="lazy" />
+          <h2 class="text-xs font-medium mt-1">Jhonas</h2>
+        </button>
+        <button class="w-full flex-none max-w-14 grid place-items-center p-1 rounded-md transition-colors duration-200 hover:bg-foreground/5">
+          <img class="flex-none rounded-full w-10 h-10" src="https://randomuser.me/api/portraits/men/79.jpg" alt="avatar" loading="lazy" />
+          <h2 class="text-xs font-medium mt-1">Mathiaz</h2>
+        </button>
+        <button class="w-full flex-none max-w-14 grid place-items-center p-1 rounded-md transition-colors duration-200 hover:bg-foreground/5">
+          <img class="flex-none rounded-full w-10 h-10" src="https://randomuser.me/api/portraits/men/16.jpg" alt="avatar" loading="lazy" />
+          <h2 class="text-xs font-medium mt-1">Fabio</h2>
+        </button>
+        <button class="w-full flex-none max-w-14 grid place-items-center p-1 rounded-md transition-colors duration-200 hover:bg-foreground/5">
+          <img class="flex-none rounded-full w-10 h-10" src="https://randomuser.me/api/portraits/men/46.jpg" alt="avatar" loading="lazy" />
+          <h2 class="text-xs font-medium mt-1">Miller</h2>
+        </button>
+        <button class="w-full flex-none max-w-14 grid place-items-center p-1 rounded-md transition-colors duration-200 hover:bg-foreground/5">
+          <img class="flex-none rounded-full w-10 h-10" src="https://randomuser.me/api/portraits/women/86.jpg" alt="avatar" loading="lazy" />
+          <h2 class="text-xs font-medium mt-1">Jessy</h2>
+        </button>
+        <button class="w-full flex-none max-w-14 grid place-items-center p-1 rounded-md transition-colors duration-200 hover:bg-foreground/5">
+          <img class="flex-none rounded-full w-10 h-10" src="https://randomuser.me/api/portraits/men/36.jpg" alt="avatar" loading="lazy" />
+          <h2 class="text-xs font-medium mt-1">Jack</h2>
+        </button>
+      </section>
+      <section class="flex items-center justify-between px-4">
+        <h2 class="text-base font-semibold">Top 10 albums</h2>
+      </section>
+      <section class="flex items-center justify-start overflow-auto pl-4 gap-2 pb-2">
+        <div class="flex flex-col gap-1 w-full max-w-[4rem]">
+          <img
+            src="https://images.pexels.com/photos/9008763/pexels-photo-9008763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            data-author="https://www.pexels.com/es-es/@yankrukov/"
+            alt="Cover"
+            class="w-full object-cover rounded"
+          />
+          <div class="w-full">
+            <h4 class="truncate font-medium">The saxo of the 80s</h4>
+            <p class="truncate">Yan Krukau and Pavel</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-1 w-full max-w-[4rem]">
+          <img
+            src="https://images.pexels.com/photos/8044098/pexels-photo-8044098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            data-author="https://www.pexels.com/es-es/@anthonyshkraba-production/"
+            alt="Cover"
+            class="w-full object-cover rounded"
+          />
+          <div class="w-full">
+            <h4 class="truncate font-medium">The saxo of the 80s</h4>
+            <p class="truncate">Yan Krukau and Pavel</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-1 w-full max-w-[4rem]">
+          <img
+            src="https://images.pexels.com/photos/8132766/pexels-photo-8132766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            data-author="https://www.pexels.com/es-es/@anna-pou/"
+            alt="Cover"
+            class="w-full object-cover rounded"
+          />
+          <div class="w-full">
+            <h4 class="truncate font-medium">The saxo of the 80s</h4>
+            <p class="truncate">Yan Krukau and Pavel</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-1 w-full max-w-[4rem]">
+          <img
+            src="https://images.pexels.com/photos/8132766/pexels-photo-8132766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            data-author="https://www.pexels.com/es-es/@anna-pou/"
+            alt="Cover"
+            class="w-full object-cover rounded"
+          />
+          <div class="w-full">
+            <h4 class="truncate font-medium">The saxo of the 80s</h4>
+            <p class="truncate">Yan Krukau and Pavel</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-1 w-full max-w-[4rem]">
+          <img
+            src="https://images.pexels.com/photos/8132766/pexels-photo-8132766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            data-author="https://www.pexels.com/es-es/@anna-pou/"
+            alt="Cover"
+            class="w-full object-cover rounded"
+          />
+          <div class="w-full">
+            <h4 class="truncate font-medium">The saxo of the 80s</h4>
+            <p class="truncate">Yan Krukau and Pavel</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-1 w-full max-w-[4rem]">
+          <img
+            src="https://images.pexels.com/photos/8132766/pexels-photo-8132766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            data-author="https://www.pexels.com/es-es/@anna-pou/"
+            alt="Cover"
+            class="w-full object-cover rounded"
+          />
+          <div class="w-full">
+            <h4 class="truncate font-medium">The saxo of the 80s</h4>
+            <p class="truncate">Yan Krukau and Pavel</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="w-full flex justify-between items-center pt-4 px-4">
+      <button class="flex justify-center items-center rounded-full w-9 h-9 transition-all duration-300 hover:bg-foreground/5 focus:bg-foreground focus:text-background">
+        <span class="material-symbols-fill material-symbols-md">shuffle</span>
+      </button>
+      <button class="flex justify-center items-center rounded-full w-9 h-9 transition-all duration-300 hover:bg-foreground/5 focus:bg-foreground focus:text-background">
+        <span class="material-symbols-fill material-symbols-md">skip_previous</span>
+      </button>
+      <button class="flex justify-center items-center rounded-full w-9 h-9 transition-colors duration-300 bg-gray-900 text-white dark:bg-gray-100 dark:text-black">
+        <span class="material-symbols-fill material-symbols-md">play_arrow</span>
+      </button>
+      <button class="flex justify-center items-center rounded-full w-9 h-9 transition-all duration-300 hover:bg-foreground/5 focus:bg-foreground focus:text-background">
+        <span class="material-symbols-fill material-symbols-md">skip_next</span>
+      </button>
+      <button class="flex justify-center items-center rounded-full w-9 h-9 transition-all duration-300 hover:bg-foreground/5 focus:bg-foreground focus:text-background">
+        <span class="material-symbols-fill material-symbols-md">mic</span>
+      </button>
+    </div>
+  </div>
+</article>

@@ -1,8 +1,8 @@
 ---
-title: 'Widgets y Cards Minimalistas para Redes Sociales | Tailwind CSS 4'
-description: 'Descubre una colección exclusiva de widgets y diseños minimalistas para proyectos sociales y de redes sociales. Creados con Tailwind CSS 4 y Astro, optimizados para velocidad, diseño limpio y máxima personalización.'
-slug: 'social'
-category: 'Social'
+title: "Widgets y Cards Minimalistas para Redes Sociales | Tailwind CSS 4"
+description: "Descubre una colección exclusiva de widgets y diseños minimalistas para proyectos sociales y de redes sociales. Creados con Tailwind CSS 4 y Astro, optimizados para velocidad, diseño limpio y máxima personalización."
+slug: "social"
+category: "Social"
 visible: true
 ---
 
@@ -567,9 +567,9 @@ visible: true
       </h2>
     </header>
     <section class="flex flex-col items-start gap-2 border-t p-3 border-border">
-      <p>Apacionado del frontend y el diseño de interfaces...</p>
+      <p>Apasionado del frontend y el diseño de interfaces...</p>
       <a
-        href="https://frankuxui.com/"
+        href="https://frankuxui.dev"
         class="px-3 h-6 rounded font-medium inline-flex items-center justify-center transition-colors duration-300 bg-indigo-100 text-indigo-500 hover:bg-indigo-200 dark:bg-indigo-500/20 dark:text-indigo-400 dark:hover:bg-indigo-500/40">
         Leer más
       </a>
@@ -813,11 +813,11 @@ visible: true
   <section class="flex items-center justify-between divide-x divide-border gap-2 w-full">
     <div class="flex items-center justify-start gap-2 p-3">
       <div class="w-full min-w-10 max-w-12 flex flex-col border border-border rounded overflow-hidden">
-        <div class="flex items-center justify-center font-medium p-1 uppercase text-xs bg-danger text-white">ENE</div>
+        <div class="flex items-center justify-center font-medium p-1 uppercase text-xs bg-rose-600 text-white">ENE</div>
         <div class="flex items-center justify-center font-medium p-1">18</div>
       </div>
       <div class="w-full min-w-10 max-w-12 flex flex-col border border-border rounded overflow-hidden">
-        <div class="flex items-center justify-center font-medium p-1 uppercase text-xs bg-danger text-white">ENE</div>
+        <div class="flex items-center justify-center font-medium p-1 uppercase text-xs bg-rose-600 text-white">ENE</div>
         <div class="flex items-center justify-center font-medium p-1">28</div>
       </div>
     </div>
@@ -1335,22 +1335,25 @@ visible: true
 </article>
 
 <article
-  class="overflow-hidden relative border break-inside rounded-xl p-4 mb-3 gap-2 text-xs border-border bg-background text-foreground after:absolute after:top-0 after:left-0 after:w-full after:h-4 after:hidden after:border-x after:border-b after:border-border after:border-x-(--pattern-fg) after:bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] after:bg-[size:10px_10px] after:bg-fixed after:[--pattern-fg:var(--color-danger)]/15 md:after:block dark:after:[--pattern-fg:var(--color-white)]/10 before:absolute before:bottom-0 before:left-0 before:w-full before:h-4 before:hidden before:border-x before:border-t before:border-border before:border-x-(--pattern-fg) before:bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] before:bg-[size:10px_10px] before:bg-fixed before:[--pattern-fg:var(--color-danger)]/15 md:before:block dark:before:[--pattern-fg:var(--color-white)]/10"
-  data-filter="social">
-  <div
-    class="absolute left-0 top-0 h-full w-4 border-r border-border hidden border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-danger)]/15 lg:col-start-3 lg:block dark:[--pattern-fg:var(--color-white)]/10">
-  </div>
-  <div
-    class="absolute right-0 top-0 h-full w-4 border-l border-border hidden border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-danger)]/15 lg:col-start-3 lg:block dark:[--pattern-fg:var(--color-white)]/10">
-  </div>
-  <section class="p-2">
-    <span class="material-symbols-rounded material-symbols-xl material-symbols-weight-300 text-rose-500">colors</span>
-    <div class="grid gap-1">
-      <h2 class="text-base font-semibold">Your <span class="text-rose-500">favorite</span> colors</h2>
-      <p class="text-foreground/70">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedd...</p>
+    class="overflow-hidden relative border break-inside rounded-xl p-4 mb-3 gap-2 text-xs border-border bg-background text-foreground after:absolute after:top-0 after:left-0 after:w-full after:h-4 after:hidden after:border-b after:border-border after:bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] after:bg-[size:10px_10px] after:bg-fixed after:[--pattern-fg:var(--color-foreground)]/5 md:after:block dark:after:[--pattern-fg:var(--color-white)]/10 before:absolute before:bottom-0 before:left-0 before:w-full before:h-4 before:hidden before:border-t before:border-border before:bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] before:bg-[size:10px_10px] before:bg-fixed before:[--pattern-fg:var(--color-foreground)]/5 md:before:block dark:before:[--pattern-fg:var(--color-white)]/10"
+    data-filter="social"
+  >
+    <div
+      class="absolute left-0 top-0 h-full w-4 border-r border-border hidden bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-foreground)]/5 lg:col-start-3 lg:block dark:[--pattern-fg:var(--color-white)]/10"
+    >
     </div>
-  </section>
-</article>
+    <div
+      class="absolute right-0 top-0 h-full w-4 border-l border-border hidden bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-foreground)]/5 lg:col-start-3 lg:block dark:[--pattern-fg:var(--color-white)]/10"
+    >
+    </div>
+    <section class="p-2">
+      <span class="material-symbols-rounded material-symbols-xl material-symbols-weight-300 text-rose-500">colors</span>
+      <div class="grid gap-1">
+        <h2 class="text-base font-semibold">Your <span class="text-rose-500">favorite</span> colors</h2>
+        <p class="text-foreground/70">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedd...</p>
+      </div>
+    </section>
+  </article>
 
 <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground focus-within:bg-foreground/3" data-filter="social">
   <div class="w-full flex items-center justify-between">

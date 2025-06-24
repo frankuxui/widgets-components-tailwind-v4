@@ -356,6 +356,22 @@ visible: true
   </div>
 </section>
 
+<article class="relative flex items-center justify-between border break-inside rounded-lg mb-3 p-4 gap-2 text-xs overflow-hidden bg-background border-border text-foreground">
+  <div class="inline-flex items-center gap-4">
+    <img
+      src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?h=180&w=180"
+      data-author="https://unsplash.com/es/@rexcuando"
+      alt="cover"
+      class="w-12 h-12 max-w-full object-cover rounded-xl"
+    />
+    <div class="flex-1 grid">
+      <h2 class="text-sm font-medium">Coldplay</h2>
+      <p>Adventure of a Lifetime</p>
+    </div>
+  </div>
+  <span class="font-semibold">2:43</span>
+</article>
+
 <section class="grid grid-cols-2 gap-3 mb-3 break-inside" data-filter="multimedia">
   <article class="group relative flex items-center justify-between break-inside rounded-xl text-xs overflow-hidden bg-black text-white">
     <img
@@ -1574,11 +1590,7 @@ visible: true
       <button class="flex items-center justify-between rounded-full p-1 w-full bg-rose-500 text-white">
         <span class="flex-1 uppercase font-semibold text-xs inline-flex items-center text-center justify-center">Buy now</span>
         <span class="inline-flex items-center justify-center rounded-full flex-none w-5 h-5 bg-white text-rose-500">
-          <svg data-icon="play-fill" xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22" fill="currentColor"
-            ><path
-              d="M340-302.23v-355.54q0-15.84 10.87-26 10.87-10.15 25.37-10.15 4.53 0 9.5 1.31 4.97 1.3 9.49 3.92l279.84 178.15q8.24 5.62 12.35 13.46 4.12 7.85 4.12 17.08 0 9.23-4.12 17.08-4.11 7.84-12.35 13.46L395.23-271.31q-4.53 2.62-9.52 3.92-4.98 1.31-9.51 1.31-14.51 0-25.35-10.15-10.85-10.16-10.85-26Z"
-            ></path></svg
-          >
+          <svg data-icon="play-fill" xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22" fill="currentColor" ><path d="M340-302.23v-355.54q0-15.84 10.87-26 10.87-10.15 25.37-10.15 4.53 0 9.5 1.31 4.97 1.3 9.49 3.92l279.84 178.15q8.24 5.62 12.35 13.46 4.12 7.85 4.12 17.08 0 9.23-4.12 17.08-4.11 7.84-12.35 13.46L395.23-271.31q-4.53 2.62-9.52 3.92-4.98 1.31-9.51 1.31-14.51 0-25.35-10.15-10.85-10.16-10.85-26Z" ></path></svg >
         </span>
       </button>
     </div>
@@ -1604,11 +1616,7 @@ visible: true
         </dd>
       </div>
       <button class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white text-black">
-        <svg data-icon="share-outline" xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22" fill="currentColor"
-          ><path
-            d="M672.22-100q-44.91 0-76.26-31.41-31.34-31.41-31.34-76.28 0-6 4.15-29.16L284.31-404.31q-14.46 15-34.36 23.5t-42.64 8.5q-44.71 0-76.01-31.54Q100-435.39 100-480q0-44.61 31.3-76.15 31.3-31.54 76.01-31.54 22.74 0 42.64 8.5 19.9 8.5 34.36 23.5l284.46-167.08q-2.38-7.38-3.27-14.46-.88-7.08-.88-15.08 0-44.87 31.43-76.28Q627.49-860 672.4-860t76.25 31.44Q780-797.13 780-752.22q0 44.91-31.41 76.26-31.41 31.34-76.28 31.34-22.85 0-42.5-8.69Q610.15-662 595.69-677L311.23-509.54q2.38 7.39 3.27 14.46.88 7.08.88 15.08t-.88 15.08q-.89 7.07-3.27 14.46L595.69-283q14.46-15 34.12-23.69 19.65-8.69 42.5-8.69 44.87 0 76.28 31.43Q780-252.51 780-207.6t-31.44 76.25Q717.13-100 672.22-100Zm.09-60q20.27 0 33.98-13.71Q720-187.42 720-207.69q0-20.27-13.71-33.98-13.71-13.72-33.98-13.72-20.27 0-33.98 13.72-13.72 13.71-13.72 33.98 0 20.27 13.72 33.98Q652.04-160 672.31-160Zm-465-272.31q20.43 0 34.25-13.71 13.83-13.71 13.83-33.98 0-20.27-13.83-33.98-13.82-13.71-34.25-13.71-20.11 0-33.71 13.71Q160-500.27 160-480q0 20.27 13.6 33.98 13.6 13.71 33.71 13.71Zm465-272.3q20.27 0 33.98-13.72Q720-732.04 720-752.31q0-20.27-13.71-33.98Q692.58-800 672.31-800q-20.27 0-33.98 13.71-13.72 13.71-13.72 33.98 0 20.27 13.72 33.98 13.71 13.72 33.98 13.72Zm0 496.92ZM207.69-480Zm464.62-272.31Z"
-          ></path></svg
-        >
+        <svg data-icon="share-outline" xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22" fill="currentColor" ><path d="M672.22-100q-44.91 0-76.26-31.41-31.34-31.41-31.34-76.28 0-6 4.15-29.16L284.31-404.31q-14.46 15-34.36 23.5t-42.64 8.5q-44.71 0-76.01-31.54Q100-435.39 100-480q0-44.61 31.3-76.15 31.3-31.54 76.01-31.54 22.74 0 42.64 8.5 19.9 8.5 34.36 23.5l284.46-167.08q-2.38-7.38-3.27-14.46-.88-7.08-.88-15.08 0-44.87 31.43-76.28Q627.49-860 672.4-860t76.25 31.44Q780-797.13 780-752.22q0 44.91-31.41 76.26-31.41 31.34-76.28 31.34-22.85 0-42.5-8.69Q610.15-662 595.69-677L311.23-509.54q2.38 7.39 3.27 14.46.88 7.08.88 15.08t-.88 15.08q-.89 7.07-3.27 14.46L595.69-283q14.46-15 34.12-23.69 19.65-8.69 42.5-8.69 44.87 0 76.28 31.43Q780-252.51 780-207.6t-31.44 76.25Q717.13-100 672.22-100Zm.09-60q20.27 0 33.98-13.71Q720-187.42 720-207.69q0-20.27-13.71-33.98-13.71-13.72-33.98-13.72-20.27 0-33.98 13.72-13.72 13.71-13.72 33.98 0 20.27 13.72 33.98Q652.04-160 672.31-160Zm-465-272.31q20.43 0 34.25-13.71 13.83-13.71 13.83-33.98 0-20.27-13.83-33.98-13.82-13.71-34.25-13.71-20.11 0-33.71 13.71Q160-500.27 160-480q0 20.27 13.6 33.98 13.6 13.71 33.71 13.71Zm465-272.3q20.27 0 33.98-13.72Q720-732.04 720-752.31q0-20.27-13.71-33.98Q692.58-800 672.31-800q-20.27 0-33.98 13.71-13.72 13.71-13.72 33.98 0 20.27 13.72 33.98 13.71 13.72 33.98 13.72Zm0 496.92ZM207.69-480Zm464.62-272.31Z" ></path></svg >
       </button>
     </section>
   </div>
@@ -1732,3 +1740,220 @@ visible: true
     </button>
   </section>
 </article>
+
+<article
+  class="relative flex items-center justify-between border break-inside rounded-lg mb-3 p-4 text-xs overflow-hidden bg-violet-100 border-violet-100 dark:bg-violet-500/20 dark:border-violet-500/20"
+>
+  <header class="inline-flex items-center gap-2">
+    <div class="flex-1 grid">
+      <h2 class="text-sm font-medium">Jarry Smith</h2>
+      <p>Lorem ipsum dolor sit amet...</p>
+    </div>
+  </header>
+  <section class="inline-flex items-center gap-4 flex-none">
+    <button class="flex flex-none justify-center items-center rounded-full w-8 h-8 transition-all duration-300 bg-violet-600 text-white focus:ring-2 focus:ring-violet-600">
+      <svg data-icon="play-fill" xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22" fill="currentColor"
+        ><path
+          d="M340-302.23v-355.54q0-15.84 10.87-26 10.87-10.15 25.37-10.15 4.53 0 9.5 1.31 4.97 1.3 9.49 3.92l279.84 178.15q8.24 5.62 12.35 13.46 4.12 7.85 4.12 17.08 0 9.23-4.12 17.08-4.11 7.84-12.35 13.46L395.23-271.31q-4.53 2.62-9.52 3.92-4.98 1.31-9.51 1.31-14.51 0-25.35-10.15-10.85-10.16-10.85-26Z"
+        ></path></svg
+      >
+    </button>
+    <span class="font-semibold">2:43</span>
+  </section>
+</article>
+
+<article
+  class="relative flex items-center justify-between border break-inside rounded-lg mb-3 p-4 gap-2 text-xs overflow-hidden bg-blue-50 border-blue-50 dark:bg-blue-500/20 dark:border-blue-500/20"
+>
+  <div class="inline-flex items-center gap-4">
+    <img
+      src="https://images.unsplash.com/photo-1487180144351-b8472da7d491?h=267&w=267"
+      data-author="https://unsplash.com/es/@rexcuando"
+      alt="cover"
+      class="w-12 h-12 max-w-full object-cover rounded-full"
+    />
+    <div class="flex-1 grid">
+      <h2 class="text-sm font-medium">Jarry Smith</h2>
+      <p class="truncate">Pure love in the air</p>
+    </div>
+  </div>
+  <section class="inline-flex items-center gap-4 flex-none">
+    <button class="flex flex-none justify-center items-center rounded-full w-8 h-8 transition-colors duration-300 bg-blue-600 text-white">
+      <svg data-icon="pause" xmlns="http://www.w3.org/2000/svg" height="22" width="22" viewBox="0 -960 960 960" fill="currentColor"
+        ><path
+          d="M588.65-240.92q-12.86 0-21.52-9.08-8.67-9.08-8.67-21.12v-417.76q0-12.04 8.67-21.12 8.66-9.08 21.52-9.08h85.58q12.03 0 21.11 9.08t9.08 21.12v417.76q0 12.04-9.08 21.12-9.08 9.08-21.11 9.08h-85.58Zm-302 0q-12.86 0-21.52-9.08-8.67-9.08-8.67-21.12v-417.76q0-12.04 8.67-21.12 8.66-9.08 21.52-9.08H373q11.44 0 20.81 9.08 9.38 9.08 9.38 21.12v417.76q0 12.04-9.38 21.12-9.37 9.08-20.81 9.08h-86.35Z"
+        ></path></svg
+      >
+    </button>
+    <span class="font-semibold">5:02</span>
+  </section>
+</article>
+
+<article class="relative grid grid-cols-12 border break-inside rounded-lg mb-3 text-xs overflow-hidden divide-x divide-border bg-background border-border">
+  <header class="col-span-9 inline-flex items-center gap-2 h-full">
+    <div class="flex items-center justify-start h-full w-full gap-3">
+      <img
+        src="https://images.pexels.com/photos/8663213/pexels-photo-8663213.jpeg?w=500&h=500"
+        data-author="https://www.pexels.com/es-es/@orione-conceicao-1531154/"
+        alt="cover"
+        class="w-full h-full max-h-16 max-w-20 object-cover"
+      />
+      <div class="flex-1 grid">
+        <h2 class="text-sm font-medium">Alan Anderson</h2>
+        <p class="text-xs text-foreground/70">3 min ago</p>
+      </div>
+    </div>
+  </header>
+  <div class="col-span-3 flex items-center justify-center gap-4 p-4 bg-foreground/2">
+    <button class="flex justify-center items-center rounded-full w-7 h-7 transition-colors duration-300 bg-foreground text-background">
+      <svg data-icon="play-fill" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20" fill="currentColor"
+        ><path
+          d="M340-302.23v-355.54q0-15.84 10.87-26 10.87-10.15 25.37-10.15 4.53 0 9.5 1.31 4.97 1.3 9.49 3.92l279.84 178.15q8.24 5.62 12.35 13.46 4.12 7.85 4.12 17.08 0 9.23-4.12 17.08-4.11 7.84-12.35 13.46L395.23-271.31q-4.53 2.62-9.52 3.92-4.98 1.31-9.51 1.31-14.51 0-25.35-10.15-10.85-10.16-10.85-26Z"
+        ></path></svg
+      >
+    </button>
+  </div>
+</article>
+
+<article class="relative grid grid-cols-12 items-start border break-inside rounded-lg mb-3 text-xs overflow-hidden divide-x divide-border bg-background border-border">
+  <header class="col-span-4 inline-flex items-center gap-2 h-full">
+    <div class="flex items-center justify-start h-full w-full">
+      <img
+        src="https://images.pexels.com/photos/6263724/pexels-photo-6263724.jpeg?w=500&h=500"
+        data-author="https://www.pexels.com/es-es/@jorge-fakhouri-filho-861811/"
+        alt="cover"
+        class="w-full h-full max-h-24 max-w-full object-cover"
+      />
+    </div>
+  </header>
+  <section class="relative flex flex-col justify-start items-center h-full col-span-8 p-3 gap-2">
+    <div class="absolute right-0 top-0 w-14 h-14 pointer-events-none bg-violet-500 opacity-30 blur-2xl"></div>
+    <div class="relative z-1 flex-1 grid text-center place-content-start">
+      <h2 class="text-sm font-medium">Alan Anderson</h2>
+      <p class="text-xs text-foreground/70">3 min ago</p>
+    </div>
+    <div class="flex items-center w-full justify-between gap-2">
+      <button class="flex-none inline-flex items-center justify-center rounded-full w-7 h-7 transition-all duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-foreground">
+        <svg data-icon="shuffle" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 -960 960 960" fill="currentColor"
+          ><path
+            d="M605.61-148q-15.74 0-25.87-10.63-10.12-10.63-10.12-26.38 0-15.76 10.62-25.87Q590.87-221 606.61-221h83.01L572.77-337.85q-10.92-10.92-10.81-24.69.12-13.77 11.42-25.08 11.31-11.3 24.89-11.3t24.88 11.3L739-272.15v-82.08q0-15.75 10.63-25.88 10.63-10.12 26.38-10.12 15.76 0 25.87 10.12Q812-369.98 812-354.23v157.07q0 20.37-14.4 34.76-14.39 14.4-34.76 14.4H605.61Zm-447.69-9.92q-11.69-11.7-11.69-25.08 0-13.39 11.69-25.08L688.85-739h-83.24q-15.74 0-25.87-10.63-10.12-10.63-10.12-26.38 0-15.76 10.62-25.87Q590.87-812 606.61-812h156.23q20.37 0 34.76 14.4 14.4 14.39 14.4 34.76v156.07q0 15.75-10.13 25.88-10.13 10.12-25.88 10.12-15.76 0-26.37-10.62Q739-592.02 739-607.77v-81.08L208.08-157.92q-11.31 11.3-24.89 11.5-13.57.19-25.27-11.5Zm.39-594.39q-11.31-11.3-11.12-24.88.2-13.58 11.43-24.89 11.23-11.3 25.07-11.3 13.85 0 24.77 11.3l176.85 177.62q11.3 11.31 11.11 24.88-.19 13.58-11.11 24.57-11.18 11.24-24.82 11.24t-24.95-11.31L158.31-752.31Z"
+          ></path></svg
+        >
+      </button>
+      <button class="flex-none inline-flex items-center justify-center rounded-full w-7 h-7 transition-all duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-foreground">
+        <svg data-icon="skip-previous-outline" xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 -960 960 960" fill="currentColor"
+          ><path
+            d="M244.62-297.69v-364.62q0-12.75 8.63-21.37 8.62-8.63 21.38-8.63t21.37 8.63q8.62 8.62 8.62 21.37v364.62q0 12.75-8.63 21.37-8.63 8.63-21.39 8.63-12.75 0-21.37-8.63-8.61-8.62-8.61-21.37Zm414.53-7.16L441.92-450.08q-8.23-5.61-12.15-13.15T425.85-480q0-9.23 3.92-16.77 3.92-7.54 12.15-13.15l217.23-145.23q4.62-3.62 9.85-4.62 5.23-1 10.23-1 14.46 0 25.31 9.94 10.84 9.95 10.84 26.22v289.22q0 16.27-10.84 26.22-10.85 9.94-25.31 9.94-5 0-10.23-1t-9.85-4.62ZM655.38-480Zm0 100v-200L504.77-480l150.61 100Z"
+          ></path></svg
+        >
+      </button>
+      <button class="flex-none inline-flex items-center justify-center rounded-full w-7 h-7 bg-foreground text-background">
+        <svg data-icon="pause" xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 -960 960 960" fill="currentColor"
+          ><path
+            d="M634.5-208q-30.94 0-52.97-22.03Q559.5-252.06 559.5-283v-394q0-30.94 22.03-52.97Q603.56-752 634.5-752h5q30.94 0 52.97 22.03Q714.5-707.94 714.5-677v394q0 30.94-22.03 52.97Q670.44-208 639.5-208h-5Zm-314 0q-30.94 0-52.97-22.03Q245.5-252.06 245.5-283v-394q0-30.94 22.03-52.97Q289.56-752 320.5-752h5q30.94 0 52.97 22.03Q400.5-707.94 400.5-677v394q0 30.94-22.03 52.97Q356.44-208 325.5-208h-5Z"
+          ></path></svg
+        >
+      </button>
+      <button class="flex-none inline-flex items-center justify-center rounded-full w-7 h-7 transition-all duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-foreground">
+        <svg data-icon="skip-next-outline" xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 -960 960 960" fill="currentColor"
+          ><path
+            d="M655.38-297.69v-364.62q0-12.75 8.63-21.37 8.63-8.63 21.39-8.63 12.75 0 21.37 8.63 8.61 8.62 8.61 21.37v364.62q0 12.75-8.63 21.37-8.62 8.63-21.38 8.63T664-276.32q-8.62-8.62-8.62-21.37Zm-410.76-37.7v-289.22q0-16.27 10.84-26.22 10.85-9.94 25.31-9.94 5 0 10.23 1t9.85 4.62l217.23 145.23q8.23 5.61 12.15 13.15t3.92 16.77q0 9.23-3.92 16.77-3.92 7.54-12.15 13.15L300.85-304.85q-4.62 3.62-9.85 4.62-5.23 1-10.23 1-14.46 0-25.31-9.94-10.84-9.95-10.84-26.22Zm60-144.61Zm0 100 150.61-100-150.61-100v200Z"
+          ></path></svg
+        >
+      </button>
+      <button class="flex-none inline-flex items-center justify-center rounded-full w-7 h-7 transition-all duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-foreground">
+        <svg data-icon="1x" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="currentColor"
+          ><path
+            d="M250-610h-50q-12.75 0-21.37-8.63-8.63-8.63-8.63-21.38 0-12.76 8.63-21.37Q187.25-670 200-670h80q12.75 0 21.37 8.63Q310-652.75 310-640v320q0 12.75-8.63 21.37-8.63 8.63-21.38 8.63-12.76 0-21.37-8.63Q250-307.25 250-320v-290Zm336 176.77-77.08 128.84q-3.76 6.82-10.16 10.6-6.4 3.79-14.68 3.79-17.31 0-25.93-15-8.61-15 .31-30l93.08-157-80.08-132q-9.31-15.38-.52-30.69Q479.72-670 497.29-670q8.4 0 15.47 4.13 7.06 4.12 10.78 10.87l63.23 104.23 63.69-104.84q3.75-6.82 10.51-10.6 6.75-3.79 15-3.79 17.26 0 25.88 15 8.61 15-.31 30l-79.08 133 92.69 156q9.31 15.38.31 30.69T688.56-290q-8.2 0-15.28-4.13-7.09-4.12-10.82-10.87L586-433.23Z"
+          ></path></svg
+        >
+      </button>
+    </div>
+  </section>
+</article>
+
+<section class="w-full break-inside mb-3 grid grid-cols-2 items-start gap-3">
+  <article class="relative flex items-center justify-center flex-col border break-inside rounded-xl mb-3 text-xs overflow-hidden bg-background text-foreground border-border">
+    <section class="w-full flex items-center justify-start gap-2 overflow-auto flex-nowrap pb-2 p-2">
+      <img
+        src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?h=280&w=280"
+        data-author="https://unsplash.com/es/@adityachinchure"
+        alt="cover"
+        class="w-full max-w-32 h-full min-h-28 max-h-32 object-cover rounded-lg"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1668352851504-0c5d240bbe70?h=280&w=280"
+        data-author="https://unsplash.com/es/@yuka0510"
+        alt="cover"
+        class="w-full max-w-32 h-full min-h-28 max-h-32 object-cover rounded-lg"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1487180144351-b8472da7d491?h=280&w=280"
+        data-author="https://unsplash.com/es/@rexcuando"
+        alt="cover"
+        class="w-full max-w-32 h-full min-h-28 max-h-32 object-cover rounded-lg"
+      />
+    </section>
+    <section class="flex items-center w-full justify-center gap-2 p-2 border-y border-border">
+      <button class="flex-none inline-flex items-center justify-center rounded-full w-7 h-7 transition-all duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-foreground">
+        <svg data-icon="skip-previous-outline" xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 -960 960 960" fill="currentColor"
+          ><path
+            d="M244.62-297.69v-364.62q0-12.75 8.63-21.37 8.62-8.63 21.38-8.63t21.37 8.63q8.62 8.62 8.62 21.37v364.62q0 12.75-8.63 21.37-8.63 8.63-21.39 8.63-12.75 0-21.37-8.63-8.61-8.62-8.61-21.37Zm414.53-7.16L441.92-450.08q-8.23-5.61-12.15-13.15T425.85-480q0-9.23 3.92-16.77 3.92-7.54 12.15-13.15l217.23-145.23q4.62-3.62 9.85-4.62 5.23-1 10.23-1 14.46 0 25.31 9.94 10.84 9.95 10.84 26.22v289.22q0 16.27-10.84 26.22-10.85 9.94-25.31 9.94-5 0-10.23-1t-9.85-4.62ZM655.38-480Zm0 100v-200L504.77-480l150.61 100Z"
+          ></path></svg
+        >
+      </button>
+      <button class="flex-none inline-flex items-center justify-center rounded-full w-7 h-7 bg-foreground text-background">
+        <svg data-icon="play-fill" xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22" fill="currentColor"
+          ><path
+            d="M340-302.23v-355.54q0-15.84 10.87-26 10.87-10.15 25.37-10.15 4.53 0 9.5 1.31 4.97 1.3 9.49 3.92l279.84 178.15q8.24 5.62 12.35 13.46 4.12 7.85 4.12 17.08 0 9.23-4.12 17.08-4.11 7.84-12.35 13.46L395.23-271.31q-4.53 2.62-9.52 3.92-4.98 1.31-9.51 1.31-14.51 0-25.35-10.15-10.85-10.16-10.85-26Z"
+          ></path></svg
+        >
+      </button>
+      <button class="flex-none inline-flex items-center justify-center rounded-full w-7 h-7 transition-all duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-foreground">
+        <svg data-icon="skip-next-outline" xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 -960 960 960" fill="currentColor"
+          ><path
+            d="M655.38-297.69v-364.62q0-12.75 8.63-21.37 8.63-8.63 21.39-8.63 12.75 0 21.37 8.63 8.61 8.62 8.61 21.37v364.62q0 12.75-8.63 21.37-8.62 8.63-21.38 8.63T664-276.32q-8.62-8.62-8.62-21.37Zm-410.76-37.7v-289.22q0-16.27 10.84-26.22 10.85-9.94 25.31-9.94 5 0 10.23 1t9.85 4.62l217.23 145.23q8.23 5.61 12.15 13.15t3.92 16.77q0 9.23-3.92 16.77-3.92 7.54-12.15 13.15L300.85-304.85q-4.62 3.62-9.85 4.62-5.23 1-10.23 1-14.46 0-25.31-9.94-10.84-9.95-10.84-26.22Zm60-144.61Zm0 100 150.61-100-150.61-100v200Z"
+          ></path></svg
+        >
+      </button>
+    </section>
+    <section class="w-full p-4 flex flex-col items-start gap-2">
+      <button class="w-full inline-flex items-center justify-center rounded font-medium uppercase px-3 h-7 cursor-pointer bg-violet-700 text-white">Share</button>
+    </section>
+  </article>
+  <article class="relative flex items-center justify-center flex-col border break-inside rounded-xl mb-3 text-xs overflow-hidden bg-background text-foreground border-border">
+    <img
+      src="https://images.unsplash.com/photo-1668352851504-0c5d240bbe70?h=280&w=280"
+      data-author="https://unsplash.com/es/@yuka0510"
+      alt="cover"
+      class="w-full max-w-full object-cover"
+    />
+    <section class="flex items-center w-full justify-center gap-2 p-2 border-b border-border">
+      <button class="flex-none inline-flex items-center justify-center rounded-full w-7 h-7 transition-all duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-foreground">
+        <svg data-icon="skip-previous-outline" xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 -960 960 960" fill="currentColor"
+          ><path
+            d="M244.62-297.69v-364.62q0-12.75 8.63-21.37 8.62-8.63 21.38-8.63t21.37 8.63q8.62 8.62 8.62 21.37v364.62q0 12.75-8.63 21.37-8.63 8.63-21.39 8.63-12.75 0-21.37-8.63-8.61-8.62-8.61-21.37Zm414.53-7.16L441.92-450.08q-8.23-5.61-12.15-13.15T425.85-480q0-9.23 3.92-16.77 3.92-7.54 12.15-13.15l217.23-145.23q4.62-3.62 9.85-4.62 5.23-1 10.23-1 14.46 0 25.31 9.94 10.84 9.95 10.84 26.22v289.22q0 16.27-10.84 26.22-10.85 9.94-25.31 9.94-5 0-10.23-1t-9.85-4.62ZM655.38-480Zm0 100v-200L504.77-480l150.61 100Z"
+          ></path></svg
+        >
+      </button>
+      <button class="flex-none inline-flex items-center justify-center rounded-full w-7 h-7 bg-foreground text-background">
+        <svg data-icon="pause" xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 -960 960 960" fill="currentColor"
+          ><path
+            d="M634.5-208q-30.94 0-52.97-22.03Q559.5-252.06 559.5-283v-394q0-30.94 22.03-52.97Q603.56-752 634.5-752h5q30.94 0 52.97 22.03Q714.5-707.94 714.5-677v394q0 30.94-22.03 52.97Q670.44-208 639.5-208h-5Zm-314 0q-30.94 0-52.97-22.03Q245.5-252.06 245.5-283v-394q0-30.94 22.03-52.97Q289.56-752 320.5-752h5q30.94 0 52.97 22.03Q400.5-707.94 400.5-677v394q0 30.94-22.03 52.97Q356.44-208 325.5-208h-5Z"
+          ></path></svg
+        >
+      </button>
+      <button class="flex-none inline-flex items-center justify-center rounded-full w-7 h-7 transition-all duration-300 hover:bg-foreground/10 focus:ring-2 focus:ring-foreground">
+        <svg data-icon="skip-next-outline" xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 -960 960 960" fill="currentColor"
+          ><path
+            d="M655.38-297.69v-364.62q0-12.75 8.63-21.37 8.63-8.63 21.39-8.63 12.75 0 21.37 8.63 8.61 8.62 8.61 21.37v364.62q0 12.75-8.63 21.37-8.62 8.63-21.38 8.63T664-276.32q-8.62-8.62-8.62-21.37Zm-410.76-37.7v-289.22q0-16.27 10.84-26.22 10.85-9.94 25.31-9.94 5 0 10.23 1t9.85 4.62l217.23 145.23q8.23 5.61 12.15 13.15t3.92 16.77q0 9.23-3.92 16.77-3.92 7.54-12.15 13.15L300.85-304.85q-4.62 3.62-9.85 4.62-5.23 1-10.23 1-14.46 0-25.31-9.94-10.84-9.95-10.84-26.22Zm60-144.61Zm0 100 150.61-100-150.61-100v200Z"
+          ></path></svg
+        >
+      </button>
+    </section>
+    <section class="w-full p-4 flex flex-col items-start gap-2">
+      <p class="text-xs">This playlist is the best of the year</p>
+      <button class="w-full inline-flex items-center justify-center rounded font-medium uppercase px-3 h-7 cursor-pointer bg-foreground text-background">Album</button>
+    </section>
+  </article>
+</section>

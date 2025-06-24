@@ -8,7 +8,12 @@ const data = widgets
     category: item.data.category,
     visible: item.data.visible ?? true,
   }))
-  .filter((item) => item.visible);
+  .filter((item) => item.visible)
+  .sort((a, b) => {
+    const categoryA = a.category?.split(" ")?.join("") ?? "";
+    const categoryB = b.category?.split(" ")?.join("") ?? "";
+    return categoryA === "" && categoryB === "" ? 0 : categoryA.localeCompare(categoryB);
+  });
 
 const pageSlug = Astro.url.pathname.split("/")[1];
 const pathname = Astro.url.pathname;
@@ -45,7 +50,7 @@ const pathname = Astro.url.pathname;
             );
           })
       }
-      <li class="relative">
+      <li class="relative ml-2">
         <button
           data-toggle="menu-more"
           class="z-[1] relative inline-flex items-center justify-center w-8 h-8 focus:ring-2 transition-all rounded-full border text-foreground border-border bg-background focus:ring-primary data-[state='open']:bg-foreground/10"

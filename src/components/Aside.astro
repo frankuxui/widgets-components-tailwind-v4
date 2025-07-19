@@ -17,7 +17,7 @@ const pageSlug = Astro.url.pathname.split("/")[1];
   <div data-toggle="aside" class="absolute top-0 left-0 w-full h-full bg-foreground/10 backdrop-blur-xs"></div>
 
   <div class="aside-content relative flex flex-col w-full h-full max-w-xs z-10 bg-background" style="transition: transform 200ms ease-in-out; transform: translateX(-100%);">
-    <header class="w-full flex items-center justify-between px-6 h-16 border-b border-border">
+    <header class="w-full flex items-center justify-between px-10 h-16 border-b border-border">
       <h2 class="text-lg font-medium text-foreground">Widgets</h2>
 
       <!-- Close button -->
@@ -28,7 +28,7 @@ const pageSlug = Astro.url.pathname.split("/")[1];
       </button>
       <!-- End close button -->
     </header>
-    <section class="flex-1 py-8 px-6 overflow-y-auto">
+    <section class="flex-1 py-8 px-10 overflow-y-auto">
       <h2 class="text-lg font-medium text-foreground">Categories</h2>
       <ul class="flex flex-col w-full mt-4">
         {

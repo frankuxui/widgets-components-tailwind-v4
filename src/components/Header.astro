@@ -15,13 +15,16 @@ const data = widgets
     return categoryA === "" && categoryB === "" ? 0 : categoryA.localeCompare(categoryB);
   });
 
-const pageSlug = Astro.url.pathname.split("/")[1];
-const pathname = Astro.url.pathname;
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const basePath = base.replace(/\/$/, "");
+const currentPath = Astro.url.pathname.startsWith(basePath) ? Astro.url.pathname.slice(basePath.length) || "/" : Astro.url.pathname;
+const currentSlug = currentPath.split("/")[1];
+const urlFor = (path = "") => `${base}${path.replace(/^\//, "")}`;
 ---
 
 <header class="z-30 sticky h-16 left-0 w-full top-0 flex items-center justify-center border-b border-border bg-background/60 backdrop-blur-lg">
   <div class="w-full h-full flex items-center justify-between">
-    <a href="/" class="relative overflow-hidden flex items-center gap-2 pl-10 lg:px-6 h-full lg:border-r lg:border-border">
+    <a href={urlFor()} class="relative overflow-hidden flex items-center gap-2 pl-10 lg:px-6 h-full lg:border-r lg:border-border">
       <span class="relative z-1 flex-none text-base font-medium text-foreground">Widgets</span>
     </a>
     <div
@@ -36,12 +39,12 @@ const pathname = Astro.url.pathname;
             return (
               <li>
                 <a
-                  href={`/${item.slug}`}
+                  href={urlFor(item.slug)}
                   class="relative flex items-center justify-center text-xs uppercase py-2 px-3 rounded-full tracking-wider transition-colors duration-200"
                   class:list={{
-                    "font-normal text-foreground/70": pageSlug !== item.slug,
+                    "font-normal text-foreground/70": currentSlug !== item.slug,
                     "font-semibold text-foreground after:absolute after:inset-0 after:border after:border-dashed after:border-sky-300/60 after:bg-sky-400/10 after:group-hover:bg-sky-400/15 dark:after:border-sky-300/30":
-                      pageSlug === item.slug,
+                      currentSlug === item.slug,
                   }}
                 >
                   {item.category}
@@ -65,11 +68,11 @@ const pathname = Astro.url.pathname;
                 .map((item) => {
                   return (
                     <a
-                      href={`/${item.slug}`}
+                      href={urlFor(item.slug)}
                       class="relative block py-2 px-4 w-full rounded transition-colors duration-200"
                       class:list={{
-                        "text-gray-600 hover:text-black hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-white/5 dark:hover:text-white": pageSlug !== item.slug,
-                        "text-black font-bold dark:text-white hover:bg-black/5 dark:hover:bg-white/5": pageSlug === item.slug,
+                        "text-gray-600 hover:text-black hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-white/5 dark:hover:text-white": currentSlug !== item.slug,
+                        "text-black font-bold dark:text-white hover:bg-black/5 dark:hover:bg-white/5": currentSlug === item.slug,
                       }}
                     >
                       {item.category}

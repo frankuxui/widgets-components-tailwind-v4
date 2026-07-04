@@ -11,7 +11,7 @@
     }
   ],
   "arrowParens": "always",
-  "semi": true,
+  "semi": false,
   "singleQuote": false,
   "quoteProps": "as-needed",
   "jsxSingleQuote": false,

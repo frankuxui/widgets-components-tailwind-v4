@@ -561,7 +561,7 @@ visible: true
   </article>
   <article class="border break-inside rounded-xl text-xs mb-3 border-border bg-background text-foreground" data-filter="social">
     <header class="flex items-center justify-start gap-2 p-3">
-      <img src="https://frankuxui.com/images/frankuxui_frontend_developer_ux_ui_designer.png" alt="Fotografía de frankuxui" class="h-5/12 w-5/12 object-cover rounded-full" />
+      <img src="https://frankuxui.com/frankuxui-ux-ui-designer-frontend-developer-cover-mobile.webp" alt="Fotografía de frankuxui" class="size-12 flex-none object-cover rounded-full bg-foreground" />
       <h2 class="text-sm font-medium mt-2">
         Frank <br /> Esteban
       </h2>

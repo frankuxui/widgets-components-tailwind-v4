@@ -1,7 +1,7 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection } from "astro:content"
 
-const widgets = await getCollection("widgets");
+const widgets = await getCollection("widgets")
 const data = widgets
   .map((item) => ({
     slug: item.id,
@@ -10,22 +10,22 @@ const data = widgets
   }))
   .filter((item) => item.visible)
   .sort((a, b) => {
-    const categoryA = a.category?.split(" ")?.join("") ?? "";
-    const categoryB = b.category?.split(" ")?.join("") ?? "";
-    return categoryA === "" && categoryB === "" ? 0 : categoryA.localeCompare(categoryB);
-  });
+    const categoryA = a.category?.split(" ")?.join("") ?? ""
+    const categoryB = b.category?.split(" ")?.join("") ?? ""
+    return categoryA === "" && categoryB === "" ? 0 : categoryA.localeCompare(categoryB)
+  })
 
-const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
-const basePath = base.replace(/\/$/, "");
-const currentPath = Astro.url.pathname.startsWith(basePath) ? Astro.url.pathname.slice(basePath.length) || "/" : Astro.url.pathname;
-const currentSlug = currentPath.split("/")[1];
-const urlFor = (path = "") => `${base}${path.replace(/^\//, "")}`;
+const base = import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`
+const basePath = base.replace(/\/$/, "")
+const currentPath = Astro.url.pathname.startsWith(basePath) ? Astro.url.pathname.slice(basePath.length) || "/" : Astro.url.pathname
+const currentSlug = currentPath.split("/")[1]
+const urlFor = (path = "") => `${base}${path.replace(/^\//, "")}`
 ---
 
 <header class="z-30 sticky h-16 left-0 w-full top-0 flex items-center justify-center border-b border-border bg-background/60 backdrop-blur-lg">
   <div class="w-full h-full flex items-center justify-between">
     <a href={urlFor()} class="relative overflow-hidden flex items-center gap-2 pl-10 lg:px-6 h-full lg:border-r lg:border-border">
-      <span class="relative z-1 flex-none text-base font-medium text-foreground">Widgets</span>
+      <span class="relative z-1 flex-none text-sm uppercase font-medium text-foreground">Widgets</span>
     </a>
     <div
       class="hidden lg:block z-0 opacity-80 pointer-events-none h-full w-full flex-1 border-border border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-black)]/5 dark:[--pattern-fg:var(--color-white)]/10"
@@ -50,7 +50,7 @@ const urlFor = (path = "") => `${base}${path.replace(/^\//, "")}`;
                   {item.category}
                 </a>
               </li>
-            );
+            )
           })
       }
       <li class="relative ml-2">
@@ -77,7 +77,7 @@ const urlFor = (path = "") => `${base}${path.replace(/^\//, "")}`;
                     >
                       {item.category}
                     </a>
-                  );
+                  )
                 })
             }
           </div>
@@ -92,8 +92,8 @@ const urlFor = (path = "") => `${base}${path.replace(/^\//, "")}`;
       <div class="h-full flex items-center justify-end gap-4 px-10 lg:px-6 border-l border-border">
         <button data-toggle="theme" class="w-10 h-10 inline-flex items-center justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path d="M12 3l0 18"></path><path d="M12 9l4.65 -4.65"
-            ></path><path d="M12 14.3l7.37 -7.37"></path><path d="M12 19.6l8.85 -8.85"></path></svg
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path d="M12 3l0 18"></path><path d="M12 9l4.65 -4.65"></path><path
+              d="M12 14.3l7.37 -7.37"></path><path d="M12 19.6l8.85 -8.85"></path></svg
           >
         </button>
         <!-- Menu button -->
@@ -101,19 +101,9 @@ const urlFor = (path = "") => `${base}${path.replace(/^\//, "")}`;
           data-toggle="aside"
           class="flex lg:hidden items-center justify-center w-10 h-10 flex-none transition-colors duration-300 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-white"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+          <svg xmlns="http://www.w3.org/2000/svg" class="size-12" viewBox="0 0 24 24"
+            ><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.6" d="M9.41 9.66H9.4m5.2 0h-.01m-5.28 4.7H9.3m5.3 0h-.01"></path></svg
           >
-            <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
         </button>
         <!-- End menu button -->
       </div>
@@ -122,67 +112,67 @@ const urlFor = (path = "") => `${base}${path.replace(/^\//, "")}`;
 </header>
 
 <script>
-  const themeToggle = document.querySelectorAll('[data-toggle="theme"]');
+  const themeToggle = document.querySelectorAll('[data-toggle="theme"]')
 
   // Theme
 
   const applyTheme = (theme: string) => {
     if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-      document.documentElement.classList.remove("light");
+      document.documentElement.classList.add("dark")
+      document.documentElement.classList.remove("light")
     } else {
-      document.documentElement.classList.add("light");
-      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.add("light")
+      document.documentElement.classList.remove("dark")
     }
-  };
+  }
 
   // Leer tema guardado o sistema
-  const savedTheme = localStorage.getItem("theme");
+  const savedTheme = localStorage.getItem("theme")
 
   if (savedTheme) {
-    applyTheme(savedTheme);
+    applyTheme(savedTheme)
   } else {
     // Detectar preferencia del sistema
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      applyTheme("dark");
+      applyTheme("dark")
     } else {
-      applyTheme("light");
+      applyTheme("light")
     }
   }
 
   // Toggle del tema al hacer click
   themeToggle.forEach((toggle) => {
     toggle.addEventListener("click", () => {
-      const currentTheme = document.documentElement.classList.contains("dark") ? "dark" : "light";
-      const newTheme = currentTheme === "dark" ? "light" : "dark";
-      applyTheme(newTheme);
-      localStorage.setItem("theme", newTheme);
-    });
-  });
+      const currentTheme = document.documentElement.classList.contains("dark") ? "dark" : "light"
+      const newTheme = currentTheme === "dark" ? "light" : "dark"
+      applyTheme(newTheme)
+      localStorage.setItem("theme", newTheme)
+    })
+  })
 
   // Escuchar cambios en preferencia del sistema
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
     if (!localStorage.getItem("theme")) {
-      applyTheme(e.matches ? "dark" : "light");
+      applyTheme(e.matches ? "dark" : "light")
     }
-  });
+  })
 
   // Menu more toggle
 
-  const menuMoreToggle = document.querySelectorAll('[data-toggle="menu-more"]');
-  const menuDropdown = document.querySelectorAll(".menu-dropdown");
+  const menuMoreToggle = document.querySelectorAll('[data-toggle="menu-more"]')
+  const menuDropdown = document.querySelectorAll(".menu-dropdown")
 
   menuMoreToggle.forEach((toggle) => {
     toggle.addEventListener("click", () => {
-      const dropdown = toggle.nextElementSibling as HTMLElement;
+      const dropdown = toggle.nextElementSibling as HTMLElement
 
       if (dropdown.style.display === "none") {
-        dropdown.style.display = "block";
+        dropdown.style.display = "block"
       } else {
-        dropdown.style.display = "none";
+        dropdown.style.display = "none"
       }
-    });
-  });
+    })
+  })
 
   // Close menu more dropdown when clicking outside of it
 
@@ -190,19 +180,19 @@ const urlFor = (path = "") => `${base}${path.replace(/^\//, "")}`;
     menuMoreToggle.forEach((item) => {
       if (!item.contains(e.target as Node)) {
         menuDropdown.forEach((dropdown) => {
-          (dropdown as HTMLElement).style.display = "none";
-        });
+          ;(dropdown as HTMLElement).style.display = "none"
+        })
       }
-    });
-  });
+    })
+  })
 
   // Close menu more dropdown when clicking the escape key
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       menuDropdown.forEach((dropdown) => {
-        (dropdown as HTMLElement).style.display = "none";
-      });
+        ;(dropdown as HTMLElement).style.display = "none"
+      })
     }
-  });
+  })
 </script>

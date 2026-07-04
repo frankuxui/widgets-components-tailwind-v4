@@ -1,154 +1,841 @@
 ---
-import Expo from "@/layouts/Expo.astro";
+import Expo from "@/layouts/Expo.astro"
 ---
 
 <Expo>
-  <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="food">
-    <svg
-      viewBox="0 0 64 64"
-      xmlns="http://www.w3.org/2000/svg"
-      class="w-12 h-12"
-      xml:space="preserve"
-      style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2"
-    >
-      <path style="fill:none" d="M0 0h64v64H0z"></path>
-      <path
-        d="M24 37h5M39.5 37H47a2 2 0 0 0 2-2v-3H15v3a2 2 0 0 0 2 2h1M18 37v2.002C18 46.733 24.267 53 31.998 53H32c3.713 0 7.274-1.475 9.899-4.101A13.996 13.996 0 0 0 46 39v-2M32 47v9M20.371 47l-3.041 9M43.629 47l3.041 9"
-        stroke="currentColor"
-        stroke-width="2px"
-        fill="none"
-      >
-      </path>
-      <path
-        d="M31.669 23.118s-.695-2.299-4.46-3.872c-3.766-1.574-6.708 2.638-3.882 7.695 3.476 6.219 17.383 6.661 19.99 1.564 1.091-2.132.235-4.167.235-4.167-1.3-4.712-6.646-10.271-14.489-4.175"
-        stroke="currentColor"
-        stroke-width="2px"
-        fill="none"
-      >
-      </path>
-      <path
-        d="M20.677 26.735c-1.123.883-1.567 1.222-1.852 1.386a.316.316 0 0 0-.475.322c.045.436.463 1.828 2.081.7 2.039-1.424 4.899.069 4.899.069M23.907 19.246l-5.761-4.239a1.021 1.021 0 0 0-1.329.101l-.001.001a.827.827 0 0 0 .017 1.189l5.085 4.792M42.295 10.6V8M26.655 10.6V8M37.382 10.6V8M21.742 10.6V8M13 32h38"
-        stroke="currentColor"
-        stroke-width="2px"
-        fill="none"
-      >
-      </path>
+  <section class="break-inside columns-2 items-start gap-3">
+    <article class="border break-inside rounded-xl group overflow-hidden text-xs mb-3 p-3 border-border bg-background text-foreground" data-filter="shopping">...</article>
+    <article class="border break-inside rounded-xl group overflow-hidden text-xs mb-3 p-3 border-border bg-background text-foreground" data-filter="shopping">...</article>
+    <article class="border break-inside rounded-xl group overflow-hidden text-xs mb-3 p-3 border-border bg-background text-foreground" data-filter="shopping">...</article>
+    <article class="border break-inside rounded-xl group overflow-hidden text-xs mb-3 p-3 border-border bg-background text-foreground" data-filter="shopping">...</article>
+  </section>
+
+  <article class="border break-inside rounded-xl group overflow-hidden text-xs mb-3 p-3 border-border bg-background text-foreground" data-filter="shopping">...</article>
+  <article class="border break-inside rounded-xl group overflow-hidden text-xs mb-3 p-3 border-border bg-background text-foreground" data-filter="shopping">...</article>
+  <article class="border break-inside rounded-xl group overflow-hidden text-xs mb-3 p-3 border-border bg-background text-foreground" data-filter="shopping">...</article>
+
+  <article class="border break-inside rounded-xl overflow-hidden mb-3 text-xs border-border bg-background text-foreground" data-filter="travel">
+    <header class="flex items-center justify-between gap-3 border-b border-dashed border-border p-4">
+      <div>
+        <p class="text-foreground/60">Boarding pass</p>
+        <h2 class="text-lg font-semibold leading-tight">MAD -> LIS</h2>
+      </div>
+      <svg viewBox="0 0 48 48" class="size-10 text-sky-600" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M5 28l38-14-9 26-8-12-12 8 4-12z"></path>
+      </svg>
+    </header>
+    <div class="grid grid-cols-3 gap-3 p-4">
+      <div><span class="text-foreground/50">Gate</span><strong class="block text-sm">B12</strong></div>
+      <div><span class="text-foreground/50">Seat</span><strong class="block text-sm">18A</strong></div>
+      <div><span class="text-foreground/50">Time</span><strong class="block text-sm">14:30</strong></div>
+    </div>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="travel">
+    <header class="flex items-center justify-between">
+      <div>
+        <h2 class="text-sm font-semibold">Ruta del dia</h2>
+        <p class="text-foreground/60">Centro historico a mirador</p>
+      </div>
+      <span class="rounded-full bg-emerald-500/10 px-2 py-1 text-emerald-600">4 paradas</span>
+    </header>
+    <svg viewBox="0 0 280 96" class="mt-4 h-24 w-full" fill="none">
+      <path d="M24 72C70 18 108 84 150 42s72-12 106-30" stroke="currentColor" stroke-width="2" stroke-dasharray="5 5" class="text-foreground/35"></path>
+      <circle cx="24" cy="72" r="7" class="fill-emerald-500"></circle>
+      <circle cx="150" cy="42" r="7" class="fill-sky-500"></circle>
+      <circle cx="256" cy="12" r="7" class="fill-rose-500"></circle>
     </svg>
   </article>
 
-  <article class="border rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="food">
-    <div class="w-full flex items-center justify-between gap-6">
-      <header class="flex items-center gap-4">
-        <svg
-          viewBox="0 0 64 64"
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-12 h-12"
-          xml:space="preserve"
-          style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2"
-        >
-          <path style="fill:none" d="M0 0h64v64H0z"></path>
-          <path
-            d="M24 37h5M39.5 37H47a2 2 0 0 0 2-2v-3H15v3a2 2 0 0 0 2 2h1M18 37v2.002C18 46.733 24.267 53 31.998 53H32c3.713 0 7.274-1.475 9.899-4.101A13.996 13.996 0 0 0 46 39v-2M32 47v9M20.371 47l-3.041 9M43.629 47l3.041 9"
-            stroke="currentColor"
-            stroke-width="2px"
-            fill="none"
-          >
-          </path>
-          <path
-            d="M31.669 23.118s-.695-2.299-4.46-3.872c-3.766-1.574-6.708 2.638-3.882 7.695 3.476 6.219 17.383 6.661 19.99 1.564 1.091-2.132.235-4.167.235-4.167-1.3-4.712-6.646-10.271-14.489-4.175"
-            stroke="currentColor"
-            stroke-width="2px"
-            fill="none"
-          >
-          </path>
-          <path
-            d="M20.677 26.735c-1.123.883-1.567 1.222-1.852 1.386a.316.316 0 0 0-.475.322c.045.436.463 1.828 2.081.7 2.039-1.424 4.899.069 4.899.069M23.907 19.246l-5.761-4.239a1.021 1.021 0 0 0-1.329.101l-.001.001a.827.827 0 0 0 .017 1.189l5.085 4.792M42.295 10.6V8M26.655 10.6V8M37.382 10.6V8M21.742 10.6V8M13 32h38"
-            stroke="currentColor"
-            stroke-width="2px"
-            fill="none"
-          >
-          </path>
+  <section class="break-inside columns-2 items-start gap-3">
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="travel">
+      <div class="flex items-center justify-between">
+        <svg viewBox="0 0 48 48" class="size-9 text-amber-600" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="12" y="14" width="24" height="26" rx="4"></rect>
+          <path d="M18 14v-2a6 6 0 0112 0v2M18 22h12M18 30h8"></path>
         </svg>
-        <div class="flex-auto">
-          <span class="text-foreground/70">Chicken Shop</span>
-          <h2 class="text-sm font-medium block">Grilled Chicken Salad</h2>
+        <strong>17.8 kg</strong>
+      </div>
+      <h2 class="mt-3 font-semibold text-sm">Equipaje</h2>
+      <div class="mt-3 h-2 rounded-full bg-foreground/8">
+        <div class="h-full w-[72%] rounded-full bg-amber-500"></div>
+      </div>
+      <p class="mt-2 text-foreground/60">Limite: 23 kg.</p>
+    </article>
+
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="travel">
+      <svg viewBox="0 0 48 48" class="size-8 text-blue-600" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M8 34h32M12 34l6-18h12l6 18M18 22h12M21 10h6"></path>
+      </svg>
+      <h2 class="mt-3 font-semibold text-sm">Puerta abierta</h2>
+      <p class="mt-1 text-foreground/60">Embarque en 28 minutos.</p>
+      <div class="mt-3 flex items-center justify-between rounded-lg bg-blue-500/10 p-2 text-blue-700 dark:text-blue-300">
+        <span>Terminal 2</span><strong>Gate C7</strong>
+      </div>
+    </article>
+
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="travel">
+      <div class="flex items-start justify-between">
+        <div>
+          <h2 class="font-semibold text-sm">Clima destino</h2>
+          <p class="text-foreground/60">Roma, manana</p>
         </div>
-      </header>
-      <div class="relative group">
-        <div
-          class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2
-           opacity-0 invisible
-           transition-all duration-200
-           group-hover:opacity-100 group-hover:visible
-           z-50 font-medium text-xs px-3 py-1 rounded
-           bg-foreground text-background"
-        >
-          Llamar
-        </div>
-        <button class="inline-flex items-center justify-center w-9 h-9
-           rounded-full transition-colors duration-200
-           focus:ring-2 focus:ring-primary
-           hover:bg-foreground/5">
-          <span class="material-symbols-rounded material-symbols-lg material-symbols-weight-300"> phone_enabled </span>
-        </button>
+        <svg viewBox="0 0 48 48" class="size-10 text-yellow-500" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="24" cy="24" r="8"></circle>
+          <path d="M24 5v6M24 37v6M5 24h6M37 24h6M10 10l4 4M34 34l4 4M38 10l-4 4M14 34l-4 4"></path>
+        </svg>
+      </div>
+      <strong class="mt-3 block text-3xl">27 C</strong>
+      <p class="text-foreground/60">Ligero viento por la tarde.</p>
+    </article>
+
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="travel">
+      <h2 class="font-semibold text-sm">Presupuesto viaje</h2>
+      <p class="mt-1 text-foreground/60">EUR 640 de EUR 900 usados</p>
+      <svg viewBox="0 0 120 120" class="mx-auto mt-3 size-28 -rotate-90" fill="none">
+        <circle cx="60" cy="60" r="44" stroke="currentColor" stroke-width="10" class="text-foreground/10"></circle>
+        <circle cx="60" cy="60" r="44" stroke="currentColor" stroke-width="10" stroke-dasharray="276" stroke-dashoffset="80" class="text-teal-500"></circle>
+      </svg>
+    </article>
+  </section>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="travel">
+    <header class="flex items-center justify-between">
+      <div>
+        <h2 class="text-sm font-semibold">Checklist express</h2>
+        <p class="text-foreground/60">Antes de salir al aeropuerto</p>
+      </div>
+      <svg viewBox="0 0 48 48" class="size-9 text-lime-600" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M14 24l7 7 14-16"></path>
+        <rect x="8" y="8" width="32" height="32" rx="8"></rect>
+      </svg>
+    </header>
+    <div class="mt-4 grid gap-2">
+      <p class="flex items-center justify-between"><span>Pasaporte</span><span class="text-lime-600">Listo</span></p>
+      <p class="flex items-center justify-between"><span>Tarjeta SIM</span><span class="text-lime-600">Listo</span></p>
+      <p class="flex items-center justify-between"><span>Seguro</span><span class="text-amber-600">Pendiente</span></p>
+    </div>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="travel">
+    <div class="flex items-center justify-between">
+      <div>
+        <p class="text-foreground/60">Hotel check-in</p>
+        <h2 class="text-xl font-semibold">Habitacion 508</h2>
+      </div>
+      <svg viewBox="0 0 48 48" class="size-10 text-purple-600" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="17" cy="24" r="7"></circle>
+        <path d="M24 24h18M32 24v6M38 24v5"></path>
+      </svg>
+    </div>
+    <div class="mt-4 rounded-lg border border-dashed border-border p-3">
+      <p class="flex justify-between"><span>Entrada</span><strong>15:00</strong></p>
+      <p class="mt-2 flex justify-between"><span>Salida</span><strong>11:00</strong></p>
+    </div>
+  </article>
+
+  <article class="relative border break-inside rounded-xl p-4 mb-3 text-xs overflow-hidden border-border bg-background text-foreground" data-filter="travel">
+    <svg viewBox="0 0 220 120" class="absolute -right-8 -top-6 h-28 w-44 text-sky-500/15" fill="currentColor">
+      <path d="M20 70c50-60 96 44 180-24v74H20z"></path>
+    </svg>
+    <div class="relative">
+      <p class="text-foreground/60">Pasaporte digital</p>
+      <h2 class="mt-1 text-lg font-semibold">ES-7842-TRV</h2>
+      <div class="mt-4 grid grid-cols-2 gap-2">
+        <span class="rounded bg-foreground/5 p-2">Visa OK</span>
+        <span class="rounded bg-foreground/5 p-2">Seguro OK</span>
       </div>
     </div>
   </article>
 
-  <article class="border break-inside rounded-xl mb-3 text-xs grid grid-cols-12 border-border bg-background text-foreground" data-filter="food">
-    <div class="p-3 col-span-3">
-      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2"
-        ><path style="fill:none" d="M0 0h64v64H0z"></path><path
-          d="M54.257 49.395a3.117 3.117 0 0 1-1.546.41h-5.217c-.945 0-1.838.429-2.429 1.165l-.723.901a3.112 3.112 0 0 1-2.428 1.165H22.086a3.112 3.112 0 0 1-2.428-1.165l-.723-.901a3.115 3.115 0 0 0-2.429-1.165h-5.217a3.117 3.117 0 0 1-1.546-.41L4 46.112h56l-5.743 3.283z"
-          style="fill:none;stroke:currentColor;stroke-width:2px"></path><path
-          d="M57 46.051c0 .081-50 .081-50 0 0-13.798 11.202-25 25-25s25 11.202 25 25z"
-          style="fill:none;stroke:currentColor;stroke-width:2px"></path><path
-          d="M13 46.066c0-3.34.864-6.48 2.38-9.209M20.294 31.104a19.018 19.018 0 0 1 3.97-2.395M32 20.869v-4M37 16.869H27M10.704 18.869s1.226-2.87-.334-6.214M53.296 18.869s-1.226-2.87.334-6.214M20.285 12.655s1.227-2.871-.334-6.215M43.715 12.655s-1.227-2.871.334-6.215"
-          style="fill:none;stroke:currentColor;stroke-width:2px"></path></svg
-      >
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="travel">
+    <header class="flex items-center gap-3">
+      <svg viewBox="0 0 48 48" class="size-10 text-yellow-600" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M8 30h32l-4-12H12zM14 30v6M34 30v6M16 36h4M28 36h4M16 18l2-6h12l2 6"></path>
+      </svg>
+      <div>
+        <h2 class="text-sm font-semibold">Taxi reservado</h2>
+        <p class="text-foreground/60">Conductor: Leo Garcia</p>
+      </div>
+    </header>
+    <div class="mt-4 flex items-center justify-between rounded-lg bg-foreground/5 p-3">
+      <span>12 min</span><strong>EUR 18.50</strong>
     </div>
-    <div class="flex-1 flex flex-col items-start col-span-9 p-3 h-full border-l border-border">
-      <p>Book your chicken salad today!</p>
-      <div class="inline-flex items-center gap-2">
-        <h2 class="text-sm font-medium">Taking Orders Now</h2>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4"
-          ><path
-            fill="currentColor"
-            d="m10.6 13.8l-2.15-2.15q-.275-.275-.7-.275t-.7.275t-.275.7t.275.7L9.9 15.9q.3.3.7.3t.7-.3l5.65-5.65q.275-.275.275-.7t-.275-.7t-.7-.275t-.7.275zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"
-          ></path></svg
-        >
+  </article>
+
+  <section class="break-inside columns-2 items-start gap-3">
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="travel">
+      <h2 class="font-semibold text-sm">Zonas horarias</h2>
+      <div class="mt-3 grid gap-2">
+        <p class="flex justify-between"><span>Madrid</span><strong>11:54</strong></p>
+        <p class="flex justify-between"><span>Tokyo</span><strong>18:54</strong></p>
+        <p class="flex justify-between"><span>NYC</span><strong>05:54</strong></p>
+      </div>
+    </article>
+
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="travel">
+      <div class="flex items-center justify-between">
+        <h2 class="font-semibold text-sm">Packing cubes</h2>
+        <svg viewBox="0 0 48 48" class="size-8 text-rose-600" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="8" y="10" width="14" height="14" rx="3"></rect>
+          <rect x="26" y="10" width="14" height="14" rx="3"></rect>
+          <rect x="8" y="28" width="32" height="10" rx="3"></rect>
+        </svg>
+      </div>
+      <div class="mt-3 flex gap-1">
+        <span class="h-8 flex-1 rounded bg-rose-500/20"></span>
+        <span class="h-8 flex-1 rounded bg-sky-500/20"></span>
+        <span class="h-8 flex-1 rounded bg-lime-500/20"></span>
+      </div>
+      <p class="mt-2 text-foreground/60">Ropa, tech y aseo separados.</p>
+    </article>
+
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="travel">
+      <svg viewBox="0 0 48 48" class="size-8 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M24 6l15 6v10c0 10-6 17-15 20C15 39 9 32 9 22V12z"></path>
+        <path d="M17 24l5 5 10-12"></path>
+      </svg>
+      <h2 class="mt-3 font-semibold text-sm">Seguro activo</h2>
+      <p class="mt-1 text-foreground/60">Cobertura medica y equipaje.</p>
+    </article>
+
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="travel">
+      <h2 class="font-semibold text-sm">Visado</h2>
+      <p class="mt-1 text-foreground/60">Solicitud en revision.</p>
+      <div class="mt-3 flex items-center gap-2">
+        <span class="size-3 rounded-full bg-emerald-500"></span>
+        <span class="h-px flex-1 bg-emerald-500"></span>
+        <span class="size-3 rounded-full bg-amber-500"></span>
+        <span class="h-px flex-1 bg-foreground/15"></span>
+        <span class="size-3 rounded-full bg-foreground/20"></span>
+      </div>
+    </article>
+  </section>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="travel">
+    <header class="flex items-center justify-between">
+      <div>
+        <h2 class="text-sm font-semibold">Lounge airport</h2>
+        <p class="text-foreground/60">Acceso incluido con tu plan</p>
+      </div>
+      <svg viewBox="0 0 48 48" class="size-10 text-cyan-600" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M10 30h28M14 30l-3 10M34 30l3 10M17 18h14a5 5 0 015 5v7H12v-7a5 5 0 015-5zM18 18V9h12v9"></path>
+      </svg>
+    </header>
+    <div class="mt-4 flex items-center justify-between rounded-lg border border-border p-3">
+      <span>Terminal 4S</span><strong>2 invitados</strong>
+    </div>
+  </article>
+
+  <article class="break-inside rounded-xl p-4 mb-3 text-xs bg-gradient-to-br from-slate-950 to-sky-700 text-white" data-filter="travel">
+    <p class="opacity-70">Cuenta atras</p>
+    <h2 class="mt-1 text-3xl font-semibold">09 dias</h2>
+    <p class="mt-2 opacity-80">para Islandia roadtrip.</p>
+    <svg viewBox="0 0 220 54" class="mt-4 h-12 w-full" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M8 42c28-30 52-30 78 0s52 30 78 0 34-24 48-12" class="opacity-50"></path>
+      <path d="M70 16l14 26h-28z" fill="currentColor" class="opacity-90"></path>
+    </svg>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="travel">
+    <header class="flex items-center justify-between">
+      <h2 class="text-sm font-semibold">Gastos compartidos</h2>
+      <span class="rounded-full bg-violet-500/10 px-2 py-1 text-violet-600">4 personas</span>
+    </header>
+    <div class="mt-4 grid gap-2">
+      <p class="flex justify-between"><span>Ana pago hotel</span><strong>EUR 320</strong></p>
+      <p class="flex justify-between"><span>Tu debes</span><strong>EUR 80</strong></p>
+    </div>
+    <button class="mt-4 inline-flex h-8 w-full items-center justify-center rounded-full bg-foreground text-background">Liquidar</button>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="travel">
+    <div class="flex items-center justify-between gap-3">
+      <div>
+        <h2 class="text-sm font-semibold">Huella estimada</h2>
+        <p class="text-foreground/60">Vuelo + hotel</p>
+      </div>
+      <svg viewBox="0 0 48 48" class="size-10 text-green-600" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M34 8C20 10 12 18 12 30c0 6 4 10 10 10 13 0 18-14 18-28V8z"></path>
+        <path d="M14 36c6-12 13-18 24-24"></path>
+      </svg>
+    </div>
+    <strong class="mt-4 block text-2xl">184 kg CO2</strong>
+    <p class="text-foreground/60">Compensacion sugerida: EUR 7.40</p>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="travel">
+    <header class="flex items-center justify-between">
+      <div>
+        <h2 class="text-sm font-semibold">Conexion tren</h2>
+        <p class="text-foreground/60">Paris Nord -> Bruges</p>
+      </div>
+      <svg viewBox="0 0 48 48" class="size-10 text-red-600" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="12" y="6" width="24" height="28" rx="5"></rect>
+        <path d="M17 14h14M17 22h14M18 34l-4 8M30 34l4 8M18 42h12"></path>
+      </svg>
+    </header>
+    <div class="mt-4 flex items-center justify-between">
+      <strong>08:16</strong>
+      <span class="h-px flex-1 mx-3 bg-border"></span>
+      <strong>10:02</strong>
+    </div>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="travel">
+    <header class="flex items-center justify-between">
+      <h2 class="text-sm font-semibold">Joyas locales</h2>
+      <svg viewBox="0 0 48 48" class="size-9 text-pink-600" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M24 42s14-12 14-24A14 14 0 1010 18c0 12 14 24 14 24z"></path>
+        <circle cx="24" cy="18" r="5"></circle>
+      </svg>
+    </header>
+    <div class="mt-4 grid gap-2">
+      <p class="rounded-lg bg-foreground/5 p-2">Cafe escondido en Alfama</p>
+      <p class="rounded-lg bg-foreground/5 p-2">Mirador sin colas al atardecer</p>
+      <p class="rounded-lg bg-foreground/5 p-2">Mercado local de ceramica</p>
+    </div>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="storage">
+    <header class="flex items-center justify-between">
+      <div>
+        <h2 class="text-sm font-semibold">Cloud Vault</h2>
+        <p class="text-foreground/60">2.4 TB usados de 4 TB</p>
+      </div>
+      <svg viewBox="0 0 48 48" class="size-10 text-sky-600" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M16 34H36a8 8 0 0 0 0-16 12 12 0 0 0-23-3A9 9 0 0 0 16 34z"></path>
+      </svg>
+    </header>
+    <div class="mt-4 h-3 rounded-full bg-foreground/8 p-0.5">
+      <div class="h-full w-[60%] rounded-full bg-sky-500"></div>
+    </div>
+    <p class="mt-2 text-foreground/60">Sincronizacion estable.</p>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="multimedia">
+    <header class="flex items-center justify-between">
+      <div>
+        <h2 class="text-sm font-semibold">Now playing</h2>
+        <p class="text-foreground/60">Midnight City Radio</p>
+      </div>
+      <button class="size-10 rounded-full inline-flex items-center justify-center bg-foreground text-background">
+        <span class="material-symbols-rounded material-symbols-weight-300">pause</span>
+      </button>
+    </header>
+    <div class="mt-4 flex h-12 items-end gap-1">
+      <span class="h-5 flex-1 rounded bg-fuchsia-500/40"></span>
+      <span class="h-10 flex-1 rounded bg-fuchsia-500"></span>
+      <span class="h-7 flex-1 rounded bg-fuchsia-500/60"></span>
+      <span class="h-12 flex-1 rounded bg-fuchsia-500"></span>
+      <span class="h-6 flex-1 rounded bg-fuchsia-500/40"></span>
+      <span class="h-9 flex-1 rounded bg-fuchsia-500/70"></span>
+    </div>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="food">
+    <div class="flex items-start justify-between gap-3">
+      <div>
+        <p class="text-foreground/60">Meal prep</p>
+        <h2 class="text-xl font-semibold">5 bowls listos</h2>
+      </div>
+      <svg viewBox="0 0 48 48" class="size-10 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 24h30a14 14 0 0 1-14 14h-2A14 14 0 0 1 9 24z"></path>
+        <path d="M15 24c2-8 16-8 18 0M18 14c0-4 4-4 4-8M28 14c0-4 4-4 4-8"></path>
+      </svg>
+    </div>
+    <div class="mt-4 grid grid-cols-5 gap-1">
+      <span class="h-2 rounded bg-emerald-500"></span>
+      <span class="h-2 rounded bg-emerald-500"></span>
+      <span class="h-2 rounded bg-emerald-500"></span>
+      <span class="h-2 rounded bg-emerald-500"></span>
+      <span class="h-2 rounded bg-foreground/10"></span>
+    </div>
+    <p class="mt-2 text-foreground/60">4 dias cubiertos.</p>
+  </article>
+
+  <section class="break-inside columns-2 items-start gap-3">
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="storage">
+      <div class="flex items-center justify-between">
+        <svg viewBox="0 0 48 48" class="size-9 text-violet-600" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="8" y="10" width="32" height="28" rx="5"></rect>
+          <path d="M14 18h20M14 26h12M32 30l4 4 6-8"></path>
+        </svg>
+        <span class="rounded-full bg-violet-500/10 px-2 py-1 text-violet-600">Auto</span>
+      </div>
+      <h2 class="mt-3 font-semibold text-sm">Backup nocturno</h2>
+      <p class="mt-1 text-foreground/60">Proxima copia a las 02:00.</p>
+    </article>
+
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="storage">
+      <h2 class="font-semibold text-sm">Archivos grandes</h2>
+      <p class="mt-1 text-foreground/60">Detectados para limpiar.</p>
+      <div class="mt-3 grid gap-2">
+        <p class="flex justify-between rounded bg-foreground/5 p-2"><span>Video.mov</span><strong>8.2 GB</strong></p>
+        <p class="flex justify-between rounded bg-foreground/5 p-2"><span>Backup.zip</span><strong>5.1 GB</strong></p>
+      </div>
+    </article>
+
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="multimedia">
+      <div class="flex items-center justify-between">
+        <h2 class="font-semibold text-sm">Podcast queue</h2>
+        <span class="material-symbols-rounded material-symbols-weight-300">graphic_eq</span>
+      </div>
+      <div class="mt-3 grid gap-2">
+        <p class="rounded bg-foreground/5 p-2">Diseno invisible · 24 min</p>
+        <p class="rounded bg-foreground/5 p-2">Producto y cafe · 41 min</p>
+      </div>
+    </article>
+
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="food">
+      <div class="flex items-center justify-between">
+        <h2 class="font-semibold text-sm">Despensa</h2>
+        <span class="rounded-full bg-amber-500/10 px-2 py-1 text-amber-600">Bajo</span>
+      </div>
+      <div class="mt-3 grid gap-2">
+        <p class="flex justify-between"><span>Avena</span><strong>12%</strong></p>
+        <p class="flex justify-between"><span>Arroz</span><strong>28%</strong></p>
+        <p class="flex justify-between"><span>Cafe</span><strong>9%</strong></p>
+      </div>
+    </article>
+  </section>
+
+  <article class="border break-inside rounded-xl overflow-hidden mb-3 text-xs border-border bg-background text-foreground" data-filter="storage">
+    <header class="flex items-center justify-between p-4">
+      <div>
+        <h2 class="text-sm font-semibold">Mapa de almacenamiento</h2>
+        <p class="text-foreground/60">Distribucion por tipo</p>
+      </div>
+      <strong>1.8 TB</strong>
+    </header>
+    <div class="grid grid-cols-4 grid-rows-3 gap-1 p-4 pt-0">
+      <span class="col-span-2 row-span-3 rounded-lg bg-blue-500/60"></span>
+      <span class="col-span-2 rounded-lg bg-purple-500/50"></span>
+      <span class="rounded-lg bg-emerald-500/50"></span>
+      <span class="rounded-lg bg-amber-500/50"></span>
+      <span class="col-span-2 rounded-lg bg-rose-500/50"></span>
+    </div>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="multimedia">
+    <header class="flex items-center justify-between">
+      <div>
+        <h2 class="text-sm font-semibold">Render en cola</h2>
+        <p class="text-foreground/60">Campana verano 4K</p>
+      </div>
+      <span class="rounded-full bg-orange-500/10 px-2 py-1 text-orange-600">68%</span>
+    </header>
+    <div class="mt-4 flex items-center gap-2">
+      <svg viewBox="0 0 48 48" class="size-12 text-orange-600" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="8" y="10" width="32" height="24" rx="4"></rect>
+        <path d="M20 18l10 6-10 6zM14 40h20"></path>
+      </svg>
+      <div class="flex-1">
+        <div class="h-2 rounded-full bg-foreground/8"><div class="h-full w-[68%] rounded-full bg-orange-500"></div></div>
+        <p class="mt-2 text-foreground/60">12 min restantes.</p>
       </div>
     </div>
   </article>
 
-  <article class="relative border break-inside rounded-xl mb-3 text-xs overflow-hidden s grid grid-cols-12 border-border bg-background text-foreground" data-filter="food">
-    <div class="absolute bottom-0 left-0 w-full h-1 bg-foreground/10">
-      <div class="h-1 bg-blue-600" style="width: 70%"></div>
-    </div>
-    <div class="p-3 col-span-3 flex items-center justify-center bg-foreground/2">
-      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2"
-        ><path style="fill:none" d="M0 0h64v64H0z"></path><path
-          d="M54.448 33a1.335 1.335 0 0 1 1.322 1.534l-.726 4.839A16 16 0 0 1 39.221 53H24.779A16 16 0 0 1 8.956 39.373l-.726-4.839A1.335 1.335 0 0 1 9.552 33h44.896z"
-          style="fill:none;stroke:currentColor;stroke-width:2px"></path><path
-          d="M47.5 45.284a15.105 15.105 0 0 1-9.6 3.432M43 52.503V57H21v-4.497M12.3 33a10.161 10.161 0 0 1 3.085-2.524 5.391 5.391 0 0 1 5.667-6.547 6.986 6.986 0 0 1 5.941-2.013c1.295-6.811 8.282-6.624 11.959-3.805 4.507.19 4.917 2.734 4.917 2.734a5.003 5.003 0 0 1 3.88 6.49c.505.472.961.994 1.362 1.558A5.01 5.01 0 0 1 52.941 33M26.5 28.5l-1-.5M42.5 29l.5-.5M15.444 20.109s-2.036-1.336-.627-3.838c2.195-3.898-.941-5.256-.941-5.256M51.373 20.109s2.037-1.336.627-3.838c-2.195-3.898.941-5.256.941-5.256M25.347 14.573s-2.036-1.335-.627-3.838c2.195-3.897-.941-5.256-.941-5.256M41.47 14.573s2.037-1.335.627-3.838c-2.195-3.897.941-5.256.941-5.256"
-          style="fill:none;stroke:currentColor;stroke-width:2px"></path></svg
-      >
-    </div>
-    <div class="flex-1 flex flex-col items-start col-span-9 p-3 h-full border-l gap-1.5 border-border">
-      <p class="text-foreground/70">Your order is being prepared. Thank you for your patience!</p>
-      <h2 class="text-sm font-medium">Your Order is 70% Ready</h2>
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="food">
+    <header class="flex items-center justify-between">
+      <div>
+        <h2 class="text-sm font-semibold">Reserva de mesa</h2>
+        <p class="text-foreground/60">Bistro Norte</p>
+      </div>
+      <svg viewBox="0 0 48 48" class="size-10 text-red-600" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M16 8v32M10 8v10a6 6 0 0012 0V8M32 8v32M32 8c6 4 8 10 4 18h-4"></path>
+      </svg>
+    </header>
+    <div class="mt-4 flex items-center justify-between rounded-lg border border-dashed border-border p-3">
+      <span>Hoy · 21:30</span><strong>2 personas</strong>
     </div>
   </article>
-  <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="food"></article>
-  <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="food"></article>
-  <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="food"></article>
-  <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="food"></article>
-  <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="food"></article>
-  <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="food"></article>
-  <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="food"></article>
-  <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="food"></article>
-  <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="food"></article>
-  <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="food"></article>
-  <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="food"></article>
-  <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="food"></article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="storage">
+    <div class="flex items-center justify-between gap-3">
+      <div>
+        <h2 class="text-sm font-semibold">Carpeta compartida</h2>
+        <p class="text-foreground/60">Brand assets</p>
+      </div>
+      <div class="flex -space-x-2">
+        <span class="size-8 rounded-full border-2 border-background bg-pink-300"></span>
+        <span class="size-8 rounded-full border-2 border-background bg-sky-300"></span>
+        <span class="size-8 rounded-full border-2 border-background bg-lime-300"></span>
+      </div>
+    </div>
+    <p class="mt-4 rounded-lg bg-foreground/5 p-3">24 archivos actualizados esta semana.</p>
+  </article>
+
+  <article class="break-inside rounded-xl p-4 mb-3 text-xs bg-gradient-to-br from-zinc-950 to-indigo-700 text-white" data-filter="multimedia">
+    <p class="opacity-70">Cinema mode</p>
+    <h2 class="mt-1 text-2xl font-semibold">Watch party</h2>
+    <p class="mt-2 opacity-80">5 amigos sincronizados.</p>
+    <div class="mt-4 flex items-center gap-2">
+      <button class="size-9 rounded-full inline-flex items-center justify-center bg-white text-black">
+        <span class="material-symbols-rounded material-symbols-weight-300">play_arrow</span>
+      </button>
+      <span class="h-1 flex-1 rounded-full bg-white/30"><span class="block h-full w-[42%] rounded-full bg-white"></span></span>
+    </div>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="food">
+    <header class="flex items-center justify-between">
+      <h2 class="text-sm font-semibold">Pedido cocina</h2>
+      <span class="rounded-full bg-lime-500/10 px-2 py-1 text-lime-600">En fuego</span>
+    </header>
+    <div class="mt-4 flex items-center gap-3">
+      <svg viewBox="0 0 48 48" class="size-12 text-lime-600" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M14 30h20a10 10 0 0 1-20 0zM10 30h28M18 18c-3-4 3-5 0-9M26 18c-3-4 3-5 0-9M34 18c-3-4 3-5 0-9"></path>
+      </svg>
+      <div>
+        <p class="font-medium">Ramen miso</p>
+        <p class="text-foreground/60">Mesa 6 · listo en 7 min.</p>
+      </div>
+    </div>
+  </article>
+
+  <section class="break-inside columns-2 items-start gap-3">
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="storage">
+      <h2 class="font-semibold text-sm">Versiones</h2>
+      <p class="mt-1 text-foreground/60">Contrato_final.pdf</p>
+      <div class="mt-3 flex items-center gap-2">
+        <span class="size-6 rounded-full bg-emerald-500"></span>
+        <span class="h-px flex-1 bg-border"></span>
+        <span class="size-6 rounded-full bg-sky-500"></span>
+        <span class="h-px flex-1 bg-border"></span>
+        <span class="size-6 rounded-full bg-foreground/20"></span>
+      </div>
+    </article>
+
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="multimedia">
+      <div class="flex items-center justify-between">
+        <h2 class="font-semibold text-sm">Color grading</h2>
+        <span class="font-semibold">LUT 03</span>
+      </div>
+      <div class="mt-3 grid grid-cols-5 gap-1">
+        <span class="h-10 rounded bg-red-400"></span>
+        <span class="h-10 rounded bg-orange-300"></span>
+        <span class="h-10 rounded bg-teal-400"></span>
+        <span class="h-10 rounded bg-blue-500"></span>
+        <span class="h-10 rounded bg-zinc-800"></span>
+      </div>
+    </article>
+
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="food">
+      <h2 class="font-semibold text-sm">Macronutrientes</h2>
+      <div class="mt-3 grid gap-2">
+        <p class="flex justify-between"><span>Proteina</span><strong>42g</strong></p>
+        <p class="flex justify-between"><span>Carbos</span><strong>68g</strong></p>
+        <p class="flex justify-between"><span>Grasas</span><strong>18g</strong></p>
+      </div>
+    </article>
+
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="storage">
+      <div class="flex items-center justify-between">
+        <h2 class="font-semibold text-sm">Disco local</h2>
+        <strong>91%</strong>
+      </div>
+      <svg viewBox="0 0 120 64" class="mt-3 h-16 w-full" fill="none">
+        <path d="M10 52C28 18 42 48 60 28s34-8 50-18" stroke="currentColor" stroke-width="3" class="text-rose-500"></path>
+        <path d="M10 52h100" stroke="currentColor" class="text-foreground/15"></path>
+      </svg>
+    </article>
+  </section>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="multimedia">
+    <header class="flex items-center justify-between">
+      <div>
+        <h2 class="text-sm font-semibold">Biblioteca creativa</h2>
+        <p class="text-foreground/60">Assets multimedia</p>
+      </div>
+      <strong>842</strong>
+    </header>
+    <div class="mt-4 grid grid-cols-3 gap-2 text-center">
+      <div class="rounded-lg bg-foreground/5 p-2"><strong class="block">312</strong><span class="text-foreground/60">Audio</span></div>
+      <div class="rounded-lg bg-foreground/5 p-2"><strong class="block">205</strong><span class="text-foreground/60">Video</span></div>
+      <div class="rounded-lg bg-foreground/5 p-2"><strong class="block">325</strong><span class="text-foreground/60">Clips</span></div>
+    </div>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="food">
+    <header class="flex items-center justify-between">
+      <div>
+        <h2 class="text-sm font-semibold">Temporizador horno</h2>
+        <p class="text-foreground/60">Focaccia romero</p>
+      </div>
+      <strong class="text-xl">18:24</strong>
+    </header>
+    <svg viewBox="0 0 220 54" class="mt-4 h-14 w-full" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M8 38c26-22 48-22 74 0s48 22 74 0 38-18 56-4" class="text-orange-500"></path>
+      <circle cx="156" cy="38" r="5" class="fill-orange-500 stroke-orange-500"></circle>
+    </svg>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="weather">
+    <header class="flex items-start justify-between gap-3">
+      <div>
+        <p class="text-foreground/60">Ahora en Madrid</p>
+        <h2 class="text-4xl font-semibold leading-none">31 C</h2>
+      </div>
+      <svg viewBox="0 0 48 48" class="size-12 text-yellow-500" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="24" cy="24" r="8"></circle>
+        <path d="M24 5v6M24 37v6M5 24h6M37 24h6M10 10l4 4M34 34l4 4M38 10l-4 4M14 34l-4 4"></path>
+      </svg>
+    </header>
+    <div class="mt-4 grid grid-cols-3 gap-2 text-center">
+      <span class="rounded-lg bg-foreground/5 p-2">UV 7</span>
+      <span class="rounded-lg bg-foreground/5 p-2">32%</span>
+      <span class="rounded-lg bg-foreground/5 p-2">12 km/h</span>
+    </div>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="health">
+    <header class="flex items-center justify-between">
+      <div>
+        <h2 class="text-sm font-semibold">Pulso en reposo</h2>
+        <p class="text-foreground/60">Media semanal</p>
+      </div>
+      <span class="rounded-full bg-rose-500/10 px-2 py-1 text-rose-600">62 bpm</span>
+    </header>
+    <svg viewBox="0 0 220 70" class="mt-4 h-16 w-full" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M8 42h34l10-24 18 44 16-28h28l9-14 13 22h76" class="text-rose-500"></path>
+      <path d="M8 58h204" class="text-foreground/10"></path>
+    </svg>
+  </article>
+
+  <section class="break-inside columns-2 items-start gap-3">
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="weather">
+      <div class="flex items-center justify-between">
+        <h2 class="font-semibold text-sm">Probabilidad lluvia</h2>
+        <strong class="text-blue-600">68%</strong>
+      </div>
+      <div class="mt-3 h-2 rounded-full bg-foreground/8">
+        <div class="h-full w-[68%] rounded-full bg-blue-500"></div>
+      </div>
+      <p class="mt-2 text-foreground/60">Pico entre 18:00 y 20:00.</p>
+    </article>
+
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="weather">
+      <svg viewBox="0 0 48 48" class="size-9 text-cyan-600" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M10 31c8-9 20 9 28-2M10 38c8-9 20 9 28-2M14 20h20M18 14h12"></path>
+      </svg>
+      <h2 class="mt-3 font-semibold text-sm">Alerta de niebla</h2>
+      <p class="mt-1 text-foreground/60">Visibilidad reducida al amanecer.</p>
+    </article>
+
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="health">
+      <div class="flex items-center justify-between">
+        <h2 class="font-semibold text-sm">Hidratacion</h2>
+        <strong>1.6 / 2.5 L</strong>
+      </div>
+      <div class="mt-3 grid grid-cols-5 gap-1">
+        <span class="h-8 rounded bg-sky-500"></span>
+        <span class="h-8 rounded bg-sky-500"></span>
+        <span class="h-8 rounded bg-sky-500/60"></span>
+        <span class="h-8 rounded bg-foreground/10"></span>
+        <span class="h-8 rounded bg-foreground/10"></span>
+      </div>
+    </article>
+
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="health">
+      <div class="flex items-center justify-between">
+        <h2 class="font-semibold text-sm">Mindfulness</h2>
+        <span class="rounded-full bg-violet-500/10 px-2 py-1 text-violet-600">12 min</span>
+      </div>
+      <svg viewBox="0 0 90 70" class="mx-auto mt-3 h-20 w-full" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="45" cy="35" r="12" class="text-violet-500"></circle>
+        <circle cx="45" cy="35" r="24" class="text-violet-500/50"></circle>
+        <circle cx="45" cy="35" r="34" class="text-violet-500/20"></circle>
+      </svg>
+    </article>
+  </section>
+
+  <article class="border break-inside rounded-xl overflow-hidden mb-3 text-xs border-border bg-background text-foreground" data-filter="weather">
+    <header class="flex items-center justify-between p-4">
+      <div>
+        <h2 class="text-sm font-semibold">Pronostico 5 dias</h2>
+        <p class="text-foreground/60">Temperatura maxima</p>
+      </div>
+      <strong>Estable</strong>
+    </header>
+    <div class="flex h-28 items-end gap-2 px-4 pb-4">
+      <span class="h-14 flex-1 rounded-t-lg bg-yellow-500/40"></span>
+      <span class="h-20 flex-1 rounded-t-lg bg-yellow-500"></span>
+      <span class="h-16 flex-1 rounded-t-lg bg-yellow-500/60"></span>
+      <span class="h-24 flex-1 rounded-t-lg bg-orange-500"></span>
+      <span class="h-18 flex-1 rounded-t-lg bg-yellow-500/70"></span>
+    </div>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="health">
+    <header class="flex items-center justify-between">
+      <div>
+        <h2 class="text-sm font-semibold">Sueno profundo</h2>
+        <p class="text-foreground/60">Objetivo: 2h 00m</p>
+      </div>
+      <svg viewBox="0 0 48 48" class="size-10 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M34 8a14 14 0 1 0 6 26 18 18 0 0 1-6-26z"></path>
+      </svg>
+    </header>
+    <div class="mt-4 flex items-end justify-between">
+      <strong class="text-3xl font-semibold">1h 42m</strong>
+      <span class="text-indigo-600">+18 min</span>
+    </div>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="weather">
+    <div class="flex items-center justify-between gap-3">
+      <div>
+        <h2 class="text-sm font-semibold">Indice UV</h2>
+        <p class="text-foreground/60">Proteccion recomendada</p>
+      </div>
+      <strong class="text-3xl text-orange-500">8</strong>
+    </div>
+    <div class="mt-4 grid grid-cols-5 gap-1">
+      <span class="h-2 rounded bg-lime-500"></span>
+      <span class="h-2 rounded bg-yellow-500"></span>
+      <span class="h-2 rounded bg-orange-500"></span>
+      <span class="h-2 rounded bg-red-500"></span>
+      <span class="h-2 rounded bg-purple-500/30"></span>
+    </div>
+  </article>
+
+  <article class="break-inside rounded-xl p-4 mb-3 text-xs bg-gradient-to-br from-emerald-700 to-lime-500 text-white" data-filter="health">
+    <p class="opacity-80">Objetivo diario</p>
+    <h2 class="mt-1 text-3xl font-semibold">8.420</h2>
+    <p class="mt-1 opacity-80">pasos de 10.000</p>
+    <svg viewBox="0 0 220 56" class="mt-4 h-14 w-full" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M10 42c20-30 32 20 52-10s44-26 62 0 34 28 86-8" class="opacity-70"></path>
+      <circle cx="162" cy="31" r="5" fill="currentColor"></circle>
+    </svg>
+  </article>
+
+  <section class="break-inside columns-2 items-start gap-3">
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="weather">
+      <h2 class="font-semibold text-sm">Calidad del aire</h2>
+      <p class="mt-1 text-foreground/60">AQI moderado</p>
+      <div class="mt-3 flex items-center justify-between rounded-lg bg-amber-500/10 p-2 text-amber-700 dark:text-amber-300">
+        <span>PM2.5</span><strong>41</strong>
+      </div>
+    </article>
+
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="weather">
+      <h2 class="font-semibold text-sm">Viento</h2>
+      <p class="mt-1 text-foreground/60">Rachas del noroeste</p>
+      <svg viewBox="0 0 120 70" class="mt-3 h-16 w-full" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M8 24h72a10 10 0 1 0-10-10M18 42h90a9 9 0 1 1-9 9M8 58h52" class="text-cyan-600"></path>
+      </svg>
+    </article>
+
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="health">
+      <h2 class="font-semibold text-sm">Respiracion</h2>
+      <p class="mt-1 text-foreground/60">Ritmo 4-7-8</p>
+      <div class="mt-3 flex items-center gap-2">
+        <span class="size-8 rounded-full bg-teal-500/20"></span>
+        <span class="size-11 rounded-full bg-teal-500/30"></span>
+        <span class="size-14 rounded-full bg-teal-500/40"></span>
+      </div>
+    </article>
+
+    <article class="border break-inside rounded-xl p-3 mb-3 text-xs border-border bg-background text-foreground" data-filter="health">
+      <h2 class="font-semibold text-sm">Postura</h2>
+      <p class="mt-1 text-foreground/60">Pausa activa en 14 min.</p>
+      <div class="mt-3 h-2 rounded-full bg-foreground/8">
+        <div class="h-full w-[76%] rounded-full bg-purple-500"></div>
+      </div>
+    </article>
+  </section>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="weather">
+    <header class="flex items-center justify-between">
+      <div>
+        <h2 class="text-sm font-semibold">Radar de tormenta</h2>
+        <p class="text-foreground/60">Celula activa al oeste</p>
+      </div>
+      <span class="rounded-full bg-red-500/10 px-2 py-1 text-red-600">45 min</span>
+    </header>
+    <svg viewBox="0 0 120 120" class="mx-auto mt-4 size-32" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="60" cy="60" r="48" class="text-foreground/10"></circle>
+      <circle cx="60" cy="60" r="30" class="text-foreground/10"></circle>
+      <circle cx="60" cy="60" r="12" class="text-foreground/10"></circle>
+      <path d="M60 60l38-18" class="text-red-500"></path>
+      <circle cx="94" cy="44" r="7" class="fill-red-500 stroke-red-500"></circle>
+    </svg>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="health">
+    <header class="flex items-center justify-between">
+      <div>
+        <h2 class="text-sm font-semibold">Energia corporal</h2>
+        <p class="text-foreground/60">Basado en sueno y actividad</p>
+      </div>
+      <strong class="text-emerald-600">82%</strong>
+    </header>
+    <div class="mt-4 grid grid-cols-4 gap-1">
+      <span class="h-12 rounded bg-emerald-500/30"></span>
+      <span class="h-16 rounded bg-emerald-500/50"></span>
+      <span class="h-20 rounded bg-emerald-500"></span>
+      <span class="h-14 rounded bg-emerald-500/40"></span>
+    </div>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="weather">
+    <header class="flex items-center justify-between">
+      <h2 class="text-sm font-semibold">Amanecer / atardecer</h2>
+      <svg viewBox="0 0 48 48" class="size-9 text-orange-500" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 34h36M14 34a10 10 0 0 1 20 0M24 8v8M10 20l6 6M38 20l-6 6"></path>
+      </svg>
+    </header>
+    <div class="mt-4 flex items-center justify-between rounded-lg bg-foreground/5 p-3">
+      <span>06:44</span><span class="h-px flex-1 mx-3 bg-border"></span><span>21:37</span>
+    </div>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="health">
+    <header class="flex items-center justify-between">
+      <div>
+        <h2 class="text-sm font-semibold">Comidas conscientes</h2>
+        <p class="text-foreground/60">Ritmo y saciedad</p>
+      </div>
+      <svg viewBox="0 0 48 48" class="size-10 text-lime-600" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M24 42s14-8 14-22A14 14 0 0 0 10 20c0 14 14 22 14 22z"></path>
+        <path d="M18 22c4 2 8 2 12 0"></path>
+      </svg>
+    </header>
+    <div class="mt-4 grid grid-cols-3 gap-2 text-center">
+      <span class="rounded bg-foreground/5 p-2">Lento</span>
+      <span class="rounded bg-lime-500/10 p-2 text-lime-600">Bien</span>
+      <span class="rounded bg-foreground/5 p-2">Ligero</span>
+    </div>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="weather">
+    <div class="flex items-center justify-between gap-3">
+      <div>
+        <h2 class="text-sm font-semibold">Polen</h2>
+        <p class="text-foreground/60">Gramíneas altas</p>
+      </div>
+      <svg viewBox="0 0 48 48" class="size-10 text-green-600" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M24 42V12M24 22c-8-7-14-7-18 0 8 2 14 2 18 0zM24 30c8-7 14-7 18 0-8 2-14 2-18 0zM24 16c6-6 10-6 14 0"></path>
+      </svg>
+    </div>
+    <p class="mt-4 rounded-lg bg-green-500/10 p-3 text-green-700 dark:text-green-300">Recomendado ventilar por la noche.</p>
+  </article>
+
+  <article class="border break-inside rounded-xl p-4 mb-3 text-xs border-border bg-background text-foreground" data-filter="health">
+    <header class="flex items-center justify-between">
+      <h2 class="text-sm font-semibold">Habitos semanales</h2>
+      <span class="rounded-full bg-foreground px-2 py-1 text-background">5/7</span>
+    </header>
+    <div class="mt-4 grid grid-cols-7 gap-1">
+      <span class="h-8 rounded bg-emerald-500"></span>
+      <span class="h-8 rounded bg-emerald-500"></span>
+      <span class="h-8 rounded bg-emerald-500"></span>
+      <span class="h-8 rounded bg-foreground/10"></span>
+      <span class="h-8 rounded bg-emerald-500"></span>
+      <span class="h-8 rounded bg-emerald-500"></span>
+      <span class="h-8 rounded bg-foreground/10"></span>
+    </div>
+  </article>
 </Expo>
